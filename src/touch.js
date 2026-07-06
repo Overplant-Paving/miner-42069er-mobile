@@ -14,7 +14,7 @@ const SVG = {
 };
 
 const CSS = `
-body.touch { touch-action: none; }
+body.touch { touch-action: none; overscroll-behavior: none; }
 .mtc { position: fixed; inset: 0; z-index: 20; pointer-events: none;
   font-family: system-ui, sans-serif; -webkit-user-select: none; user-select: none;
   -webkit-tap-highlight-color: transparent; }
@@ -23,44 +23,55 @@ body.touch { touch-action: none; }
   user-select: none; margin: 0; padding: 0; border: none; cursor: pointer;
   display: flex; align-items: center; justify-content: center;
   color: rgba(242,233,220,.92); background: rgba(20,16,25,.42);
-  border: 2px solid rgba(242,233,220,.28); backdrop-filter: blur(2px); }
+  border: 2px solid rgba(242,233,220,.28);
+  -webkit-backdrop-filter: blur(2px); backdrop-filter: blur(2px); }
 .mtc button svg { width: 60%; height: 60%; fill: currentColor; }
 .mtc button.down { background: rgba(255,93,162,.55); border-color: rgba(255,210,74,.9); }
 
-.mtc .dpad { position: absolute; left: max(3vw, env(safe-area-inset-left));
-  bottom: max(4vh, env(safe-area-inset-bottom)); display: grid;
-  grid-template-columns: repeat(3, var(--d)); grid-template-rows: repeat(3, var(--d));
-  --d: clamp(52px, 15vmin, 92px); }
-.mtc .dpad button { border-radius: 14px; }
-.mtc .dpad .up    { grid-area: 1 / 2; }
-.mtc .dpad .left  { grid-area: 2 / 1; }
-.mtc .dpad .right { grid-area: 2 / 3; }
-.mtc .dpad .down  { grid-area: 3 / 2; }
+/* D-pad: fixed-size container with each key absolutely placed. No grid/flow —
+   placement is unambiguous across browsers. Sizes are fixed px (not vh/vmin) so
+   the mobile URL bar hiding on first touch can't move or resize the pad. */
+.mtc .dpad { position: absolute;
+  left: max(14px, env(safe-area-inset-left));
+  bottom: max(18px, env(safe-area-inset-bottom));
+  width: calc(var(--d) * 3); height: calc(var(--d) * 3); --d: 62px; }
+.mtc .dpad button { position: absolute; width: var(--d); height: var(--d);
+  border-radius: 14px; }
+.mtc .dpad .up    { left: var(--d);           top: 0; }
+.mtc .dpad .left  { left: 0;                   top: var(--d); }
+.mtc .dpad .right { left: calc(var(--d) * 2);  top: var(--d); }
+.mtc .dpad .down  { left: var(--d);            top: calc(var(--d) * 2); }
 
-.mtc .jump { position: absolute; right: max(4vw, env(safe-area-inset-right));
-  bottom: max(7vh, env(safe-area-inset-bottom)); border-radius: 50%;
-  width: clamp(76px, 22vmin, 128px); height: clamp(76px, 22vmin, 128px);
+.mtc .jump { position: absolute;
+  right: max(20px, env(safe-area-inset-right));
+  bottom: max(24px, env(safe-area-inset-bottom));
+  width: 96px; height: 96px; border-radius: 50%;
   background: rgba(63,167,255,.32); }
 
-.mtc .util { position: absolute; top: max(2vh, env(safe-area-inset-top));
-  right: max(2vw, env(safe-area-inset-right)); display: flex; gap: 10px; }
-.mtc .util button { width: clamp(40px, 10vmin, 56px); height: clamp(40px, 10vmin, 56px);
-  border-radius: 12px; }
+.mtc .util { position: absolute;
+  top: max(12px, env(safe-area-inset-top));
+  right: max(12px, env(safe-area-inset-right)); display: flex; gap: 10px; }
+.mtc .util button { width: 46px; height: 46px; border-radius: 12px; }
 
-.mtc .start { position: absolute; inset: 0; margin: auto; width: min(70vw, 340px);
-  height: clamp(64px, 16vh, 120px); align-self: center; border-radius: 18px;
-  font: 700 clamp(16px, 4.4vmin, 26px)/1 system-ui, sans-serif; letter-spacing: .08em;
+.mtc .start { position: absolute; inset: 0; margin: auto; width: min(76vw, 340px);
+  height: 96px; border-radius: 18px;
+  font: 700 22px/1 system-ui, sans-serif; letter-spacing: .08em;
   color: rgba(242,233,220,.95); background: rgba(20,16,25,.35);
   border: 2px solid rgba(255,210,74,.6); }
 
 .mtc .restart { position: absolute; left: 0; right: 0; margin: 0 auto;
-  bottom: 12vh; width: min(48vw, 220px); height: clamp(44px, 9vh, 64px);
-  border-radius: 14px; font: 600 clamp(13px, 3.4vmin, 18px)/1 system-ui, sans-serif;
-  letter-spacing: .06em; }
+  bottom: 86px; width: min(60vw, 220px); height: 54px;
+  border-radius: 14px; font: 600 16px/1 system-ui, sans-serif; letter-spacing: .06em; }
+
+/* smaller controls on very short screens (small phones held in landscape) */
+@media (max-height: 380px) {
+  .mtc .dpad { --d: 52px; }
+  .mtc .jump { width: 82px; height: 82px; }
+}
 
 /* group visibility per game mode (set via data-mode on .mtc) */
 .mtc .dpad, .mtc .jump, .mtc .start, .mtc .restart { display: none; }
-.mtc[data-mode="play"] .dpad, .mtc[data-mode="play"] .jump { display: grid; }
+.mtc[data-mode="play"] .dpad { display: block; }
 .mtc[data-mode="play"] .jump { display: flex; }
 .mtc[data-mode="menu"] .start { display: flex; }
 .mtc[data-mode="menu"].gameover .restart { display: flex; }
