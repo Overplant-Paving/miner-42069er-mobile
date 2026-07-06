@@ -3,6 +3,7 @@ import * as C from './constants.js';
 import { loadAssets, Anim, makeProp, drawText } from './engine.js';
 import { Level, Player, Mutant, Pickup, PowerUp, Particles, Toasts, Elevator, Slide, overlaps } from './game.js';
 import { sfx, toggleMute, isMuted, unlockAudio, music } from './audio.js';
+import { setupTouchControls } from './touch.js';
 
 const canvas = document.getElementById('game');
 const ctx = canvas.getContext('2d');
@@ -25,6 +26,9 @@ window.addEventListener('keyup', e => {
   const k = keyOf(e.code);
   if (k) held.delete(k);
 });
+
+// On-screen controls for touch devices; feeds the same held/pressed sets.
+const touch = setupTouchControls({ held, pressed, unlock: unlockAudio });
 
 // ------------------------------------------------------------------- boot
 
@@ -59,6 +63,7 @@ let continues = 0, continueLevel = 0;
 function go(next) {
   state = next;
   stateT = 0;
+  touch.setState(next);
   if (next === 'playing') music.start(C.MUSIC.bpm, C.MUSIC.gain);
   else music.stop();
 }
@@ -655,6 +660,7 @@ function frame(now) {
 
   if (pressed.has('mute')) {
     const m = toggleMute();
+    touch.setMuted(m);
     toasts.push(m ? 'MUTED' : 'SOUND ON', C.PALETTE.boneWhite);
   }
   shakeT = Math.max(0, shakeT - dt);

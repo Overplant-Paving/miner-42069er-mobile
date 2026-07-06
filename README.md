@@ -39,6 +39,12 @@ Open http://localhost:8341/
 | P | Pause |
 | M | Mute (state shown bottom-right) |
 
+### Touch (phones & tablets)
+
+On touch devices an on-screen D-pad and jump button appear automatically —
+play it in **landscape**. Tap the big button to start; use the top-right icons
+to pause and mute. (Force the controls on any device with `?touch=1`.)
+
 Don't fall more than one platform row. Claims survive your deaths; the timer
 doesn't. Chain claims within 2 seconds for streak bonuses; your best score is
 remembered between sessions. Elevators are ridden by jumping aboard; slides are
