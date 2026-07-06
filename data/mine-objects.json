@@ -1,0 +1,880 @@
+{
+  "job": "map-mine-stage",
+  "map_mode": "side_scroll_mode",
+  "visual_model": "parallax_layers",
+  "runtime_object_model": [
+    "platform_objects",
+    "scene_hooks"
+  ],
+  "collision_model": "precise_shapes",
+  "engine_target": "raw_canvas",
+  "stage_canvas": {
+    "width": 1536,
+    "height": 864
+  },
+  "coordinate_system": {
+    "origin": "top_left",
+    "unit": "px",
+    "y_axis": "down"
+  },
+  "stage_reference": "assets/map/mine-stage-reference.png",
+  "stage_preview": "assets/map/mine-stage-preview.png",
+  "assets": {
+    "platform": {
+      "unclaimed": {
+        "left": "assets/props/platform/left.png",
+        "mid": "assets/props/platform/mid.png",
+        "right": "assets/props/platform/right.png"
+      },
+      "claimed": {
+        "left": "assets/props/platform-claimed/left.png",
+        "mid": "assets/props/platform-claimed/mid.png",
+        "right": "assets/props/platform-claimed/right.png"
+      },
+      "piece_geometry": {
+        "left": {
+          "width": 32,
+          "height": 32
+        },
+        "mid": {
+          "width": 96,
+          "height": 32
+        },
+        "right": {
+          "width": 32,
+          "height": 32
+        }
+      },
+      "repeat_axis": "x",
+      "claimed_geometry_matches_unclaimed": true
+    },
+    "ladder": {
+      "piece": "assets/props/ladder/ladder.png",
+      "piece_geometry": {
+        "width": 48,
+        "height": 64
+      },
+      "repeat_axis": "y"
+    }
+  },
+  "object_candidates_from_stage_reference": [
+    {
+      "id": "platform_girder",
+      "classification": [
+        "wide_or_long_object",
+        "collision_bearing_object",
+        "tileset_or_strip_piece"
+      ],
+      "asset_strategy": "platform_strip_1x3",
+      "render_layer": "platforms"
+    },
+    {
+      "id": "ladder_repeat",
+      "classification": [
+        "tall_or_large_object",
+        "collision_bearing_object",
+        "tileset_or_strip_piece"
+      ],
+      "asset_strategy": "one_by_one_repeat_piece",
+      "render_layer": "ladders"
+    }
+  ],
+  "platforms": [
+    {
+      "id": "p1",
+      "type": "platform_girder",
+      "row": 1,
+      "x": 64,
+      "y": 128,
+      "segments": 5,
+      "segment_width": 96,
+      "cap_width": 32,
+      "width": 544,
+      "height": 32,
+      "state": "unclaimed",
+      "anchor": "top_left",
+      "render_layer": "platforms",
+      "collision_role": "one_way_platform_top",
+      "claim_segments": [
+        {
+          "index": 0,
+          "x": 96,
+          "y": 124,
+          "width": 96,
+          "height": 12,
+          "claim_rule": "grounded_feet_center_inside"
+        },
+        {
+          "index": 1,
+          "x": 192,
+          "y": 124,
+          "width": 96,
+          "height": 12,
+          "claim_rule": "grounded_feet_center_inside"
+        },
+        {
+          "index": 2,
+          "x": 288,
+          "y": 124,
+          "width": 96,
+          "height": 12,
+          "claim_rule": "grounded_feet_center_inside"
+        },
+        {
+          "index": 3,
+          "x": 384,
+          "y": 124,
+          "width": 96,
+          "height": 12,
+          "claim_rule": "grounded_feet_center_inside"
+        },
+        {
+          "index": 4,
+          "x": 480,
+          "y": 124,
+          "width": 96,
+          "height": 12,
+          "claim_rule": "grounded_feet_center_inside"
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "type": "platform_girder",
+      "row": 1,
+      "x": 696,
+      "y": 128,
+      "segments": 5,
+      "segment_width": 96,
+      "cap_width": 32,
+      "width": 544,
+      "height": 32,
+      "state": "unclaimed",
+      "anchor": "top_left",
+      "render_layer": "platforms",
+      "collision_role": "one_way_platform_top",
+      "claim_segments": [
+        {
+          "index": 0,
+          "x": 728,
+          "y": 124,
+          "width": 96,
+          "height": 12,
+          "claim_rule": "grounded_feet_center_inside"
+        },
+        {
+          "index": 1,
+          "x": 824,
+          "y": 124,
+          "width": 96,
+          "height": 12,
+          "claim_rule": "grounded_feet_center_inside"
+        },
+        {
+          "index": 2,
+          "x": 920,
+          "y": 124,
+          "width": 96,
+          "height": 12,
+          "claim_rule": "grounded_feet_center_inside"
+        },
+        {
+          "index": 3,
+          "x": 1016,
+          "y": 124,
+          "width": 96,
+          "height": 12,
+          "claim_rule": "grounded_feet_center_inside"
+        },
+        {
+          "index": 4,
+          "x": 1112,
+          "y": 124,
+          "width": 96,
+          "height": 12,
+          "claim_rule": "grounded_feet_center_inside"
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "type": "platform_girder",
+      "row": 2,
+      "x": 376,
+      "y": 248,
+      "segments": 5,
+      "segment_width": 96,
+      "cap_width": 32,
+      "width": 544,
+      "height": 32,
+      "state": "unclaimed",
+      "anchor": "top_left",
+      "render_layer": "platforms",
+      "collision_role": "one_way_platform_top",
+      "claim_segments": [
+        {
+          "index": 0,
+          "x": 408,
+          "y": 244,
+          "width": 96,
+          "height": 12,
+          "claim_rule": "grounded_feet_center_inside"
+        },
+        {
+          "index": 1,
+          "x": 504,
+          "y": 244,
+          "width": 96,
+          "height": 12,
+          "claim_rule": "grounded_feet_center_inside"
+        },
+        {
+          "index": 2,
+          "x": 600,
+          "y": 244,
+          "width": 96,
+          "height": 12,
+          "claim_rule": "grounded_feet_center_inside"
+        },
+        {
+          "index": 3,
+          "x": 696,
+          "y": 244,
+          "width": 96,
+          "height": 12,
+          "claim_rule": "grounded_feet_center_inside"
+        },
+        {
+          "index": 4,
+          "x": 792,
+          "y": 244,
+          "width": 96,
+          "height": 12,
+          "claim_rule": "grounded_feet_center_inside"
+        }
+      ]
+    },
+    {
+      "id": "p4",
+      "type": "platform_girder",
+      "row": 2,
+      "x": 1096,
+      "y": 248,
+      "segments": 3,
+      "segment_width": 96,
+      "cap_width": 32,
+      "width": 352,
+      "height": 32,
+      "state": "unclaimed",
+      "anchor": "top_left",
+      "render_layer": "platforms",
+      "collision_role": "one_way_platform_top",
+      "claim_segments": [
+        {
+          "index": 0,
+          "x": 1128,
+          "y": 244,
+          "width": 96,
+          "height": 12,
+          "claim_rule": "grounded_feet_center_inside"
+        },
+        {
+          "index": 1,
+          "x": 1224,
+          "y": 244,
+          "width": 96,
+          "height": 12,
+          "claim_rule": "grounded_feet_center_inside"
+        },
+        {
+          "index": 2,
+          "x": 1320,
+          "y": 244,
+          "width": 96,
+          "height": 12,
+          "claim_rule": "grounded_feet_center_inside"
+        }
+      ]
+    },
+    {
+      "id": "p5",
+      "type": "platform_girder",
+      "row": 3,
+      "x": 152,
+      "y": 368,
+      "segments": 4,
+      "segment_width": 96,
+      "cap_width": 32,
+      "width": 448,
+      "height": 32,
+      "state": "unclaimed",
+      "anchor": "top_left",
+      "render_layer": "platforms",
+      "collision_role": "one_way_platform_top",
+      "claim_segments": [
+        {
+          "index": 0,
+          "x": 184,
+          "y": 364,
+          "width": 96,
+          "height": 12,
+          "claim_rule": "grounded_feet_center_inside"
+        },
+        {
+          "index": 1,
+          "x": 280,
+          "y": 364,
+          "width": 96,
+          "height": 12,
+          "claim_rule": "grounded_feet_center_inside"
+        },
+        {
+          "index": 2,
+          "x": 376,
+          "y": 364,
+          "width": 96,
+          "height": 12,
+          "claim_rule": "grounded_feet_center_inside"
+        },
+        {
+          "index": 3,
+          "x": 472,
+          "y": 364,
+          "width": 96,
+          "height": 12,
+          "claim_rule": "grounded_feet_center_inside"
+        }
+      ]
+    },
+    {
+      "id": "p6",
+      "type": "platform_girder",
+      "row": 3,
+      "x": 760,
+      "y": 368,
+      "segments": 5,
+      "segment_width": 96,
+      "cap_width": 32,
+      "width": 544,
+      "height": 32,
+      "state": "unclaimed",
+      "anchor": "top_left",
+      "render_layer": "platforms",
+      "collision_role": "one_way_platform_top",
+      "claim_segments": [
+        {
+          "index": 0,
+          "x": 792,
+          "y": 364,
+          "width": 96,
+          "height": 12,
+          "claim_rule": "grounded_feet_center_inside"
+        },
+        {
+          "index": 1,
+          "x": 888,
+          "y": 364,
+          "width": 96,
+          "height": 12,
+          "claim_rule": "grounded_feet_center_inside"
+        },
+        {
+          "index": 2,
+          "x": 984,
+          "y": 364,
+          "width": 96,
+          "height": 12,
+          "claim_rule": "grounded_feet_center_inside"
+        },
+        {
+          "index": 3,
+          "x": 1080,
+          "y": 364,
+          "width": 96,
+          "height": 12,
+          "claim_rule": "grounded_feet_center_inside"
+        },
+        {
+          "index": 4,
+          "x": 1176,
+          "y": 364,
+          "width": 96,
+          "height": 12,
+          "claim_rule": "grounded_feet_center_inside"
+        }
+      ]
+    },
+    {
+      "id": "p7",
+      "type": "platform_girder",
+      "row": 4,
+      "x": 88,
+      "y": 488,
+      "segments": 6,
+      "segment_width": 96,
+      "cap_width": 32,
+      "width": 640,
+      "height": 32,
+      "state": "unclaimed",
+      "anchor": "top_left",
+      "render_layer": "platforms",
+      "collision_role": "one_way_platform_top",
+      "claim_segments": [
+        {
+          "index": 0,
+          "x": 120,
+          "y": 484,
+          "width": 96,
+          "height": 12,
+          "claim_rule": "grounded_feet_center_inside"
+        },
+        {
+          "index": 1,
+          "x": 216,
+          "y": 484,
+          "width": 96,
+          "height": 12,
+          "claim_rule": "grounded_feet_center_inside"
+        },
+        {
+          "index": 2,
+          "x": 312,
+          "y": 484,
+          "width": 96,
+          "height": 12,
+          "claim_rule": "grounded_feet_center_inside"
+        },
+        {
+          "index": 3,
+          "x": 408,
+          "y": 484,
+          "width": 96,
+          "height": 12,
+          "claim_rule": "grounded_feet_center_inside"
+        },
+        {
+          "index": 4,
+          "x": 504,
+          "y": 484,
+          "width": 96,
+          "height": 12,
+          "claim_rule": "grounded_feet_center_inside"
+        },
+        {
+          "index": 5,
+          "x": 600,
+          "y": 484,
+          "width": 96,
+          "height": 12,
+          "claim_rule": "grounded_feet_center_inside"
+        }
+      ]
+    },
+    {
+      "id": "p8",
+      "type": "platform_girder",
+      "row": 4,
+      "x": 888,
+      "y": 488,
+      "segments": 3,
+      "segment_width": 96,
+      "cap_width": 32,
+      "width": 352,
+      "height": 32,
+      "state": "unclaimed",
+      "anchor": "top_left",
+      "render_layer": "platforms",
+      "collision_role": "one_way_platform_top",
+      "claim_segments": [
+        {
+          "index": 0,
+          "x": 920,
+          "y": 484,
+          "width": 96,
+          "height": 12,
+          "claim_rule": "grounded_feet_center_inside"
+        },
+        {
+          "index": 1,
+          "x": 1016,
+          "y": 484,
+          "width": 96,
+          "height": 12,
+          "claim_rule": "grounded_feet_center_inside"
+        },
+        {
+          "index": 2,
+          "x": 1112,
+          "y": 484,
+          "width": 96,
+          "height": 12,
+          "claim_rule": "grounded_feet_center_inside"
+        }
+      ]
+    },
+    {
+      "id": "p9",
+      "type": "platform_girder",
+      "row": 5,
+      "x": 288,
+      "y": 608,
+      "segments": 4,
+      "segment_width": 96,
+      "cap_width": 32,
+      "width": 448,
+      "height": 32,
+      "state": "unclaimed",
+      "anchor": "top_left",
+      "render_layer": "platforms",
+      "collision_role": "one_way_platform_top",
+      "claim_segments": [
+        {
+          "index": 0,
+          "x": 320,
+          "y": 604,
+          "width": 96,
+          "height": 12,
+          "claim_rule": "grounded_feet_center_inside"
+        },
+        {
+          "index": 1,
+          "x": 416,
+          "y": 604,
+          "width": 96,
+          "height": 12,
+          "claim_rule": "grounded_feet_center_inside"
+        },
+        {
+          "index": 2,
+          "x": 512,
+          "y": 604,
+          "width": 96,
+          "height": 12,
+          "claim_rule": "grounded_feet_center_inside"
+        },
+        {
+          "index": 3,
+          "x": 608,
+          "y": 604,
+          "width": 96,
+          "height": 12,
+          "claim_rule": "grounded_feet_center_inside"
+        }
+      ]
+    },
+    {
+      "id": "p10",
+      "type": "platform_girder",
+      "row": 5,
+      "x": 872,
+      "y": 608,
+      "segments": 4,
+      "segment_width": 96,
+      "cap_width": 32,
+      "width": 448,
+      "height": 32,
+      "state": "unclaimed",
+      "anchor": "top_left",
+      "render_layer": "platforms",
+      "collision_role": "one_way_platform_top",
+      "claim_segments": [
+        {
+          "index": 0,
+          "x": 904,
+          "y": 604,
+          "width": 96,
+          "height": 12,
+          "claim_rule": "grounded_feet_center_inside"
+        },
+        {
+          "index": 1,
+          "x": 1000,
+          "y": 604,
+          "width": 96,
+          "height": 12,
+          "claim_rule": "grounded_feet_center_inside"
+        },
+        {
+          "index": 2,
+          "x": 1096,
+          "y": 604,
+          "width": 96,
+          "height": 12,
+          "claim_rule": "grounded_feet_center_inside"
+        },
+        {
+          "index": 3,
+          "x": 1192,
+          "y": 604,
+          "width": 96,
+          "height": 12,
+          "claim_rule": "grounded_feet_center_inside"
+        }
+      ]
+    },
+    {
+      "id": "p11",
+      "type": "platform_girder",
+      "row": 6,
+      "x": 72,
+      "y": 728,
+      "segments": 5,
+      "segment_width": 96,
+      "cap_width": 32,
+      "width": 544,
+      "height": 32,
+      "state": "unclaimed",
+      "anchor": "top_left",
+      "render_layer": "platforms",
+      "collision_role": "one_way_platform_top",
+      "claim_segments": [
+        {
+          "index": 0,
+          "x": 104,
+          "y": 724,
+          "width": 96,
+          "height": 12,
+          "claim_rule": "grounded_feet_center_inside"
+        },
+        {
+          "index": 1,
+          "x": 200,
+          "y": 724,
+          "width": 96,
+          "height": 12,
+          "claim_rule": "grounded_feet_center_inside"
+        },
+        {
+          "index": 2,
+          "x": 296,
+          "y": 724,
+          "width": 96,
+          "height": 12,
+          "claim_rule": "grounded_feet_center_inside"
+        },
+        {
+          "index": 3,
+          "x": 392,
+          "y": 724,
+          "width": 96,
+          "height": 12,
+          "claim_rule": "grounded_feet_center_inside"
+        },
+        {
+          "index": 4,
+          "x": 488,
+          "y": 724,
+          "width": 96,
+          "height": 12,
+          "claim_rule": "grounded_feet_center_inside"
+        }
+      ]
+    },
+    {
+      "id": "p12",
+      "type": "platform_girder",
+      "row": 6,
+      "x": 704,
+      "y": 728,
+      "segments": 7,
+      "segment_width": 96,
+      "cap_width": 32,
+      "width": 736,
+      "height": 32,
+      "state": "unclaimed",
+      "anchor": "top_left",
+      "render_layer": "platforms",
+      "collision_role": "one_way_platform_top",
+      "claim_segments": [
+        {
+          "index": 0,
+          "x": 736,
+          "y": 724,
+          "width": 96,
+          "height": 12,
+          "claim_rule": "grounded_feet_center_inside"
+        },
+        {
+          "index": 1,
+          "x": 832,
+          "y": 724,
+          "width": 96,
+          "height": 12,
+          "claim_rule": "grounded_feet_center_inside"
+        },
+        {
+          "index": 2,
+          "x": 928,
+          "y": 724,
+          "width": 96,
+          "height": 12,
+          "claim_rule": "grounded_feet_center_inside"
+        },
+        {
+          "index": 3,
+          "x": 1024,
+          "y": 724,
+          "width": 96,
+          "height": 12,
+          "claim_rule": "grounded_feet_center_inside"
+        },
+        {
+          "index": 4,
+          "x": 1120,
+          "y": 724,
+          "width": 96,
+          "height": 12,
+          "claim_rule": "grounded_feet_center_inside"
+        },
+        {
+          "index": 5,
+          "x": 1216,
+          "y": 724,
+          "width": 96,
+          "height": 12,
+          "claim_rule": "grounded_feet_center_inside"
+        },
+        {
+          "index": 6,
+          "x": 1312,
+          "y": 724,
+          "width": 96,
+          "height": 12,
+          "claim_rule": "grounded_feet_center_inside"
+        }
+      ]
+    }
+  ],
+  "ladders": [
+    {
+      "id": "l1",
+      "type": "ladder_repeat",
+      "x": 460,
+      "y": 144,
+      "width": 48,
+      "piece_height": 64,
+      "repeats": 3,
+      "display_height": 192,
+      "anchor": "top_left",
+      "render_layer": "ladders",
+      "connects": {
+        "top_platform": "p1",
+        "bottom_platform": "p3"
+      },
+      "climb_zone": {
+        "x": 460,
+        "y": 128,
+        "width": 48,
+        "height": 152,
+        "mount_tolerance_x": 12,
+        "top_y": 128,
+        "bottom_y": 280
+      }
+    },
+    {
+      "id": "l2",
+      "type": "ladder_repeat",
+      "x": 820,
+      "y": 264,
+      "width": 48,
+      "piece_height": 64,
+      "repeats": 3,
+      "display_height": 192,
+      "anchor": "top_left",
+      "render_layer": "ladders",
+      "connects": {
+        "top_platform": "p3",
+        "bottom_platform": "p6"
+      },
+      "climb_zone": {
+        "x": 820,
+        "y": 248,
+        "width": 48,
+        "height": 152,
+        "mount_tolerance_x": 12,
+        "top_y": 248,
+        "bottom_y": 400
+      }
+    },
+    {
+      "id": "l3",
+      "type": "ladder_repeat",
+      "x": 360,
+      "y": 384,
+      "width": 48,
+      "piece_height": 64,
+      "repeats": 3,
+      "display_height": 192,
+      "anchor": "top_left",
+      "render_layer": "ladders",
+      "connects": {
+        "top_platform": "p5",
+        "bottom_platform": "p7"
+      },
+      "climb_zone": {
+        "x": 360,
+        "y": 368,
+        "width": 48,
+        "height": 152,
+        "mount_tolerance_x": 12,
+        "top_y": 368,
+        "bottom_y": 520
+      }
+    },
+    {
+      "id": "l4",
+      "type": "ladder_repeat",
+      "x": 1100,
+      "y": 504,
+      "width": 48,
+      "piece_height": 64,
+      "repeats": 3,
+      "display_height": 192,
+      "anchor": "top_left",
+      "render_layer": "ladders",
+      "connects": {
+        "top_platform": "p8",
+        "bottom_platform": "p10"
+      },
+      "climb_zone": {
+        "x": 1100,
+        "y": 488,
+        "width": 48,
+        "height": 152,
+        "mount_tolerance_x": 12,
+        "top_y": 488,
+        "bottom_y": 640
+      }
+    },
+    {
+      "id": "l5",
+      "type": "ladder_repeat",
+      "x": 704,
+      "y": 624,
+      "width": 48,
+      "piece_height": 64,
+      "repeats": 3,
+      "display_height": 192,
+      "anchor": "top_left",
+      "render_layer": "ladders",
+      "connects": {
+        "top_platform": "p9",
+        "bottom_platform": "p12"
+      },
+      "climb_zone": {
+        "x": 704,
+        "y": 608,
+        "width": 48,
+        "height": 152,
+        "mount_tolerance_x": 12,
+        "top_y": 608,
+        "bottom_y": 760
+      }
+    }
+  ],
+  "prompt_files": [
+    "assets/map/mine-background.prompt.txt",
+    "assets/props/platform/platform.prompt.txt",
+    "assets/props/ladder/ladder.prompt.txt"
+  ]
+}

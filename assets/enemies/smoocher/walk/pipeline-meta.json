@@ -1,0 +1,219 @@
+{
+  "target": "creature",
+  "mode": "walk",
+  "prompt": "Use the image just shown as the visual style reference only. Match its 16-bit pixel art style closely: crisp chunky pixels, 1px dark outline color #141019, flat 2-3 step shading, warm arcade mining palette, clean readable silhouette, same pixel density and sprite scale feel. Do NOT draw or copy the miner.\n\nCreate a raw sprite animation sheet for a new side-view cave-mutant enemy named Smoocher. Exact sheet: 2 rows by 3 columns, exactly 6 equal invisible cells, read left-to-right across the top row then left-to-right across the bottom row. Background must be 100% solid flat #FF00FF magenta only, no transparency, no gradients, no scenery. No visible grid, no borders, no labels, no text, no UI.\n\nSubject identity in every cell: cute goofy wholesome round waddling blob creature, gob-green body #8cd94a, stubby little feet, tiny arms held close, big cartoon eyes, oversized pursed cartoon lips as the defining feature. Family-friendly and silly, not gross, not scary. Side-view facing right. Dark #141019 outline, dark cavern-brown underside accents, small warm lantern-gold highlights, flat 2-3 shade bands, crisp 16-bit pixel art.\n\nAction: 6-frame side-view walk/waddle loop. The same body size in all frames, stable bottom/feet anchor line across every cell, body centered in the central 60-70% safe area of each cell. Motion phases: neutral rounded stance; squash down as front foot plants and lips lead forward; stretch up slightly with tiny rear foot stepping; rounded mid-waddle; squash on the other foot with lips puckered forward; return stretch into loop. Lips lead the way but stay attached to the face and do not widen the bounding box too much.\n\nContainment: full body must fit inside each cell, leave generous magenta margin on all four sides, same silhouette scale and same character identity every frame, no body part or lips crossing a cell edge, no floating detached effects, no shadows outside the sprite.",
+  "role": "",
+  "input": "C:\\Users\\henry\\.codex\\generated_images\\019f31a3-269c-7723-a5b4-c75dbdde81e9\\ig_062835dc8062e5f6016a4a26fab1608193867c468ce0932d2c.png",
+  "threshold": 100,
+  "edge_threshold": 150,
+  "duration": 120,
+  "rows": 2,
+  "cols": 3,
+  "cell_size": 256,
+  "fit_scale": 0.82,
+  "trim_border": 4,
+  "edge_clean_depth": 3,
+  "align": "bottom",
+  "shared_scale": true,
+  "component_mode": "all",
+  "component_padding": 0,
+  "min_component_area": 1,
+  "edge_touch_margin": 4,
+  "frame_labels": [
+    "walk-1",
+    "walk-2",
+    "walk-3",
+    "walk-4",
+    "walk-5",
+    "walk-6"
+  ],
+  "frames": [
+    {
+      "grid": [
+        0,
+        0
+      ],
+      "source_box": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "component_mode": "all",
+      "component_count": 1,
+      "selected_component_area": null,
+      "selected_component_bbox": null,
+      "crop_bbox": [
+        195,
+        186,
+        446,
+        436
+      ],
+      "edge_touch": false,
+      "output_size": [
+        173,
+        173
+      ],
+      "paste_position": [
+        41,
+        60
+      ]
+    },
+    {
+      "grid": [
+        0,
+        1
+      ],
+      "source_box": [
+        512,
+        0,
+        1024,
+        512
+      ],
+      "component_mode": "all",
+      "component_count": 1,
+      "selected_component_area": null,
+      "selected_component_bbox": null,
+      "crop_bbox": [
+        104,
+        213,
+        397,
+        439
+      ],
+      "edge_touch": false,
+      "output_size": [
+        202,
+        156
+      ],
+      "paste_position": [
+        27,
+        77
+      ]
+    },
+    {
+      "grid": [
+        0,
+        2
+      ],
+      "source_box": [
+        1024,
+        0,
+        1536,
+        512
+      ],
+      "component_mode": "all",
+      "component_count": 1,
+      "selected_component_area": null,
+      "selected_component_bbox": null,
+      "crop_bbox": [
+        39,
+        137,
+        277,
+        436
+      ],
+      "edge_touch": false,
+      "output_size": [
+        164,
+        207
+      ],
+      "paste_position": [
+        46,
+        26
+      ]
+    },
+    {
+      "grid": [
+        1,
+        0
+      ],
+      "source_box": [
+        0,
+        512,
+        512,
+        1024
+      ],
+      "component_mode": "all",
+      "component_count": 1,
+      "selected_component_area": null,
+      "selected_component_bbox": null,
+      "crop_bbox": [
+        206,
+        72,
+        462,
+        339
+      ],
+      "edge_touch": false,
+      "output_size": [
+        177,
+        184
+      ],
+      "paste_position": [
+        39,
+        49
+      ]
+    },
+    {
+      "grid": [
+        1,
+        1
+      ],
+      "source_box": [
+        512,
+        512,
+        1024,
+        1024
+      ],
+      "component_mode": "all",
+      "component_count": 1,
+      "selected_component_area": null,
+      "selected_component_bbox": null,
+      "crop_bbox": [
+        94,
+        117,
+        397,
+        339
+      ],
+      "edge_touch": false,
+      "output_size": [
+        209,
+        153
+      ],
+      "paste_position": [
+        23,
+        80
+      ]
+    },
+    {
+      "grid": [
+        1,
+        2
+      ],
+      "source_box": [
+        1024,
+        512,
+        1536,
+        1024
+      ],
+      "component_mode": "all",
+      "component_count": 1,
+      "selected_component_area": null,
+      "selected_component_bbox": null,
+      "crop_bbox": [
+        45,
+        82,
+        295,
+        339
+      ],
+      "edge_touch": false,
+      "output_size": [
+        173,
+        178
+      ],
+      "paste_position": [
+        41,
+        55
+      ]
+    }
+  ],
+  "edge_touch_frames": []
+}

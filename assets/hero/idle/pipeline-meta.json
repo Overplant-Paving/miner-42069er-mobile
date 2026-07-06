@@ -1,0 +1,190 @@
+{
+  "target": "player",
+  "mode": "idle",
+  "prompt": "Create a square 2D game sprite sheet with exactly 4 equal cells in a 2x2 grid, no visible grid lines. Same tiny cheerful helmeted worker mascot in every cell, side view facing right, wearing denim-blue overalls, cream shirt, brown gloves, brown boots, and a yellow safety helmet with a small yellow lamp. On the face, draw a thick dark-brown curved U shape under the nose and around the smile, like a classic old prospector facial-hair silhouette. 16-bit pixel art, crisp dark pixel outline, flat simple shading, warm yellow lamp highlights, solid magenta #FF00FF background. Idle loop only: neutral stance, slight breathing lift, tiny heel rock with both boots still flat, return to neutral. Keep both boot soles on the exact same lower horizontal line in all four cells. Lamp flicker is only a brightness change inside the lamp, with no loose sparks or detached glow pixels. Same size and position in all cells. No text, no labels, no props, no tools.",
+  "role": "",
+  "input": "C:\\Users\\henry\\.codex\\generated_images\\019f3190-55e0-7740-9718-cf3f3c5bc88e\\ig_0b973da9febdc8d9016a4a242544bc81979fbd096b47bd042d.png",
+  "threshold": 220,
+  "edge_threshold": 245,
+  "duration": 180,
+  "rows": 2,
+  "cols": 2,
+  "cell_size": 256,
+  "fit_scale": 0.88,
+  "trim_border": 4,
+  "edge_clean_depth": 3,
+  "align": "feet",
+  "shared_scale": true,
+  "component_mode": "largest",
+  "component_padding": 8,
+  "min_component_area": 64,
+  "edge_touch_margin": 2,
+  "frame_labels": [
+    "idle-1",
+    "idle-2",
+    "idle-3",
+    "idle-4"
+  ],
+  "frames": [
+    {
+      "grid": [
+        0,
+        0
+      ],
+      "source_box": [
+        0,
+        0,
+        627,
+        627
+      ],
+      "component_mode": "largest",
+      "component_count": 1,
+      "selected_component_area": 93972,
+      "selected_component_bbox": [
+        182,
+        86,
+        461,
+        564
+      ],
+      "crop_bbox": [
+        174,
+        78,
+        469,
+        572
+      ],
+      "edge_touch": false,
+      "output_size": [
+        132,
+        221
+      ],
+      "paste_position": [
+        62,
+        20
+      ]
+    },
+    {
+      "grid": [
+        0,
+        1
+      ],
+      "source_box": [
+        627,
+        0,
+        1254,
+        627
+      ],
+      "component_mode": "largest",
+      "component_count": 2,
+      "selected_component_area": 94037,
+      "selected_component_bbox": [
+        143,
+        90,
+        421,
+        564
+      ],
+      "crop_bbox": [
+        135,
+        82,
+        429,
+        572
+      ],
+      "edge_touch": false,
+      "output_size": [
+        131,
+        219
+      ],
+      "paste_position": [
+        62,
+        22
+      ]
+    },
+    {
+      "grid": [
+        1,
+        0
+      ],
+      "source_box": [
+        0,
+        627,
+        627,
+        1254
+      ],
+      "component_mode": "largest",
+      "component_count": 1,
+      "selected_component_area": 95965,
+      "selected_component_bbox": [
+        190,
+        47,
+        465,
+        534
+      ],
+      "crop_bbox": [
+        182,
+        39,
+        473,
+        542
+      ],
+      "edge_touch": false,
+      "output_size": [
+        130,
+        225
+      ],
+      "paste_position": [
+        63,
+        16
+      ]
+    },
+    {
+      "grid": [
+        1,
+        1
+      ],
+      "source_box": [
+        627,
+        627,
+        1254,
+        1254
+      ],
+      "component_mode": "largest",
+      "component_count": 1,
+      "selected_component_area": 93628,
+      "selected_component_bbox": [
+        141,
+        48,
+        417,
+        534
+      ],
+      "crop_bbox": [
+        133,
+        40,
+        425,
+        542
+      ],
+      "edge_touch": false,
+      "output_size": [
+        130,
+        224
+      ],
+      "paste_position": [
+        63,
+        17
+      ]
+    }
+  ],
+  "edge_touch_frames": [],
+  "postprocess": [
+    {
+      "step": "edge_magenta_fringe_cleanup",
+      "scope": [
+        "raw-sheet-clean.png",
+        "idle-1.png",
+        "idle-2.png",
+        "idle-3.png",
+        "idle-4.png",
+        "sheet-transparent.png",
+        "animation.gif"
+      ],
+      "method": "remove magenta-dominant edge pixels adjacent to transparency; rebuild sheet and gif from cleaned frames"
+    }
+  ]
+}

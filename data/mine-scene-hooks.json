@@ -1,0 +1,292 @@
+{
+  "job": "map-mine-stage",
+  "stage_canvas": {
+    "width": 1536,
+    "height": 864
+  },
+  "coordinate_system": {
+    "origin": "top_left",
+    "unit": "px",
+    "y_axis": "down"
+  },
+  "camera": {
+    "mode": "fixed_single_screen",
+    "bounds": {
+      "x": 0,
+      "y": 0,
+      "width": 1536,
+      "height": 864
+    },
+    "parallax_resolves_static": true
+  },
+  "plate_render_order": [
+    {
+      "id": "sky",
+      "path": "assets/map/mine-sky.png",
+      "render_order": 0,
+      "scroll_factor": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "opacity": 1.0,
+      "source_size": {
+        "width": 1536,
+        "height": 864
+      },
+      "display_size": {
+        "width": 1536,
+        "height": 864
+      },
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "loop_policy": "none",
+      "collision_source": false
+    },
+    {
+      "id": "far_bg",
+      "path": "assets/map/mine-far-bg.png",
+      "render_order": 10,
+      "scroll_factor": {
+        "x": 0.15,
+        "y": 0.05
+      },
+      "opacity": 0.58,
+      "source_size": {
+        "width": 1536,
+        "height": 864
+      },
+      "display_size": {
+        "width": 1536,
+        "height": 864
+      },
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "loop_policy": "none",
+      "collision_source": false
+    },
+    {
+      "id": "mid_bg",
+      "path": "assets/map/mine-mid-bg.png",
+      "render_order": 20,
+      "scroll_factor": {
+        "x": 0.35,
+        "y": 0.12
+      },
+      "opacity": 0.72,
+      "source_size": {
+        "width": 1536,
+        "height": 864
+      },
+      "display_size": {
+        "width": 1536,
+        "height": 864
+      },
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "loop_policy": "none",
+      "collision_source": false
+    },
+    {
+      "id": "near_bg",
+      "path": "assets/map/mine-near-bg.png",
+      "render_order": 30,
+      "scroll_factor": {
+        "x": 0.6,
+        "y": 0.2
+      },
+      "opacity": 0.84,
+      "source_size": {
+        "width": 1536,
+        "height": 864
+      },
+      "display_size": {
+        "width": 1536,
+        "height": 864
+      },
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "loop_policy": "none",
+      "collision_source": false
+    }
+  ],
+  "player_spawn": {
+    "id": "player_start",
+    "x": 112,
+    "y": 128,
+    "anchor": "feet",
+    "platform": "p1",
+    "facing": "right"
+  },
+  "platform_placements": [
+    {
+      "id": "p1",
+      "x": 64,
+      "y": 128,
+      "segments": 5,
+      "state": "unclaimed",
+      "asset": "platform_girder"
+    },
+    {
+      "id": "p2",
+      "x": 696,
+      "y": 128,
+      "segments": 5,
+      "state": "unclaimed",
+      "asset": "platform_girder"
+    },
+    {
+      "id": "p3",
+      "x": 376,
+      "y": 248,
+      "segments": 5,
+      "state": "unclaimed",
+      "asset": "platform_girder"
+    },
+    {
+      "id": "p4",
+      "x": 1096,
+      "y": 248,
+      "segments": 3,
+      "state": "unclaimed",
+      "asset": "platform_girder"
+    },
+    {
+      "id": "p5",
+      "x": 152,
+      "y": 368,
+      "segments": 4,
+      "state": "unclaimed",
+      "asset": "platform_girder"
+    },
+    {
+      "id": "p6",
+      "x": 760,
+      "y": 368,
+      "segments": 5,
+      "state": "unclaimed",
+      "asset": "platform_girder"
+    },
+    {
+      "id": "p7",
+      "x": 88,
+      "y": 488,
+      "segments": 6,
+      "state": "unclaimed",
+      "asset": "platform_girder"
+    },
+    {
+      "id": "p8",
+      "x": 888,
+      "y": 488,
+      "segments": 3,
+      "state": "unclaimed",
+      "asset": "platform_girder"
+    },
+    {
+      "id": "p9",
+      "x": 288,
+      "y": 608,
+      "segments": 4,
+      "state": "unclaimed",
+      "asset": "platform_girder"
+    },
+    {
+      "id": "p10",
+      "x": 872,
+      "y": 608,
+      "segments": 4,
+      "state": "unclaimed",
+      "asset": "platform_girder"
+    },
+    {
+      "id": "p11",
+      "x": 72,
+      "y": 728,
+      "segments": 5,
+      "state": "unclaimed",
+      "asset": "platform_girder"
+    },
+    {
+      "id": "p12",
+      "x": 704,
+      "y": 728,
+      "segments": 7,
+      "state": "unclaimed",
+      "asset": "platform_girder"
+    }
+  ],
+  "ladder_placements": [
+    {
+      "id": "l1",
+      "x": 460,
+      "y": 144,
+      "repeats": 3,
+      "connects": {
+        "top_platform": "p1",
+        "bottom_platform": "p3"
+      },
+      "asset": "ladder"
+    },
+    {
+      "id": "l2",
+      "x": 820,
+      "y": 264,
+      "repeats": 3,
+      "connects": {
+        "top_platform": "p3",
+        "bottom_platform": "p6"
+      },
+      "asset": "ladder"
+    },
+    {
+      "id": "l3",
+      "x": 360,
+      "y": 384,
+      "repeats": 3,
+      "connects": {
+        "top_platform": "p5",
+        "bottom_platform": "p7"
+      },
+      "asset": "ladder"
+    },
+    {
+      "id": "l4",
+      "x": 1100,
+      "y": 504,
+      "repeats": 3,
+      "connects": {
+        "top_platform": "p8",
+        "bottom_platform": "p10"
+      },
+      "asset": "ladder"
+    },
+    {
+      "id": "l5",
+      "x": 704,
+      "y": 624,
+      "repeats": 3,
+      "connects": {
+        "top_platform": "p9",
+        "bottom_platform": "p12"
+      },
+      "asset": "ladder"
+    }
+  ],
+  "hooks": {
+    "level_start": "player_start",
+    "checkpoints": [],
+    "exits": [],
+    "actor_spawn_markers": [],
+    "camera_triggers": [],
+    "encounter_triggers": []
+  },
+  "notes": "Fixed camera: scroll factors are recorded for renderer compatibility, but draw offsets remain 0,0 for this single-screen stage."
+}

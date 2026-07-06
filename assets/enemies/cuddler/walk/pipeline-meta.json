@@ -1,0 +1,249 @@
+{
+  "target": "creature",
+  "mode": "walk",
+  "prompt": "Create a clean 2D game animation sprite sheet with exactly 6 equal cells arranged as a 2x3 grid, read left to right across the top row then left to right across the bottom row. Use the miner idle reference image shown earlier as the visual style reference only: match its 16-bit pixel art style exactly, same crisp 1px dark outline (#141019), same pixel density, flat 2-3 step shading, warm arcade-mining palette, simple readable side-view character proportions, clean silhouette, and transparent-ready sprite-sheet discipline. Do not draw the miner, helmet, overalls, human, tools, or any mining gear.\n\nSubject: the Cuddler, a cute-goofy wholesome cave-mutant enemy for Miner 42069er: a lanky low-slung cave weasel with pale lavender fur, long noodly horizontal body, small legs close to the ground, rounded snout, friendly goofy expression, a small simple pink tuft mohawk colored #ff5da2, and both stubby arms permanently stretched forward as if desperate for a hug. Side view facing right. Family-friendly comedic creature, not scary, not gross.\n\nMohawk rule: the mohawk is one clean solid pink tuft with a dark outline, like a simple arcade sprite shape. No scribbles, no black speckle clusters, no loose hair particles, no broken dots above the head, no messy curls, no extra texture.\n\nAction: 6-frame side-view scurry walk cycle. Frames 1-6 show a continuous loop: crouched start, front foot reaching, body stretching forward, mid scurry with arched back, rear foot catching up, return to crouched start. The long body gently undulates frame to frame. The arms always stay stretched forward in every frame and never swing backward. Keep the same creature identity in every frame.\n\nCritical layout: exactly 2 rows and 3 columns, equal invisible cells, no visible grid lines or borders. The full creature must stay centered in each cell with the same scale and same bounding box in all frames. Draw the creature smaller than the cell: it must occupy only the central 55% to 62% of each cell width and height. Leave a wide flat magenta margin on all four sides. The snout and stretched arms must end well inside the right side of each cell; do not let them approach or touch the right cell edge. Tail and rear legs must end well inside the left side. Stable bottom anchor line: feet/belly underside sit on the same lower horizontal line in every frame.\n\nContainment: no ears, mohawk, snout, arms, fingers, tail, feet, pixels, effects, or shadows may cross or touch a cell edge. Nothing may touch the sheet edge. No floating detached effects.\n\nBackground and cleanup: solid flat #FF00FF magenta background only, no gradients, no transparency, no text, no labels, no UI, no frame numbers, no shadows outside the sprite. Crisp pixel art, no antialias blur, no painterly texture.",
+  "role": "",
+  "input": "C:\\Users\\henry\\.codex\\generated_images\\019f31ac-5ac3-7d53-89bc-9d02d7bb2412\\ig_0e463e91280deec2016a4a2abf70f88196acdba809634eb2ec.png",
+  "threshold": 100,
+  "edge_threshold": 150,
+  "duration": 120,
+  "rows": 2,
+  "cols": 3,
+  "cell_size": 256,
+  "fit_scale": 0.82,
+  "trim_border": 4,
+  "edge_clean_depth": 3,
+  "align": "bottom",
+  "shared_scale": true,
+  "component_mode": "largest",
+  "component_padding": 8,
+  "min_component_area": 64,
+  "edge_touch_margin": 4,
+  "frame_labels": [
+    "walk-1",
+    "walk-2",
+    "walk-3",
+    "walk-4",
+    "walk-5",
+    "walk-6"
+  ],
+  "frames": [
+    {
+      "grid": [
+        0,
+        0
+      ],
+      "source_box": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "component_mode": "largest",
+      "component_count": 1,
+      "selected_component_area": 35367,
+      "selected_component_bbox": [
+        62,
+        222,
+        449,
+        397
+      ],
+      "crop_bbox": [
+        54,
+        214,
+        457,
+        405
+      ],
+      "edge_touch": false,
+      "output_size": [
+        205,
+        97
+      ],
+      "paste_position": [
+        25,
+        136
+      ]
+    },
+    {
+      "grid": [
+        0,
+        1
+      ],
+      "source_box": [
+        512,
+        0,
+        1024,
+        512
+      ],
+      "component_mode": "largest",
+      "component_count": 1,
+      "selected_component_area": 32970,
+      "selected_component_bbox": [
+        53,
+        222,
+        443,
+        396
+      ],
+      "crop_bbox": [
+        45,
+        214,
+        451,
+        404
+      ],
+      "edge_touch": false,
+      "output_size": [
+        207,
+        97
+      ],
+      "paste_position": [
+        24,
+        136
+      ]
+    },
+    {
+      "grid": [
+        0,
+        2
+      ],
+      "source_box": [
+        1024,
+        0,
+        1536,
+        512
+      ],
+      "component_mode": "largest",
+      "component_count": 1,
+      "selected_component_area": 35094,
+      "selected_component_bbox": [
+        52,
+        222,
+        439,
+        396
+      ],
+      "crop_bbox": [
+        44,
+        214,
+        447,
+        404
+      ],
+      "edge_touch": false,
+      "output_size": [
+        205,
+        97
+      ],
+      "paste_position": [
+        25,
+        136
+      ]
+    },
+    {
+      "grid": [
+        1,
+        0
+      ],
+      "source_box": [
+        0,
+        512,
+        512,
+        1024
+      ],
+      "component_mode": "largest",
+      "component_count": 1,
+      "selected_component_area": 35138,
+      "selected_component_bbox": [
+        58,
+        128,
+        453,
+        302
+      ],
+      "crop_bbox": [
+        50,
+        120,
+        461,
+        310
+      ],
+      "edge_touch": false,
+      "output_size": [
+        209,
+        97
+      ],
+      "paste_position": [
+        23,
+        136
+      ]
+    },
+    {
+      "grid": [
+        1,
+        1
+      ],
+      "source_box": [
+        512,
+        512,
+        1024,
+        1024
+      ],
+      "component_mode": "largest",
+      "component_count": 1,
+      "selected_component_area": 32408,
+      "selected_component_bbox": [
+        60,
+        128,
+        436,
+        302
+      ],
+      "crop_bbox": [
+        52,
+        120,
+        444,
+        310
+      ],
+      "edge_touch": false,
+      "output_size": [
+        200,
+        97
+      ],
+      "paste_position": [
+        28,
+        136
+      ]
+    },
+    {
+      "grid": [
+        1,
+        2
+      ],
+      "source_box": [
+        1024,
+        512,
+        1536,
+        1024
+      ],
+      "component_mode": "largest",
+      "component_count": 1,
+      "selected_component_area": 33480,
+      "selected_component_bbox": [
+        60,
+        131,
+        434,
+        302
+      ],
+      "crop_bbox": [
+        52,
+        123,
+        442,
+        310
+      ],
+      "edge_touch": false,
+      "output_size": [
+        199,
+        95
+      ],
+      "paste_position": [
+        28,
+        138
+      ]
+    }
+  ],
+  "edge_touch_frames": []
+}

@@ -1,0 +1,155 @@
+{
+  "target": "creature",
+  "mode": "smitten",
+  "prompt": "Use the image just shown as the visual style reference only. Match its 16-bit pixel art style closely: crisp chunky pixels, 1px dark outline color #141019, flat 2-3 step shading, warm arcade mining palette, clean readable silhouette, same pixel density and sprite scale feel. Do NOT draw or copy the miner.\n\nCreate a raw sprite animation sheet for the same new side-view cave-mutant enemy named Smoocher. Exact sheet: 2 columns by 2 rows, exactly 4 equal invisible cells, read left-to-right across rows. Background must be 100% solid flat #FF00FF magenta only, no transparency, no gradients, no scenery. No visible grid, no borders, no labels, no text, no UI.\n\nSubject identity in every cell: cute goofy wholesome round waddling blob creature, gob-green body #8cd94a, stubby little feet, tiny arms held close, oversized pursed cartoon lips as the defining feature. Family-friendly and silly, not gross, not scary. Side-view facing right. Dark #141019 outline, dark cavern-brown underside accents, tiny warm lantern-gold highlights, flat 2-3 shade bands, crisp 16-bit pixel art.\n\nAction: 4-frame smitten loop, same body size as the walk creature, stable bottom/feet anchor line across every cell, body centered in the central 60-70% safe area. The Smoocher is bashful and dreamy: cheeks blush bashful pink #ff5da2, eyes turned into cartoon hearts, swaying gently in place. Frame phases: shy upright pose with heart eyes and blush; lean forward slightly with puckered lips; sway back with a bashful tiny-arm tuck; settle back toward neutral with heart eyes still visible. Any small floating hearts must stay very tight to the body inside the cell and must not expand the silhouette much.\n\nContainment: full body and any tiny hearts must fit inside each cell, leave generous magenta margin on all four sides, same silhouette scale and same character identity every frame, no body part, lips, or heart crossing a cell edge, no shadows outside the sprite.",
+  "role": "",
+  "input": "C:\\Users\\henry\\.codex\\generated_images\\019f31a3-269c-7723-a5b4-c75dbdde81e9\\ig_047715ae4f801be9016a4a26104d7881969a962d4bb94b6241.png",
+  "threshold": 100,
+  "edge_threshold": 150,
+  "duration": 140,
+  "rows": 2,
+  "cols": 2,
+  "cell_size": 256,
+  "fit_scale": 0.82,
+  "trim_border": 4,
+  "edge_clean_depth": 3,
+  "align": "bottom",
+  "shared_scale": true,
+  "component_mode": "all",
+  "component_padding": 0,
+  "min_component_area": 1,
+  "edge_touch_margin": 4,
+  "frame_labels": [
+    "smitten-1",
+    "smitten-2",
+    "smitten-3",
+    "smitten-4"
+  ],
+  "frames": [
+    {
+      "grid": [
+        0,
+        0
+      ],
+      "source_box": [
+        0,
+        0,
+        627,
+        627
+      ],
+      "component_mode": "all",
+      "component_count": 1,
+      "selected_component_area": null,
+      "selected_component_bbox": null,
+      "crop_bbox": [
+        169,
+        194,
+        502,
+        508
+      ],
+      "edge_touch": false,
+      "output_size": [
+        179,
+        169
+      ],
+      "paste_position": [
+        38,
+        64
+      ]
+    },
+    {
+      "grid": [
+        0,
+        1
+      ],
+      "source_box": [
+        627,
+        0,
+        1254,
+        627
+      ],
+      "component_mode": "all",
+      "component_count": 7,
+      "selected_component_area": null,
+      "selected_component_bbox": null,
+      "crop_bbox": [
+        103,
+        202,
+        493,
+        508
+      ],
+      "edge_touch": false,
+      "output_size": [
+        209,
+        164
+      ],
+      "paste_position": [
+        23,
+        69
+      ]
+    },
+    {
+      "grid": [
+        1,
+        0
+      ],
+      "source_box": [
+        0,
+        627,
+        627,
+        1254
+      ],
+      "component_mode": "all",
+      "component_count": 5,
+      "selected_component_area": null,
+      "selected_component_bbox": null,
+      "crop_bbox": [
+        169,
+        123,
+        488,
+        441
+      ],
+      "edge_touch": false,
+      "output_size": [
+        171,
+        171
+      ],
+      "paste_position": [
+        42,
+        62
+      ]
+    },
+    {
+      "grid": [
+        1,
+        1
+      ],
+      "source_box": [
+        627,
+        627,
+        1254,
+        1254
+      ],
+      "component_mode": "all",
+      "component_count": 1,
+      "selected_component_area": null,
+      "selected_component_bbox": null,
+      "crop_bbox": [
+        118,
+        126,
+        450,
+        441
+      ],
+      "edge_touch": false,
+      "output_size": [
+        178,
+        169
+      ],
+      "paste_position": [
+        39,
+        64
+      ]
+    }
+  ],
+  "edge_touch_frames": []
+}

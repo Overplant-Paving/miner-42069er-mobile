@@ -1,0 +1,65 @@
+{
+  "job": "props-hud",
+  "game": "miner-42069er",
+  "type": "prop_pack_2x2",
+  "art_style": "retro_pixel",
+  "style_anchor": "assets/hero/idle/sheet-transparent.png",
+  "raw_sheet": "raw-sheet.png",
+  "prompt": "prompt-used.txt",
+  "grid": {
+    "rows": 2,
+    "cols": 2,
+    "source_cell_size": 627
+  },
+  "prop_size": {
+    "width": 32,
+    "height": 32
+  },
+  "background": "#FF00FF",
+  "qc": {
+    "edge_touch_frames": [],
+    "processor": "generate2dsprite.py process",
+    "threshold": 1,
+    "edge_threshold": 60,
+    "component_mode": "all",
+    "notes": ""
+  },
+  "items": [
+    {
+      "id": "helmet",
+      "label": "butter-yellow miner hard hat with front lantern",
+      "grid": [
+        0,
+        0
+      ],
+      "path": "helmet/prop.png"
+    },
+    {
+      "id": "clock",
+      "label": "round alarm clock with two bells",
+      "grid": [
+        0,
+        1
+      ],
+      "path": "clock/prop.png"
+    },
+    {
+      "id": "heart",
+      "label": "bashful-pink heart",
+      "grid": [
+        1,
+        0
+      ],
+      "path": "heart/prop.png"
+    },
+    {
+      "id": "star",
+      "label": "lantern-gold five-point star",
+      "grid": [
+        1,
+        1
+      ],
+      "path": "star/prop.png"
+    }
+  ]
+}

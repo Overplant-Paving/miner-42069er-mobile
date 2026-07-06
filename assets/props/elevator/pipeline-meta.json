@@ -1,0 +1,59 @@
+{
+  "target": "asset",
+  "mode": "single",
+  "prompt": "Create one single side-view prop sprite for a 16-bit pixel-art mining platformer. Use the attached miner sheet as a style-only reference: match its simple chunky 16-bit pixel art, crisp 1px dark outline (#141019), flat 2-3 step shading, warm lantern-gold highlights, simple readable shapes, and low-detail arcade asset finish. Do not copy the character and do not include any person.\n\nSubject: a mine elevator platform, one centered prop only. Make the overall sprite silhouette low and wide, about 2:1 width-to-height. At the bottom is a sturdy wide timber slab/platform, visually dominant, roughly 2.4x wider than its height/depth, made from warm timber brown planks (#6e4a2d) with 2-3 flat brown shade steps. Add dark iron corner brackets, little bolts, and tiny lantern-gold (#ffd24a) metal glints. From the left and right ends of the slab, add two short taut vertical chains rising upward to a small iron pulley crossbar near the top of the prop. The chains are compact and short, not tall; the crossbar sits close above the slab so the whole asset remains clearly wider than tall.\n\nStyle constraints: old-school 16-bit game sprite, hard square pixel edges, no painterly gradients, no glossy HD bevels, no dense wood grain, no realistic texture, no antialiasing blur. Use dark outline #141019 around every major shape. Side-view platformer prop, wholesome comedic arcade mining mood.\n\nComposition: one single subject centered with generous padding, nothing touching any edge. Strong readable silhouette at small size. Keep all chains, slab, brackets, pulleys, and crossbar fully contained inside the canvas.\n\nSheet requirements: exactly one sprite on one canvas, no grid, no borders, no labels, no text, no UI. Background must be 100% solid flat #FF00FF magenta, no gradients, no texture, no transparency. No detached effects, no extra props, no cast shadow outside the object.",
+  "role": "",
+  "input": "C:\\Users\\henry\\.codex\\generated_images\\019f32dd-6f39-7e92-8086-5097d9c29375\\ig_0994a809a627e1d7016a4a768cbb50819885b48035bc494ca3.png",
+  "threshold": 100,
+  "edge_threshold": 150,
+  "duration": 200,
+  "rows": 1,
+  "cols": 1,
+  "cell_size": 256,
+  "fit_scale": 0.86,
+  "trim_border": 4,
+  "edge_clean_depth": 3,
+  "align": "center",
+  "shared_scale": false,
+  "component_mode": "all",
+  "component_padding": 4,
+  "min_component_area": 16,
+  "edge_touch_margin": 8,
+  "frame_labels": [
+    "elevator-1"
+  ],
+  "frames": [
+    {
+      "grid": [
+        0,
+        0
+      ],
+      "source_box": [
+        0,
+        0,
+        1774,
+        887
+      ],
+      "component_mode": "all",
+      "component_count": 1,
+      "selected_component_area": null,
+      "selected_component_bbox": null,
+      "crop_bbox": [
+        254,
+        196,
+        1509,
+        716
+      ],
+      "edge_touch": false,
+      "output_size": [
+        220,
+        91
+      ],
+      "paste_position": [
+        18,
+        82
+      ]
+    }
+  ],
+  "edge_touch_frames": []
+}

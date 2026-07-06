@@ -1,0 +1,249 @@
+{
+  "target": "creature",
+  "mode": "walk",
+  "prompt": "Use the image just shown as the visual style reference only. Match its 16-bit pixel art style exactly: crisp chunky pixels, same pixel density, clean 1px dark outline #141019, flat 2-3 step shading, warm arcade-mining palette, readable side-view silhouette, simple expressive face language, no antialias blur, no painterly texture. Do NOT draw or copy the miner, helmet, overalls, human body, tools, or mining gear.\n\nCreate a raw sprite animation sheet for a new side-view cave-mutant enemy named Grabby. Exact sheet: 3 columns by 2 rows, exactly 6 equal invisible cells, read left-to-right across the top row then left-to-right across the bottom row. Background must be 100% solid flat #FF00FF magenta only, no transparency, no gradients, no scenery. No visible grid, no borders, no labels, no text, no UI, no frame numbers.\n\nSubject identity in every cell: Grabby is a cute-goofy wholesome squat cave crab mutant, rusty orange shell and body, darker cavern-brown underside and leg tips, one comically oversized LEFT claw held up beside its face like a round boxing glove, the other claw small and tucked near the body, small beady eyes on short stalks, tiny friendly smile, stubby skittering legs. Family-friendly arcade enemy, silly and bashful rather than scary. Side view facing right. Crisp 16-bit pixel art, dark #141019 outline, flat 2-3 shade bands, small warm lantern-gold highlights on the shell and big claw.\n\nAction: 6-frame sideways scuttle walk cycle. Frames 1-6 show a looping crab scuttle: crouched start, front legs reach, body shifts forward, big left claw bobs upward, legs skitter under the shell, body settles back to start. The oversized left claw stays raised like a boxing glove in every frame and bobs gently, never swinging wide. The eye stalks bounce subtly. Keep the same Grabby identity, same body size, same shell shape, and same claw proportions in every frame.\n\nCritical layout: exactly 2 rows and 3 columns, equal invisible cells, no visible grid lines or borders. Full creature must stay centered in each cell with the same scale and same bounding box in all frames. Draw Grabby smaller than each cell: the whole body including raised claw and eye stalks must occupy only the central 60% to 68% safe area. Leave a wide flat magenta margin on all four sides. Stable bottom anchor line: all stubby legs sit on the same lower horizontal line in every frame.\n\nContainment: no claw, eye stalk, shell spike, leg, antenna, pixel, shadow, or effect may cross or touch a cell edge. Nothing may touch the sheet edge. No floating detached effects, no dust clouds, no ground shadows outside the sprite.\n\nCleanup: solid flat #FF00FF background only, transparent-ready sprite-sheet discipline, no text, no logos, no labels.",
+  "role": "",
+  "input": "C:\\Users\\henry\\.codex\\generated_images\\019f33fc-5493-7ea3-8d28-481237f3fe45\\ig_0c5de0315b35511b016a4abfe90be0819ab4ac924069369952.png",
+  "threshold": 125,
+  "edge_threshold": 150,
+  "duration": 120,
+  "rows": 2,
+  "cols": 3,
+  "cell_size": 256,
+  "fit_scale": 0.82,
+  "trim_border": 4,
+  "edge_clean_depth": 3,
+  "align": "bottom",
+  "shared_scale": true,
+  "component_mode": "largest",
+  "component_padding": 8,
+  "min_component_area": 64,
+  "edge_touch_margin": 4,
+  "frame_labels": [
+    "walk-1",
+    "walk-2",
+    "walk-3",
+    "walk-4",
+    "walk-5",
+    "walk-6"
+  ],
+  "frames": [
+    {
+      "grid": [
+        0,
+        0
+      ],
+      "source_box": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "component_mode": "largest",
+      "component_count": 1,
+      "selected_component_area": 55869,
+      "selected_component_bbox": [
+        117,
+        140,
+        444,
+        418
+      ],
+      "crop_bbox": [
+        109,
+        132,
+        452,
+        426
+      ],
+      "edge_touch": false,
+      "output_size": [
+        209,
+        179
+      ],
+      "paste_position": [
+        23,
+        54
+      ]
+    },
+    {
+      "grid": [
+        0,
+        1
+      ],
+      "source_box": [
+        512,
+        0,
+        1024,
+        512
+      ],
+      "component_mode": "largest",
+      "component_count": 1,
+      "selected_component_area": 53550,
+      "selected_component_bbox": [
+        102,
+        140,
+        424,
+        416
+      ],
+      "crop_bbox": [
+        94,
+        132,
+        432,
+        424
+      ],
+      "edge_touch": false,
+      "output_size": [
+        206,
+        178
+      ],
+      "paste_position": [
+        25,
+        55
+      ]
+    },
+    {
+      "grid": [
+        0,
+        2
+      ],
+      "source_box": [
+        1024,
+        0,
+        1536,
+        512
+      ],
+      "component_mode": "largest",
+      "component_count": 1,
+      "selected_component_area": 49351,
+      "selected_component_bbox": [
+        59,
+        154,
+        366,
+        418
+      ],
+      "crop_bbox": [
+        51,
+        146,
+        374,
+        426
+      ],
+      "edge_touch": false,
+      "output_size": [
+        197,
+        171
+      ],
+      "paste_position": [
+        29,
+        62
+      ]
+    },
+    {
+      "grid": [
+        1,
+        0
+      ],
+      "source_box": [
+        0,
+        512,
+        512,
+        1024
+      ],
+      "component_mode": "largest",
+      "component_count": 1,
+      "selected_component_area": 54187,
+      "selected_component_bbox": [
+        117,
+        73,
+        440,
+        349
+      ],
+      "crop_bbox": [
+        109,
+        65,
+        448,
+        357
+      ],
+      "edge_touch": false,
+      "output_size": [
+        207,
+        178
+      ],
+      "paste_position": [
+        24,
+        55
+      ]
+    },
+    {
+      "grid": [
+        1,
+        1
+      ],
+      "source_box": [
+        512,
+        512,
+        1024,
+        1024
+      ],
+      "component_mode": "largest",
+      "component_count": 1,
+      "selected_component_area": 49962,
+      "selected_component_bbox": [
+        76,
+        88,
+        386,
+        351
+      ],
+      "crop_bbox": [
+        68,
+        80,
+        394,
+        359
+      ],
+      "edge_touch": false,
+      "output_size": [
+        199,
+        170
+      ],
+      "paste_position": [
+        28,
+        63
+      ]
+    },
+    {
+      "grid": [
+        1,
+        2
+      ],
+      "source_box": [
+        1024,
+        512,
+        1536,
+        1024
+      ],
+      "component_mode": "largest",
+      "component_count": 1,
+      "selected_component_area": 54069,
+      "selected_component_bbox": [
+        66,
+        76,
+        383,
+        353
+      ],
+      "crop_bbox": [
+        58,
+        68,
+        391,
+        361
+      ],
+      "edge_touch": false,
+      "output_size": [
+        203,
+        179
+      ],
+      "paste_position": [
+        26,
+        54
+      ]
+    }
+  ],
+  "edge_touch_frames": []
+}

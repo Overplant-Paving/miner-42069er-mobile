@@ -1,0 +1,78 @@
+{
+  "target": "asset",
+  "mode": "single",
+  "prompt": "Use the miner sprite sheet image shown earlier only as the visual style reference: same 16-bit pixel art feel, crisp 1px #141019 outlines, flat 2-3 step shading, hard square pixels, warm lantern-gold highlights, family-friendly arcade mining mood. Do not include any character.\n\nGenerate exactly ONE static side-view mining-platformer prop on a 100% solid flat #FF00FF magenta background: a single industrial mine conveyor belt section. The conveyor sprite itself must be wide and thin but clearly substantial, with the visible sprite silhouette about 3:1 width-to-height, no thinner than 3.5:1. Make the belt and frame thick enough to read at platformer scale, with two small roller wheels visible under the bottom frame edge.\n\nDesign details: dark riveted iron side frame, ribbed black/dark rubber belt surface across the top, evenly spaced vertical tread marks across the belt, small bolts/rivets, two bottom roller wheels with dark outlines, iron gray flat shading, small lantern-gold #ffd24a hazard stripe accents on the side rail.\n\nCRITICAL seamless horizontal tiling: this is a repeating middle segment, not an end piece. Do not draw end caps. The left and right edges must be cut cleanly mid-pattern, as if sliced from an endless conveyor: top belt rail, bottom iron rail, ribbed tread spacing, rivet spacing, and hazard accent rhythm continue across repeated copies. Keep the left and right edge heights aligned and squared off so copies meet cleanly.\n\nComposition constraints: one conveyor only, side view, centered, asset fills most of a 3:1 canvas while leaving magenta margin on all sides. No text, no labels, no UI, no scenery, no ground, no extra props, no border lines, no shadows outside the sprite. Authentic pixel art only: no painterly texture, no antialias blur, no gradients, no glow. Nothing may touch the image boundary.",
+  "role": "",
+  "input": "C:\\Users\\henry\\.codex\\generated_images\\019f340d-cff4-7f33-afeb-963322f414e8\\ig_0348835b54d1d2c7016a4ac49ab974819baf17662102562b35.png",
+  "threshold": 100,
+  "edge_threshold": 150,
+  "duration": 200,
+  "rows": 1,
+  "cols": 1,
+  "cell_size": 384,
+  "fit_scale": 0.94,
+  "trim_border": 4,
+  "edge_clean_depth": 3,
+  "align": "center",
+  "shared_scale": true,
+  "component_mode": "all",
+  "component_padding": 8,
+  "min_component_area": 1,
+  "edge_touch_margin": 2,
+  "frame_labels": [
+    "conveyor-1"
+  ],
+  "frames": [
+    {
+      "grid": [
+        0,
+        0
+      ],
+      "source_box": [
+        0,
+        0,
+        2172,
+        724
+      ],
+      "component_mode": "all",
+      "component_count": 1,
+      "selected_component_area": null,
+      "selected_component_bbox": null,
+      "crop_bbox": [
+        130,
+        263,
+        2032,
+        533
+      ],
+      "edge_touch": false,
+      "output_size": [
+        360,
+        51
+      ],
+      "paste_position": [
+        12,
+        166
+      ]
+    }
+  ],
+  "edge_touch_frames": [],
+  "delivery_postprocess": {
+    "type": "horizontal_tile_crop",
+    "source_sheet_before_crop": [
+      384,
+      384
+    ],
+    "crop_box": [
+      12,
+      131,
+      372,
+      251
+    ],
+    "final_sheet_size": [
+      360,
+      120
+    ],
+    "canvas_aspect_ratio": 3.0,
+    "reason": "Remove horizontal transparent padding so repeated sheet copies meet edge-to-edge; preserve vertical transparent padding."
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "job": "props-pickups",
+  "game": "miner-42069er",
+  "type": "prop_pack_3x3",
+  "art_style": "retro_pixel",
+  "style_anchor": "assets/hero/idle/sheet-transparent.png",
+  "raw_sheet": "raw-sheet.png",
+  "prompt": "prompt-used.txt",
+  "grid": {
+    "rows": 3,
+    "cols": 3,
+    "source_cell_size": 418
+  },
+  "prop_size": {
+    "width": 32,
+    "height": 32
+  },
+  "background": "#FF00FF",
+  "qc": {
+    "edge_touch_frames": [],
+    "processor": "generate2dsprite.py process",
+    "threshold": 150,
+    "edge_threshold": 220,
+    "component_mode": "all",
+    "notes": ""
+  },
+  "items": [
+    {
+      "id": "boxers",
+      "label": "folded heart-print boxer shorts",
+      "grid": [
+        0,
+        0
+      ],
+      "path": "boxers/prop.png"
+    },
+    {
+      "id": "magazine",
+      "label": "rolled-up vintage magazine with heart cover",
+      "grid": [
+        0,
+        1
+      ],
+      "path": "magazine/prop.png"
+    },
+    {
+      "id": "lava-lamp",
+      "label": "lava lamp with pink blobs",
+      "grid": [
+        0,
+        2
+      ],
+      "path": "lava-lamp/prop.png"
+    },
+    {
+      "id": "rubber-duck",
+      "label": "classic yellow rubber duck",
+      "grid": [
+        1,
+        0
+      ],
+      "path": "rubber-duck/prop.png"
+    },
+    {
+      "id": "soap",
+      "label": "bar of soap with bubbles",
+      "grid": [
+        1,
+        1
+      ],
+      "path": "soap/prop.png"
+    },
+    {
+      "id": "cologne",
+      "label": "small cologne bottle with atomizer bulb",
+      "grid": [
+        1,
+        2
+      ],
+      "path": "cologne/prop.png"
+    },
+    {
+      "id": "batteries",
+      "label": "4-pack of batteries in packaging",
+      "grid": [
+        2,
+        0
+      ],
+      "path": "batteries/prop.png"
+    },
+    {
+      "id": "banana",
+      "label": "single banana",
+      "grid": [
+        2,
+        1
+      ],
+      "path": "banana/prop.png"
+    },
+    {
+      "id": "golden-pickaxe",
+      "label": "golden pickaxe with glint",
+      "grid": [
+        2,
+        2
+      ],
+      "path": "golden-pickaxe/prop.png"
+    }
+  ]
+}

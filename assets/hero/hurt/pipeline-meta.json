@@ -1,0 +1,175 @@
+{
+  "target": "player",
+  "mode": "hurt",
+  "prompt": "Use the image just shown as the visual reference for Dusty Rodd. Create a square 2D game sprite sheet with exactly 4 equal cells arranged as a 2x2 grid, read top-left, top-right, bottom-left, bottom-right. No visible grid lines, no borders, no labels, no text. Subject: Dusty Rodd, the exact same stocky cheerful side-view miner from the reference, facing right in every cell. Preserve identity and art style exactly: same stocky proportions and body height, same face and eyes, same horseshoe mustache, cream shirt, brown gloves and boots, denim-blue overalls #3fa7ff with bib and straps, yellow hard hat with small lantern #ffd24a, same warm lantern gold, same 1px dark outline #141019, flat 2-3 step 16-bit pixel-art shading, crisp silhouette. Action: 4-frame side-view knocked-back hurt / dizzy stagger. Top-left: impact flinch, shoulders hunched and eyes squeezed, boots planted. Top-right: knocked back leaning left with one boot sliding and hard hat tipping. Bottom-left: dizzy wobble recovery, one hand near the hat, face dazed but wholesome. Bottom-right: settle back toward standing, still slightly staggered. Body-only sprite: no blood, no violence, no weapons, no detached dust, no big impact burst; if tiny dizzy stars appear, keep two or fewer tight to the head and fully inside the cell, otherwise use only expression and tipped hat. Keep the character centered in each cell, full body inside the central 60-70% safe area, consistent body height matching the idle reference within 10%, feet/bottom anchor line stable across frames, no limb, hat, star, or boot crosses a cell edge, leave solid magenta margin on all four sides. Background must be 100% solid flat #FF00FF magenta with no gradient and no shadow.",
+  "role": "",
+  "input": "C:\\Users\\henry\\.codex\\generated_images\\019f31a3-1b0e-7f32-81e5-33ba81ac6c0a\\ig_094f577e30bf28fa016a4a26809c148194a849733687eac236.png",
+  "threshold": 220,
+  "edge_threshold": 245,
+  "duration": 180,
+  "rows": 2,
+  "cols": 2,
+  "cell_size": 256,
+  "fit_scale": 0.88,
+  "trim_border": 4,
+  "edge_clean_depth": 3,
+  "align": "feet",
+  "shared_scale": true,
+  "component_mode": "largest",
+  "component_padding": 8,
+  "min_component_area": 64,
+  "edge_touch_margin": 2,
+  "frame_labels": [
+    "hurt-1",
+    "hurt-2",
+    "hurt-3",
+    "hurt-4"
+  ],
+  "frames": [
+    {
+      "grid": [
+        0,
+        0
+      ],
+      "source_box": [
+        0,
+        0,
+        627,
+        627
+      ],
+      "component_mode": "largest",
+      "component_count": 1,
+      "selected_component_area": 91892,
+      "selected_component_bbox": [
+        199,
+        97,
+        479,
+        542
+      ],
+      "crop_bbox": [
+        191,
+        89,
+        487,
+        550
+      ],
+      "edge_touch": false,
+      "output_size": [
+        144,
+        225
+      ],
+      "paste_position": [
+        56,
+        16
+      ]
+    },
+    {
+      "grid": [
+        0,
+        1
+      ],
+      "source_box": [
+        627,
+        0,
+        1254,
+        627
+      ],
+      "component_mode": "largest",
+      "component_count": 3,
+      "selected_component_area": 91425,
+      "selected_component_bbox": [
+        63,
+        134,
+        476,
+        541
+      ],
+      "crop_bbox": [
+        55,
+        126,
+        484,
+        549
+      ],
+      "edge_touch": false,
+      "output_size": [
+        209,
+        206
+      ],
+      "paste_position": [
+        23,
+        35
+      ]
+    },
+    {
+      "grid": [
+        1,
+        0
+      ],
+      "source_box": [
+        0,
+        627,
+        627,
+        1254
+      ],
+      "component_mode": "largest",
+      "component_count": 2,
+      "selected_component_area": 87293,
+      "selected_component_bbox": [
+        213,
+        39,
+        506,
+        476
+      ],
+      "crop_bbox": [
+        205,
+        31,
+        514,
+        484
+      ],
+      "edge_touch": false,
+      "output_size": [
+        151,
+        221
+      ],
+      "paste_position": [
+        52,
+        20
+      ]
+    },
+    {
+      "grid": [
+        1,
+        1
+      ],
+      "source_box": [
+        627,
+        627,
+        1254,
+        1254
+      ],
+      "component_mode": "largest",
+      "component_count": 1,
+      "selected_component_area": 87252,
+      "selected_component_bbox": [
+        96,
+        43,
+        400,
+        476
+      ],
+      "crop_bbox": [
+        88,
+        35,
+        408,
+        484
+      ],
+      "edge_touch": false,
+      "output_size": [
+        156,
+        219
+      ],
+      "paste_position": [
+        50,
+        22
+      ]
+    }
+  ],
+  "edge_touch_frames": []
+}

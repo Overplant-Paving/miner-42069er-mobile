@@ -1,0 +1,3787 @@
+{
+  "comment": "Runtime level geometry. Level 1 is transcribed from the map job's data/mine-collision.json + mine-scene-hooks.json; levels 2-3 are authored variations on the same 120px row grid using the same platform/ladder art. Rows y: 128/248/368/488/608/728.",
+  "levels": [
+    {
+      "name": "The Shallow End",
+      "introLine": "Everyone starts somewhere. Usually on top.",
+      "timer": 120,
+      "mutantSpeed": 60,
+      "spawn": {
+        "x": 112,
+        "y": 128
+      },
+      "platforms": [
+        {
+          "x": 64,
+          "y": 128,
+          "segments": 5
+        },
+        {
+          "x": 696,
+          "y": 128,
+          "segments": 5
+        },
+        {
+          "x": 376,
+          "y": 248,
+          "segments": 5
+        },
+        {
+          "x": 1096,
+          "y": 248,
+          "segments": 3
+        },
+        {
+          "x": 152,
+          "y": 368,
+          "segments": 4
+        },
+        {
+          "x": 740,
+          "y": 368,
+          "segments": 5
+        },
+        {
+          "x": 88,
+          "y": 488,
+          "segments": 6
+        },
+        {
+          "x": 850,
+          "y": 488,
+          "segments": 3
+        },
+        {
+          "x": 288,
+          "y": 608,
+          "segments": 4
+        },
+        {
+          "x": 872,
+          "y": 608,
+          "segments": 4
+        },
+        {
+          "x": 72,
+          "y": 728,
+          "segments": 5
+        },
+        {
+          "x": 704,
+          "y": 728,
+          "segments": 7
+        }
+      ],
+      "ladders": [
+        {
+          "x": 460,
+          "yTop": 128,
+          "yBottom": 248
+        },
+        {
+          "x": 820,
+          "yTop": 248,
+          "yBottom": 368
+        },
+        {
+          "x": 360,
+          "yTop": 368,
+          "yBottom": 488
+        },
+        {
+          "x": 1100,
+          "yTop": 488,
+          "yBottom": 608
+        },
+        {
+          "x": 704,
+          "yTop": 608,
+          "yBottom": 728
+        }
+      ],
+      "pickups": [
+        {
+          "item": "boxers",
+          "x": 1000,
+          "y": 128
+        },
+        {
+          "item": "rubber-duck",
+          "x": 300,
+          "y": 368
+        },
+        {
+          "item": "soap",
+          "x": 1060,
+          "y": 488
+        },
+        {
+          "item": "golden-pickaxe",
+          "x": 250,
+          "y": 728
+        }
+      ],
+      "mutants": [
+        {
+          "type": "smoocher",
+          "platform": 2,
+          "dir": 1
+        },
+        {
+          "type": "smoocher",
+          "platform": 6,
+          "dir": -1
+        }
+      ]
+    },
+    {
+      "name": "Deeper, Deeper",
+      "introLine": "That's it, Dusty. The good ore is further down.",
+      "timer": 110,
+      "mutantSpeed": 80,
+      "spawn": {
+        "x": 120,
+        "y": 128
+      },
+      "platforms": [
+        {
+          "x": 64,
+          "y": 128,
+          "segments": 4
+        },
+        {
+          "x": 800,
+          "y": 128,
+          "segments": 5
+        },
+        {
+          "x": 280,
+          "y": 248,
+          "segments": 3
+        },
+        {
+          "x": 900,
+          "y": 248,
+          "segments": 4
+        },
+        {
+          "x": 96,
+          "y": 368,
+          "segments": 5
+        },
+        {
+          "x": 760,
+          "y": 368,
+          "segments": 5
+        },
+        {
+          "x": 400,
+          "y": 488,
+          "segments": 6
+        },
+        {
+          "x": 72,
+          "y": 608,
+          "segments": 4
+        },
+        {
+          "x": 1000,
+          "y": 608,
+          "segments": 4
+        },
+        {
+          "x": 200,
+          "y": 728,
+          "segments": 5
+        },
+        {
+          "x": 860,
+          "y": 728,
+          "segments": 5
+        }
+      ],
+      "ladders": [
+        {
+          "x": 400,
+          "yTop": 128,
+          "yBottom": 248
+        },
+        {
+          "x": 1000,
+          "yTop": 128,
+          "yBottom": 248
+        },
+        {
+          "x": 500,
+          "yTop": 248,
+          "yBottom": 368
+        },
+        {
+          "x": 1100,
+          "yTop": 248,
+          "yBottom": 368
+        },
+        {
+          "x": 900,
+          "yTop": 368,
+          "yBottom": 488
+        },
+        {
+          "x": 450,
+          "yTop": 488,
+          "yBottom": 608
+        },
+        {
+          "x": 1100,
+          "yTop": 608,
+          "yBottom": 728
+        },
+        {
+          "x": 350,
+          "yTop": 608,
+          "yBottom": 728
+        }
+      ],
+      "pickups": [
+        {
+          "item": "magazine",
+          "x": 1100,
+          "y": 128
+        },
+        {
+          "item": "lava-lamp",
+          "x": 200,
+          "y": 368
+        },
+        {
+          "item": "batteries",
+          "x": 700,
+          "y": 488
+        },
+        {
+          "item": "banana",
+          "x": 400,
+          "y": 728
+        },
+        {
+          "item": "cologne",
+          "x": 1200,
+          "y": 608
+        }
+      ],
+      "mutants": [
+        {
+          "type": "smoocher",
+          "platform": 2,
+          "dir": 1
+        },
+        {
+          "type": "smoocher",
+          "platform": 6,
+          "dir": 1
+        },
+        {
+          "type": "cuddler",
+          "platform": 5,
+          "dir": -1
+        }
+      ]
+    },
+    {
+      "name": "The Motherlode",
+      "introLine": "Uncle Randy always said: finish what you start.",
+      "timer": 100,
+      "mutantSpeed": 100,
+      "spawn": {
+        "x": 100,
+        "y": 128
+      },
+      "platforms": [
+        {
+          "x": 64,
+          "y": 128,
+          "segments": 3
+        },
+        {
+          "x": 620,
+          "y": 128,
+          "segments": 3
+        },
+        {
+          "x": 1120,
+          "y": 128,
+          "segments": 3
+        },
+        {
+          "x": 300,
+          "y": 248,
+          "segments": 4
+        },
+        {
+          "x": 900,
+          "y": 248,
+          "segments": 4
+        },
+        {
+          "x": 64,
+          "y": 368,
+          "segments": 4
+        },
+        {
+          "x": 760,
+          "y": 368,
+          "segments": 5
+        },
+        {
+          "x": 350,
+          "y": 488,
+          "segments": 3
+        },
+        {
+          "x": 1050,
+          "y": 488,
+          "segments": 3
+        },
+        {
+          "x": 72,
+          "y": 608,
+          "segments": 5
+        },
+        {
+          "x": 900,
+          "y": 608,
+          "segments": 4
+        },
+        {
+          "x": 400,
+          "y": 728,
+          "segments": 7
+        }
+      ],
+      "ladders": [
+        {
+          "x": 350,
+          "yTop": 128,
+          "yBottom": 248
+        },
+        {
+          "x": 930,
+          "yTop": 128,
+          "yBottom": 248
+        },
+        {
+          "x": 1200,
+          "yTop": 128,
+          "yBottom": 248
+        },
+        {
+          "x": 400,
+          "yTop": 248,
+          "yBottom": 368
+        },
+        {
+          "x": 1100,
+          "yTop": 248,
+          "yBottom": 368
+        },
+        {
+          "x": 430,
+          "yTop": 368,
+          "yBottom": 488
+        },
+        {
+          "x": 1150,
+          "yTop": 368,
+          "yBottom": 488
+        },
+        {
+          "x": 500,
+          "yTop": 488,
+          "yBottom": 608
+        },
+        {
+          "x": 1200,
+          "yTop": 488,
+          "yBottom": 608
+        },
+        {
+          "x": 550,
+          "yTop": 608,
+          "yBottom": 728
+        },
+        {
+          "x": 1000,
+          "yTop": 608,
+          "yBottom": 728
+        }
+      ],
+      "pickups": [
+        {
+          "item": "cologne",
+          "x": 500,
+          "y": 248
+        },
+        {
+          "item": "rubber-duck",
+          "x": 1000,
+          "y": 368
+        },
+        {
+          "item": "batteries",
+          "x": 1200,
+          "y": 488
+        },
+        {
+          "item": "magazine",
+          "x": 200,
+          "y": 608
+        },
+        {
+          "item": "golden-pickaxe",
+          "x": 760,
+          "y": 728
+        }
+      ],
+      "mutants": [
+        {
+          "type": "smoocher",
+          "platform": 3,
+          "dir": 1
+        },
+        {
+          "type": "smoocher",
+          "platform": 11,
+          "dir": -1
+        },
+        {
+          "type": "cuddler",
+          "platform": 6,
+          "dir": 1
+        },
+        {
+          "type": "cuddler",
+          "platform": 9,
+          "dir": -1
+        }
+      ]
+    },
+    {
+      "name": "The Night Shift",
+      "introLine": "Some things only come out after dark.",
+      "timer": 110,
+      "mutantSpeed": 100,
+      "spawn": {
+        "x": 100,
+        "y": 128
+      },
+      "tint": "rgba(64,52,140,0.18)",
+      "platforms": [
+        {
+          "x": 64,
+          "y": 128,
+          "segments": 4
+        },
+        {
+          "x": 720,
+          "y": 128,
+          "segments": 4
+        },
+        {
+          "x": 1240,
+          "y": 128,
+          "segments": 2
+        },
+        {
+          "x": 200,
+          "y": 248,
+          "segments": 3
+        },
+        {
+          "x": 900,
+          "y": 248,
+          "segments": 4
+        },
+        {
+          "x": 64,
+          "y": 368,
+          "segments": 4
+        },
+        {
+          "x": 760,
+          "y": 368,
+          "segments": 5
+        },
+        {
+          "x": 400,
+          "y": 488,
+          "segments": 3
+        },
+        {
+          "x": 1100,
+          "y": 488,
+          "segments": 2
+        },
+        {
+          "x": 72,
+          "y": 608,
+          "segments": 4
+        },
+        {
+          "x": 800,
+          "y": 608,
+          "segments": 5
+        },
+        {
+          "x": 300,
+          "y": 728,
+          "segments": 8
+        }
+      ],
+      "ladders": [
+        {
+          "x": 350,
+          "yTop": 128,
+          "yBottom": 248
+        },
+        {
+          "x": 1000,
+          "yTop": 128,
+          "yBottom": 248
+        },
+        {
+          "x": 300,
+          "yTop": 248,
+          "yBottom": 368
+        },
+        {
+          "x": 1100,
+          "yTop": 248,
+          "yBottom": 368
+        },
+        {
+          "x": 450,
+          "yTop": 368,
+          "yBottom": 488
+        },
+        {
+          "x": 1150,
+          "yTop": 368,
+          "yBottom": 488
+        },
+        {
+          "x": 450,
+          "yTop": 488,
+          "yBottom": 608
+        },
+        {
+          "x": 1150,
+          "yTop": 488,
+          "yBottom": 608
+        },
+        {
+          "x": 400,
+          "yTop": 608,
+          "yBottom": 728
+        },
+        {
+          "x": 900,
+          "yTop": 608,
+          "yBottom": 728
+        }
+      ],
+      "elevators": [
+        {
+          "x": 1400,
+          "yTop": 248,
+          "yBottom": 488
+        }
+      ],
+      "slides": [
+        {
+          "xTop": 552,
+          "yTop": 248,
+          "dir": 1,
+          "drop": 360
+        }
+      ],
+      "pickups": [
+        {
+          "item": "magazine",
+          "x": 1350,
+          "y": 128
+        },
+        {
+          "item": "lava-lamp",
+          "x": 200,
+          "y": 368
+        },
+        {
+          "item": "cologne",
+          "x": 1000,
+          "y": 368
+        },
+        {
+          "item": "batteries",
+          "x": 1200,
+          "y": 488
+        },
+        {
+          "item": "rubber-duck",
+          "x": 500,
+          "y": 728
+        }
+      ],
+      "mutants": [
+        {
+          "type": "smoocher",
+          "platform": 6,
+          "dir": 1
+        },
+        {
+          "type": "smoocher",
+          "platform": 11,
+          "dir": -1
+        },
+        {
+          "type": "cuddler",
+          "platform": 10,
+          "dir": 1
+        },
+        {
+          "type": "winker",
+          "x0": 1100,
+          "x1": 1440,
+          "y": 68,
+          "dir": 1
+        },
+        {
+          "type": "winker",
+          "x0": 460,
+          "x1": 620,
+          "y": 150,
+          "dir": -1
+        }
+      ]
+    },
+    {
+      "name": "The Break Room",
+      "introLine": "The coffee is strong. The crabs are stronger.",
+      "timer": 115,
+      "mutantSpeed": 70,
+      "spawn": {
+        "x": 100,
+        "y": 128
+      },
+      "platforms": [
+        {
+          "x": 64,
+          "y": 128,
+          "segments": 5
+        },
+        {
+          "x": 760,
+          "y": 128,
+          "segments": 5
+        },
+        {
+          "x": 300,
+          "y": 248,
+          "segments": 4
+        },
+        {
+          "x": 1000,
+          "y": 248,
+          "segments": 4
+        },
+        {
+          "x": 64,
+          "y": 368,
+          "segments": 4
+        },
+        {
+          "x": 700,
+          "y": 368,
+          "segments": 5
+        },
+        {
+          "x": 250,
+          "y": 488,
+          "segments": 5
+        },
+        {
+          "x": 1000,
+          "y": 488,
+          "segments": 4
+        },
+        {
+          "x": 64,
+          "y": 608,
+          "segments": 5
+        },
+        {
+          "x": 760,
+          "y": 608,
+          "segments": 5
+        },
+        {
+          "x": 200,
+          "y": 728,
+          "segments": 5
+        },
+        {
+          "x": 880,
+          "y": 728,
+          "segments": 5
+        }
+      ],
+      "ladders": [
+        {
+          "x": 400,
+          "yTop": 128,
+          "yBottom": 248
+        },
+        {
+          "x": 1100,
+          "yTop": 128,
+          "yBottom": 248
+        },
+        {
+          "x": 400,
+          "yTop": 248,
+          "yBottom": 368
+        },
+        {
+          "x": 1100,
+          "yTop": 248,
+          "yBottom": 368
+        },
+        {
+          "x": 350,
+          "yTop": 368,
+          "yBottom": 488
+        },
+        {
+          "x": 1100,
+          "yTop": 368,
+          "yBottom": 488
+        },
+        {
+          "x": 350,
+          "yTop": 488,
+          "yBottom": 608
+        },
+        {
+          "x": 1100,
+          "yTop": 488,
+          "yBottom": 608
+        },
+        {
+          "x": 300,
+          "yTop": 608,
+          "yBottom": 728
+        },
+        {
+          "x": 1000,
+          "yTop": 608,
+          "yBottom": 728
+        }
+      ],
+      "mutants": [
+        {
+          "type": "grabby",
+          "dir": 1,
+          "platform": 2
+        },
+        {
+          "type": "grabby",
+          "dir": -1,
+          "platform": 9
+        },
+        {
+          "type": "smoocher",
+          "dir": 1,
+          "platform": 6
+        }
+      ],
+      "pickups": [
+        {
+          "item": "soap",
+          "x": 900,
+          "y": 128
+        },
+        {
+          "item": "banana",
+          "x": 400,
+          "y": 368
+        },
+        {
+          "item": "rubber-duck",
+          "x": 1200,
+          "y": 488
+        },
+        {
+          "item": "magazine",
+          "x": 300,
+          "y": 728
+        }
+      ],
+      "powerups": [
+        {
+          "type": "thermos",
+          "x": 150,
+          "y": 608
+        }
+      ],
+      "conveyors": [],
+      "spikes": [],
+      "elevators": [],
+      "slides": []
+    },
+    {
+      "name": "Union Rules",
+      "introLine": "Keep the line moving. The line insists.",
+      "timer": 110,
+      "mutantSpeed": 75,
+      "spawn": {
+        "x": 100,
+        "y": 128
+      },
+      "platforms": [
+        {
+          "x": 64,
+          "y": 128,
+          "segments": 4
+        },
+        {
+          "x": 900,
+          "y": 128,
+          "segments": 5
+        },
+        {
+          "x": 64,
+          "y": 248,
+          "segments": 3
+        },
+        {
+          "x": 1100,
+          "y": 248,
+          "segments": 3
+        },
+        {
+          "x": 64,
+          "y": 368,
+          "segments": 3
+        },
+        {
+          "x": 1100,
+          "y": 368,
+          "segments": 3
+        },
+        {
+          "x": 200,
+          "y": 488,
+          "segments": 4
+        },
+        {
+          "x": 900,
+          "y": 488,
+          "segments": 4
+        },
+        {
+          "x": 64,
+          "y": 608,
+          "segments": 4
+        },
+        {
+          "x": 1000,
+          "y": 608,
+          "segments": 4
+        },
+        {
+          "x": 300,
+          "y": 728,
+          "segments": 8
+        }
+      ],
+      "ladders": [
+        {
+          "x": 300,
+          "yTop": 128,
+          "yBottom": 248
+        },
+        {
+          "x": 1200,
+          "yTop": 128,
+          "yBottom": 248
+        },
+        {
+          "x": 200,
+          "yTop": 248,
+          "yBottom": 368
+        },
+        {
+          "x": 1200,
+          "yTop": 248,
+          "yBottom": 368
+        },
+        {
+          "x": 300,
+          "yTop": 368,
+          "yBottom": 488
+        },
+        {
+          "x": 1150,
+          "yTop": 368,
+          "yBottom": 488
+        },
+        {
+          "x": 300,
+          "yTop": 488,
+          "yBottom": 608
+        },
+        {
+          "x": 1100,
+          "yTop": 488,
+          "yBottom": 608
+        },
+        {
+          "x": 400,
+          "yTop": 608,
+          "yBottom": 728
+        },
+        {
+          "x": 1050,
+          "yTop": 608,
+          "yBottom": 728
+        }
+      ],
+      "mutants": [
+        {
+          "type": "smoocher",
+          "dir": 1,
+          "platform": 6
+        },
+        {
+          "type": "grabby",
+          "dir": 1,
+          "platform": 10
+        },
+        {
+          "type": "cuddler",
+          "dir": -1,
+          "platform": 7
+        }
+      ],
+      "pickups": [
+        {
+          "item": "lava-lamp",
+          "x": 150,
+          "y": 248
+        },
+        {
+          "item": "batteries",
+          "x": 1250,
+          "y": 368
+        },
+        {
+          "item": "cologne",
+          "x": 1000,
+          "y": 488
+        },
+        {
+          "item": "boxers",
+          "x": 700,
+          "y": 728
+        }
+      ],
+      "powerups": [
+        {
+          "type": "thermos",
+          "x": 1150,
+          "y": 608
+        }
+      ],
+      "conveyors": [
+        {
+          "x": 416,
+          "y": 248,
+          "cells": 6,
+          "dir": 1
+        },
+        {
+          "x": 416,
+          "y": 368,
+          "cells": 6,
+          "dir": -1
+        },
+        {
+          "x": 512,
+          "y": 608,
+          "cells": 4,
+          "dir": 1
+        }
+      ],
+      "spikes": [],
+      "elevators": [],
+      "slides": []
+    },
+    {
+      "name": "Hot Air",
+      "introLine": "It rises. So can you.",
+      "timer": 110,
+      "mutantSpeed": 80,
+      "spawn": {
+        "x": 100,
+        "y": 128
+      },
+      "platforms": [
+        {
+          "x": 64,
+          "y": 128,
+          "segments": 4
+        },
+        {
+          "x": 720,
+          "y": 128,
+          "segments": 5
+        },
+        {
+          "x": 300,
+          "y": 248,
+          "segments": 4
+        },
+        {
+          "x": 1050,
+          "y": 248,
+          "segments": 4
+        },
+        {
+          "x": 64,
+          "y": 368,
+          "segments": 5
+        },
+        {
+          "x": 800,
+          "y": 368,
+          "segments": 5
+        },
+        {
+          "x": 300,
+          "y": 488,
+          "segments": 4
+        },
+        {
+          "x": 1050,
+          "y": 488,
+          "segments": 3
+        },
+        {
+          "x": 64,
+          "y": 608,
+          "segments": 4
+        },
+        {
+          "x": 800,
+          "y": 608,
+          "segments": 5
+        },
+        {
+          "x": 250,
+          "y": 728,
+          "segments": 8
+        }
+      ],
+      "ladders": [
+        {
+          "x": 350,
+          "yTop": 128,
+          "yBottom": 248
+        },
+        {
+          "x": 1150,
+          "yTop": 128,
+          "yBottom": 248
+        },
+        {
+          "x": 400,
+          "yTop": 248,
+          "yBottom": 368
+        },
+        {
+          "x": 1150,
+          "yTop": 248,
+          "yBottom": 368
+        },
+        {
+          "x": 300,
+          "yTop": 368,
+          "yBottom": 488
+        },
+        {
+          "x": 1100,
+          "yTop": 368,
+          "yBottom": 488
+        },
+        {
+          "x": 400,
+          "yTop": 488,
+          "yBottom": 608
+        },
+        {
+          "x": 1150,
+          "yTop": 488,
+          "yBottom": 608
+        },
+        {
+          "x": 350,
+          "yTop": 608,
+          "yBottom": 728
+        },
+        {
+          "x": 1000,
+          "yTop": 608,
+          "yBottom": 728
+        }
+      ],
+      "mutants": [
+        {
+          "type": "floaty",
+          "dir": 1,
+          "x": 650,
+          "y0": 180,
+          "y1": 340
+        },
+        {
+          "type": "floaty",
+          "dir": 1,
+          "x": 985,
+          "y0": 420,
+          "y1": 580,
+          "phase": 2.0
+        },
+        {
+          "type": "smoocher",
+          "dir": 1,
+          "platform": 5
+        },
+        {
+          "type": "grabby",
+          "dir": -1,
+          "platform": 10
+        }
+      ],
+      "pickups": [
+        {
+          "item": "rubber-duck",
+          "x": 900,
+          "y": 128
+        },
+        {
+          "item": "soap",
+          "x": 150,
+          "y": 368
+        },
+        {
+          "item": "banana",
+          "x": 1150,
+          "y": 488
+        },
+        {
+          "item": "golden-pickaxe",
+          "x": 500,
+          "y": 728
+        }
+      ],
+      "powerups": [
+        {
+          "type": "boots",
+          "x": 1250,
+          "y": 248
+        },
+        {
+          "type": "thermos",
+          "x": 150,
+          "y": 608
+        }
+      ],
+      "conveyors": [],
+      "spikes": [],
+      "elevators": [],
+      "slides": []
+    },
+    {
+      "name": "Deferred Maintenance",
+      "introLine": "Someone filed a report. Someone filed it away.",
+      "timer": 105,
+      "mutantSpeed": 80,
+      "spawn": {
+        "x": 100,
+        "y": 128
+      },
+      "platforms": [
+        {
+          "x": 64,
+          "y": 128,
+          "segments": 5
+        },
+        {
+          "x": 760,
+          "y": 128,
+          "segments": 5,
+          "crumble": [
+            4
+          ]
+        },
+        {
+          "x": 250,
+          "y": 248,
+          "segments": 5
+        },
+        {
+          "x": 1050,
+          "y": 248,
+          "segments": 4
+        },
+        {
+          "x": 64,
+          "y": 368,
+          "segments": 4
+        },
+        {
+          "x": 760,
+          "y": 368,
+          "segments": 5
+        },
+        {
+          "x": 250,
+          "y": 488,
+          "segments": 5,
+          "crumble": [
+            2
+          ]
+        },
+        {
+          "x": 1050,
+          "y": 488,
+          "segments": 3
+        },
+        {
+          "x": 64,
+          "y": 608,
+          "segments": 5
+        },
+        {
+          "x": 800,
+          "y": 608,
+          "segments": 5,
+          "crumble": [
+            1
+          ]
+        },
+        {
+          "x": 200,
+          "y": 728,
+          "segments": 6
+        },
+        {
+          "x": 950,
+          "y": 728,
+          "segments": 5
+        }
+      ],
+      "ladders": [
+        {
+          "x": 350,
+          "yTop": 128,
+          "yBottom": 248
+        },
+        {
+          "x": 1150,
+          "yTop": 128,
+          "yBottom": 248
+        },
+        {
+          "x": 300,
+          "yTop": 248,
+          "yBottom": 368
+        },
+        {
+          "x": 1150,
+          "yTop": 248,
+          "yBottom": 368
+        },
+        {
+          "x": 300,
+          "yTop": 368,
+          "yBottom": 488
+        },
+        {
+          "x": 1100,
+          "yTop": 368,
+          "yBottom": 488
+        },
+        {
+          "x": 300,
+          "yTop": 488,
+          "yBottom": 608
+        },
+        {
+          "x": 1150,
+          "yTop": 488,
+          "yBottom": 608
+        },
+        {
+          "x": 350,
+          "yTop": 608,
+          "yBottom": 728
+        },
+        {
+          "x": 1050,
+          "yTop": 608,
+          "yBottom": 728
+        }
+      ],
+      "mutants": [
+        {
+          "type": "smoocher",
+          "dir": 1,
+          "platform": 5
+        },
+        {
+          "type": "cuddler",
+          "dir": -1,
+          "platform": 10
+        },
+        {
+          "type": "grabby",
+          "dir": 1,
+          "platform": 11
+        }
+      ],
+      "pickups": [
+        {
+          "item": "magazine",
+          "x": 900,
+          "y": 128
+        },
+        {
+          "item": "lava-lamp",
+          "x": 150,
+          "y": 368
+        },
+        {
+          "item": "batteries",
+          "x": 1150,
+          "y": 488
+        },
+        {
+          "item": "cologne",
+          "x": 400,
+          "y": 728
+        }
+      ],
+      "powerups": [
+        {
+          "type": "canary",
+          "x": 150,
+          "y": 608
+        }
+      ],
+      "conveyors": [],
+      "spikes": [],
+      "elevators": [],
+      "slides": []
+    },
+    {
+      "name": "Getting the Point",
+      "introLine": "Health and safety sends their regards.",
+      "timer": 100,
+      "mutantSpeed": 85,
+      "spawn": {
+        "x": 100,
+        "y": 128
+      },
+      "platforms": [
+        {
+          "x": 64,
+          "y": 128,
+          "segments": 4
+        },
+        {
+          "x": 624,
+          "y": 128,
+          "segments": 3
+        },
+        {
+          "x": 1100,
+          "y": 128,
+          "segments": 3
+        },
+        {
+          "x": 200,
+          "y": 248,
+          "segments": 4
+        },
+        {
+          "x": 900,
+          "y": 248,
+          "segments": 4
+        },
+        {
+          "x": 64,
+          "y": 368,
+          "segments": 4
+        },
+        {
+          "x": 624,
+          "y": 368,
+          "segments": 3
+        },
+        {
+          "x": 1100,
+          "y": 368,
+          "segments": 3
+        },
+        {
+          "x": 200,
+          "y": 488,
+          "segments": 5
+        },
+        {
+          "x": 950,
+          "y": 488,
+          "segments": 4
+        },
+        {
+          "x": 64,
+          "y": 608,
+          "segments": 5
+        },
+        {
+          "x": 800,
+          "y": 608,
+          "segments": 5
+        },
+        {
+          "x": 300,
+          "y": 728,
+          "segments": 8
+        }
+      ],
+      "ladders": [
+        {
+          "x": 300,
+          "yTop": 128,
+          "yBottom": 248
+        },
+        {
+          "x": 1150,
+          "yTop": 128,
+          "yBottom": 248
+        },
+        {
+          "x": 300,
+          "yTop": 248,
+          "yBottom": 368
+        },
+        {
+          "x": 1150,
+          "yTop": 248,
+          "yBottom": 368
+        },
+        {
+          "x": 300,
+          "yTop": 368,
+          "yBottom": 488
+        },
+        {
+          "x": 1150,
+          "yTop": 368,
+          "yBottom": 488
+        },
+        {
+          "x": 400,
+          "yTop": 488,
+          "yBottom": 608
+        },
+        {
+          "x": 1100,
+          "yTop": 488,
+          "yBottom": 608
+        },
+        {
+          "x": 350,
+          "yTop": 608,
+          "yBottom": 728
+        },
+        {
+          "x": 1000,
+          "yTop": 608,
+          "yBottom": 728
+        }
+      ],
+      "mutants": [
+        {
+          "type": "smoocher",
+          "dir": 1,
+          "platform": 8
+        },
+        {
+          "type": "grabby",
+          "dir": -1,
+          "platform": 11
+        },
+        {
+          "type": "prude",
+          "dir": 1,
+          "platform": 12
+        }
+      ],
+      "pickups": [
+        {
+          "item": "soap",
+          "x": 700,
+          "y": 128
+        },
+        {
+          "item": "boxers",
+          "x": 1000,
+          "y": 248
+        },
+        {
+          "item": "rubber-duck",
+          "x": 150,
+          "y": 608
+        },
+        {
+          "item": "banana",
+          "x": 1200,
+          "y": 488
+        }
+      ],
+      "powerups": [
+        {
+          "type": "canary",
+          "x": 1200,
+          "y": 368
+        },
+        {
+          "type": "gold-helmet",
+          "x": 250,
+          "y": 488
+        }
+      ],
+      "conveyors": [],
+      "spikes": [
+        {
+          "x": 520,
+          "y": 128,
+          "cells": 1
+        },
+        {
+          "x": 990,
+          "y": 128,
+          "cells": 1
+        },
+        {
+          "x": 520,
+          "y": 368,
+          "cells": 1
+        },
+        {
+          "x": 990,
+          "y": 368,
+          "cells": 1
+        }
+      ],
+      "elevators": [],
+      "slides": []
+    },
+    {
+      "name": "Human Resources",
+      "introLine": "Immune to charm since 1962.",
+      "timer": 105,
+      "mutantSpeed": 85,
+      "spawn": {
+        "x": 100,
+        "y": 128
+      },
+      "platforms": [
+        {
+          "x": 64,
+          "y": 128,
+          "segments": 5
+        },
+        {
+          "x": 800,
+          "y": 128,
+          "segments": 5
+        },
+        {
+          "x": 300,
+          "y": 248,
+          "segments": 5
+        },
+        {
+          "x": 1050,
+          "y": 248,
+          "segments": 4
+        },
+        {
+          "x": 64,
+          "y": 368,
+          "segments": 5
+        },
+        {
+          "x": 760,
+          "y": 368,
+          "segments": 5
+        },
+        {
+          "x": 250,
+          "y": 488,
+          "segments": 5
+        },
+        {
+          "x": 1050,
+          "y": 488,
+          "segments": 3
+        },
+        {
+          "x": 64,
+          "y": 608,
+          "segments": 5
+        },
+        {
+          "x": 800,
+          "y": 608,
+          "segments": 5
+        },
+        {
+          "x": 250,
+          "y": 728,
+          "segments": 7
+        }
+      ],
+      "ladders": [
+        {
+          "x": 350,
+          "yTop": 128,
+          "yBottom": 248
+        },
+        {
+          "x": 1100,
+          "yTop": 128,
+          "yBottom": 248
+        },
+        {
+          "x": 400,
+          "yTop": 248,
+          "yBottom": 368
+        },
+        {
+          "x": 1150,
+          "yTop": 248,
+          "yBottom": 368
+        },
+        {
+          "x": 300,
+          "yTop": 368,
+          "yBottom": 488
+        },
+        {
+          "x": 1100,
+          "yTop": 368,
+          "yBottom": 488
+        },
+        {
+          "x": 400,
+          "yTop": 488,
+          "yBottom": 608
+        },
+        {
+          "x": 1150,
+          "yTop": 488,
+          "yBottom": 608
+        },
+        {
+          "x": 350,
+          "yTop": 608,
+          "yBottom": 728
+        },
+        {
+          "x": 950,
+          "yTop": 608,
+          "yBottom": 728
+        }
+      ],
+      "mutants": [
+        {
+          "type": "prude",
+          "dir": 1,
+          "platform": 2
+        },
+        {
+          "type": "prude",
+          "dir": -1,
+          "platform": 9
+        },
+        {
+          "type": "smoocher",
+          "dir": 1,
+          "platform": 5
+        },
+        {
+          "type": "smoocher",
+          "dir": 1,
+          "platform": 10
+        }
+      ],
+      "pickups": [
+        {
+          "item": "cologne",
+          "x": 900,
+          "y": 128
+        },
+        {
+          "item": "magazine",
+          "x": 150,
+          "y": 368
+        },
+        {
+          "item": "lava-lamp",
+          "x": 1150,
+          "y": 488
+        },
+        {
+          "item": "golden-pickaxe",
+          "x": 450,
+          "y": 728
+        }
+      ],
+      "powerups": [
+        {
+          "type": "gold-helmet",
+          "x": 150,
+          "y": 608
+        },
+        {
+          "type": "thermos",
+          "x": 1250,
+          "y": 248
+        }
+      ],
+      "conveyors": [],
+      "spikes": [],
+      "elevators": [],
+      "slides": []
+    },
+    {
+      "name": "The Graveyard Shift",
+      "introLine": "The bats work nights. So do you.",
+      "timer": 100,
+      "mutantSpeed": 90,
+      "spawn": {
+        "x": 100,
+        "y": 128
+      },
+      "tint": "rgba(64,52,140,0.18)",
+      "platforms": [
+        {
+          "x": 64,
+          "y": 128,
+          "segments": 4
+        },
+        {
+          "x": 720,
+          "y": 128,
+          "segments": 4
+        },
+        {
+          "x": 1240,
+          "y": 128,
+          "segments": 2
+        },
+        {
+          "x": 250,
+          "y": 248,
+          "segments": 4
+        },
+        {
+          "x": 950,
+          "y": 248,
+          "segments": 4
+        },
+        {
+          "x": 64,
+          "y": 368,
+          "segments": 5
+        },
+        {
+          "x": 800,
+          "y": 368,
+          "segments": 5
+        },
+        {
+          "x": 300,
+          "y": 488,
+          "segments": 4
+        },
+        {
+          "x": 1050,
+          "y": 488,
+          "segments": 3
+        },
+        {
+          "x": 64,
+          "y": 608,
+          "segments": 4
+        },
+        {
+          "x": 800,
+          "y": 608,
+          "segments": 5
+        },
+        {
+          "x": 250,
+          "y": 728,
+          "segments": 8
+        }
+      ],
+      "ladders": [
+        {
+          "x": 300,
+          "yTop": 128,
+          "yBottom": 248
+        },
+        {
+          "x": 1050,
+          "yTop": 128,
+          "yBottom": 248
+        },
+        {
+          "x": 350,
+          "yTop": 248,
+          "yBottom": 368
+        },
+        {
+          "x": 1100,
+          "yTop": 248,
+          "yBottom": 368
+        },
+        {
+          "x": 300,
+          "yTop": 368,
+          "yBottom": 488
+        },
+        {
+          "x": 1100,
+          "yTop": 368,
+          "yBottom": 488
+        },
+        {
+          "x": 400,
+          "yTop": 488,
+          "yBottom": 608
+        },
+        {
+          "x": 1150,
+          "yTop": 488,
+          "yBottom": 608
+        },
+        {
+          "x": 350,
+          "yTop": 608,
+          "yBottom": 728
+        },
+        {
+          "x": 1000,
+          "yTop": 608,
+          "yBottom": 728
+        }
+      ],
+      "mutants": [
+        {
+          "type": "winker",
+          "dir": 1,
+          "x0": 1080,
+          "x1": 1440,
+          "y": 68
+        },
+        {
+          "type": "floaty",
+          "dir": 1,
+          "x": 650,
+          "y0": 300,
+          "y1": 460
+        },
+        {
+          "type": "smoocher",
+          "dir": 1,
+          "platform": 6
+        },
+        {
+          "type": "cuddler",
+          "dir": -1,
+          "platform": 11
+        }
+      ],
+      "pickups": [
+        {
+          "item": "boxers",
+          "x": 1350,
+          "y": 128
+        },
+        {
+          "item": "lava-lamp",
+          "x": 150,
+          "y": 368
+        },
+        {
+          "item": "batteries",
+          "x": 1150,
+          "y": 488
+        },
+        {
+          "item": "rubber-duck",
+          "x": 500,
+          "y": 728
+        }
+      ],
+      "powerups": [
+        {
+          "type": "canary",
+          "x": 1000,
+          "y": 248
+        }
+      ],
+      "conveyors": [],
+      "spikes": [],
+      "elevators": [],
+      "slides": []
+    },
+    {
+      "name": "Double Time",
+      "introLine": "The company loves overtime. Loves it.",
+      "timer": 100,
+      "mutantSpeed": 90,
+      "spawn": {
+        "x": 100,
+        "y": 128
+      },
+      "platforms": [
+        {
+          "x": 64,
+          "y": 128,
+          "segments": 4
+        },
+        {
+          "x": 900,
+          "y": 128,
+          "segments": 4
+        },
+        {
+          "x": 200,
+          "y": 248,
+          "segments": 3
+        },
+        {
+          "x": 1032,
+          "y": 248,
+          "segments": 3
+        },
+        {
+          "x": 64,
+          "y": 368,
+          "segments": 4
+        },
+        {
+          "x": 900,
+          "y": 368,
+          "segments": 4
+        },
+        {
+          "x": 200,
+          "y": 488,
+          "segments": 4
+        },
+        {
+          "x": 1000,
+          "y": 488,
+          "segments": 3
+        },
+        {
+          "x": 64,
+          "y": 608,
+          "segments": 4
+        },
+        {
+          "x": 896,
+          "y": 608,
+          "segments": 5
+        },
+        {
+          "x": 300,
+          "y": 728,
+          "segments": 7
+        }
+      ],
+      "ladders": [
+        {
+          "x": 300,
+          "yTop": 128,
+          "yBottom": 248
+        },
+        {
+          "x": 1100,
+          "yTop": 128,
+          "yBottom": 248
+        },
+        {
+          "x": 250,
+          "yTop": 248,
+          "yBottom": 368
+        },
+        {
+          "x": 1100,
+          "yTop": 248,
+          "yBottom": 368
+        },
+        {
+          "x": 300,
+          "yTop": 368,
+          "yBottom": 488
+        },
+        {
+          "x": 1050,
+          "yTop": 368,
+          "yBottom": 488
+        },
+        {
+          "x": 250,
+          "yTop": 488,
+          "yBottom": 608
+        },
+        {
+          "x": 1100,
+          "yTop": 488,
+          "yBottom": 608
+        },
+        {
+          "x": 350,
+          "yTop": 608,
+          "yBottom": 728
+        },
+        {
+          "x": 1000,
+          "yTop": 608,
+          "yBottom": 728
+        }
+      ],
+      "mutants": [
+        {
+          "type": "smoocher",
+          "dir": 1,
+          "platform": 5
+        },
+        {
+          "type": "grabby",
+          "dir": -1,
+          "platform": 9
+        },
+        {
+          "type": "cuddler",
+          "dir": 1,
+          "platform": 10
+        }
+      ],
+      "pickups": [
+        {
+          "item": "banana",
+          "x": 1100,
+          "y": 128
+        },
+        {
+          "item": "soap",
+          "x": 150,
+          "y": 368
+        },
+        {
+          "item": "magazine",
+          "x": 1100,
+          "y": 488
+        },
+        {
+          "item": "cologne",
+          "x": 500,
+          "y": 728
+        }
+      ],
+      "powerups": [
+        {
+          "type": "thermos",
+          "x": 250,
+          "y": 608
+        }
+      ],
+      "conveyors": [
+        {
+          "x": 552,
+          "y": 248,
+          "cells": 5,
+          "dir": 1
+        },
+        {
+          "x": 512,
+          "y": 608,
+          "cells": 4,
+          "dir": -1
+        }
+      ],
+      "spikes": [],
+      "elevators": [
+        {
+          "x": 1450,
+          "yTop": 128,
+          "yBottom": 368
+        }
+      ],
+      "slides": []
+    },
+    {
+      "name": "Slip 'n' Slide",
+      "introLine": "Twice the slides. Zero liability.",
+      "timer": 95,
+      "mutantSpeed": 95,
+      "spawn": {
+        "x": 100,
+        "y": 128
+      },
+      "platforms": [
+        {
+          "x": 64,
+          "y": 128,
+          "segments": 5
+        },
+        {
+          "x": 800,
+          "y": 128,
+          "segments": 5
+        },
+        {
+          "x": 200,
+          "y": 248,
+          "segments": 3
+        },
+        {
+          "x": 950,
+          "y": 248,
+          "segments": 4
+        },
+        {
+          "x": 64,
+          "y": 368,
+          "segments": 4
+        },
+        {
+          "x": 760,
+          "y": 368,
+          "segments": 5
+        },
+        {
+          "x": 300,
+          "y": 488,
+          "segments": 4
+        },
+        {
+          "x": 1100,
+          "y": 488,
+          "segments": 3
+        },
+        {
+          "x": 64,
+          "y": 608,
+          "segments": 5
+        },
+        {
+          "x": 850,
+          "y": 608,
+          "segments": 4
+        },
+        {
+          "x": 200,
+          "y": 728,
+          "segments": 8
+        },
+        {
+          "x": 1100,
+          "y": 728,
+          "segments": 3
+        }
+      ],
+      "ladders": [
+        {
+          "x": 350,
+          "yTop": 128,
+          "yBottom": 248
+        },
+        {
+          "x": 1100,
+          "yTop": 128,
+          "yBottom": 248
+        },
+        {
+          "x": 250,
+          "yTop": 248,
+          "yBottom": 368
+        },
+        {
+          "x": 1050,
+          "yTop": 248,
+          "yBottom": 368
+        },
+        {
+          "x": 350,
+          "yTop": 368,
+          "yBottom": 488
+        },
+        {
+          "x": 1150,
+          "yTop": 368,
+          "yBottom": 488
+        },
+        {
+          "x": 400,
+          "yTop": 488,
+          "yBottom": 608
+        },
+        {
+          "x": 1200,
+          "yTop": 488,
+          "yBottom": 608
+        },
+        {
+          "x": 300,
+          "yTop": 608,
+          "yBottom": 728
+        },
+        {
+          "x": 950,
+          "yTop": 608,
+          "yBottom": 728
+        },
+        {
+          "x": 1200,
+          "yTop": 608,
+          "yBottom": 728
+        }
+      ],
+      "mutants": [
+        {
+          "type": "grabby",
+          "dir": -1,
+          "platform": 5
+        },
+        {
+          "type": "grabby",
+          "dir": 1,
+          "platform": 10
+        },
+        {
+          "type": "smoocher",
+          "dir": 1,
+          "platform": 9
+        }
+      ],
+      "pickups": [
+        {
+          "item": "rubber-duck",
+          "x": 950,
+          "y": 128
+        },
+        {
+          "item": "soap",
+          "x": 150,
+          "y": 368
+        },
+        {
+          "item": "batteries",
+          "x": 1200,
+          "y": 488
+        },
+        {
+          "item": "boxers",
+          "x": 700,
+          "y": 728
+        }
+      ],
+      "powerups": [
+        {
+          "type": "boots",
+          "x": 300,
+          "y": 248
+        }
+      ],
+      "conveyors": [],
+      "spikes": [],
+      "elevators": [],
+      "slides": [
+        {
+          "xTop": 552,
+          "yTop": 248,
+          "dir": 1,
+          "drop": 360
+        },
+        {
+          "xTop": 1298,
+          "yTop": 608,
+          "dir": 1,
+          "drop": 120
+        }
+      ]
+    },
+    {
+      "name": "The Squeeze",
+      "introLine": "Tight fits build character.",
+      "timer": 95,
+      "mutantSpeed": 95,
+      "spawn": {
+        "x": 100,
+        "y": 128
+      },
+      "platforms": [
+        {
+          "x": 64,
+          "y": 128,
+          "segments": 3
+        },
+        {
+          "x": 544,
+          "y": 128,
+          "segments": 3
+        },
+        {
+          "x": 1004,
+          "y": 128,
+          "segments": 3
+        },
+        {
+          "x": 250,
+          "y": 248,
+          "segments": 3
+        },
+        {
+          "x": 850,
+          "y": 248,
+          "segments": 3
+        },
+        {
+          "x": 64,
+          "y": 368,
+          "segments": 3
+        },
+        {
+          "x": 544,
+          "y": 368,
+          "segments": 3
+        },
+        {
+          "x": 1004,
+          "y": 368,
+          "segments": 3
+        },
+        {
+          "x": 250,
+          "y": 488,
+          "segments": 3
+        },
+        {
+          "x": 850,
+          "y": 488,
+          "segments": 3
+        },
+        {
+          "x": 64,
+          "y": 608,
+          "segments": 3
+        },
+        {
+          "x": 624,
+          "y": 608,
+          "segments": 3
+        },
+        {
+          "x": 1100,
+          "y": 608,
+          "segments": 3
+        },
+        {
+          "x": 200,
+          "y": 728,
+          "segments": 4
+        },
+        {
+          "x": 880,
+          "y": 728,
+          "segments": 5
+        }
+      ],
+      "ladders": [
+        {
+          "x": 300,
+          "yTop": 128,
+          "yBottom": 248
+        },
+        {
+          "x": 1050,
+          "yTop": 128,
+          "yBottom": 248
+        },
+        {
+          "x": 300,
+          "yTop": 248,
+          "yBottom": 368
+        },
+        {
+          "x": 1050,
+          "yTop": 248,
+          "yBottom": 368
+        },
+        {
+          "x": 300,
+          "yTop": 368,
+          "yBottom": 488
+        },
+        {
+          "x": 1050,
+          "yTop": 368,
+          "yBottom": 488
+        },
+        {
+          "x": 350,
+          "yTop": 488,
+          "yBottom": 608
+        },
+        {
+          "x": 950,
+          "yTop": 488,
+          "yBottom": 608
+        },
+        {
+          "x": 300,
+          "yTop": 608,
+          "yBottom": 728
+        },
+        {
+          "x": 1150,
+          "yTop": 608,
+          "yBottom": 728
+        }
+      ],
+      "mutants": [
+        {
+          "type": "prude",
+          "dir": 1,
+          "platform": 6
+        },
+        {
+          "type": "smoocher",
+          "dir": 1,
+          "platform": 3
+        },
+        {
+          "type": "smoocher",
+          "dir": -1,
+          "platform": 14
+        },
+        {
+          "type": "grabby",
+          "dir": 1,
+          "platform": 13
+        }
+      ],
+      "pickups": [
+        {
+          "item": "lava-lamp",
+          "x": 650,
+          "y": 128
+        },
+        {
+          "item": "cologne",
+          "x": 350,
+          "y": 368
+        },
+        {
+          "item": "banana",
+          "x": 950,
+          "y": 488
+        },
+        {
+          "item": "magazine",
+          "x": 300,
+          "y": 728
+        }
+      ],
+      "powerups": [
+        {
+          "type": "gold-helmet",
+          "x": 1150,
+          "y": 128
+        },
+        {
+          "type": "canary",
+          "x": 150,
+          "y": 608
+        }
+      ],
+      "conveyors": [],
+      "spikes": [
+        {
+          "x": 432,
+          "y": 128,
+          "cells": 1
+        },
+        {
+          "x": 432,
+          "y": 368,
+          "cells": 1
+        }
+      ],
+      "elevators": [],
+      "slides": []
+    },
+    {
+      "name": "Shaft Happens",
+      "introLine": "We warned you in the game-over screen.",
+      "timer": 95,
+      "mutantSpeed": 100,
+      "spawn": {
+        "x": 100,
+        "y": 128
+      },
+      "platforms": [
+        {
+          "x": 64,
+          "y": 128,
+          "segments": 4
+        },
+        {
+          "x": 760,
+          "y": 128,
+          "segments": 5,
+          "crumble": [
+            4
+          ]
+        },
+        {
+          "x": 250,
+          "y": 248,
+          "segments": 5,
+          "crumble": [
+            1
+          ]
+        },
+        {
+          "x": 1100,
+          "y": 248,
+          "segments": 3
+        },
+        {
+          "x": 64,
+          "y": 368,
+          "segments": 5
+        },
+        {
+          "x": 800,
+          "y": 368,
+          "segments": 4,
+          "crumble": [
+            2
+          ]
+        },
+        {
+          "x": 250,
+          "y": 488,
+          "segments": 4
+        },
+        {
+          "x": 1000,
+          "y": 488,
+          "segments": 4,
+          "crumble": [
+            2
+          ]
+        },
+        {
+          "x": 64,
+          "y": 608,
+          "segments": 5,
+          "crumble": [
+            2
+          ]
+        },
+        {
+          "x": 800,
+          "y": 608,
+          "segments": 5
+        },
+        {
+          "x": 250,
+          "y": 728,
+          "segments": 8
+        }
+      ],
+      "ladders": [
+        {
+          "x": 300,
+          "yTop": 128,
+          "yBottom": 248
+        },
+        {
+          "x": 1150,
+          "yTop": 128,
+          "yBottom": 248
+        },
+        {
+          "x": 350,
+          "yTop": 248,
+          "yBottom": 368
+        },
+        {
+          "x": 1200,
+          "yTop": 248,
+          "yBottom": 368
+        },
+        {
+          "x": 300,
+          "yTop": 368,
+          "yBottom": 488
+        },
+        {
+          "x": 1000,
+          "yTop": 368,
+          "yBottom": 488
+        },
+        {
+          "x": 400,
+          "yTop": 488,
+          "yBottom": 608
+        },
+        {
+          "x": 1100,
+          "yTop": 488,
+          "yBottom": 608
+        },
+        {
+          "x": 450,
+          "yTop": 608,
+          "yBottom": 728
+        },
+        {
+          "x": 1000,
+          "yTop": 608,
+          "yBottom": 728
+        }
+      ],
+      "mutants": [
+        {
+          "type": "winker",
+          "dir": 1,
+          "x0": 560,
+          "x1": 880,
+          "y": 60
+        },
+        {
+          "type": "smoocher",
+          "dir": 1,
+          "platform": 4
+        },
+        {
+          "type": "cuddler",
+          "dir": -1,
+          "platform": 9
+        },
+        {
+          "type": "grabby",
+          "dir": 1,
+          "platform": 10
+        }
+      ],
+      "pickups": [
+        {
+          "item": "boxers",
+          "x": 900,
+          "y": 128
+        },
+        {
+          "item": "soap",
+          "x": 150,
+          "y": 368
+        },
+        {
+          "item": "rubber-duck",
+          "x": 1150,
+          "y": 488
+        },
+        {
+          "item": "golden-pickaxe",
+          "x": 600,
+          "y": 728
+        }
+      ],
+      "powerups": [
+        {
+          "type": "canary",
+          "x": 1250,
+          "y": 248
+        },
+        {
+          "type": "gold-helmet",
+          "x": 400,
+          "y": 488
+        }
+      ],
+      "conveyors": [],
+      "spikes": [],
+      "elevators": [],
+      "slides": []
+    },
+    {
+      "name": "The Deep End",
+      "introLine": "Hold your breath. Kidding. Mostly.",
+      "timer": 90,
+      "mutantSpeed": 100,
+      "spawn": {
+        "x": 100,
+        "y": 128
+      },
+      "tint": "rgba(40,80,150,0.20)",
+      "platforms": [
+        {
+          "x": 64,
+          "y": 128,
+          "segments": 5
+        },
+        {
+          "x": 800,
+          "y": 128,
+          "segments": 5
+        },
+        {
+          "x": 250,
+          "y": 248,
+          "segments": 4
+        },
+        {
+          "x": 1050,
+          "y": 248,
+          "segments": 4
+        },
+        {
+          "x": 64,
+          "y": 368,
+          "segments": 5
+        },
+        {
+          "x": 800,
+          "y": 368,
+          "segments": 5
+        },
+        {
+          "x": 250,
+          "y": 488,
+          "segments": 4
+        },
+        {
+          "x": 1050,
+          "y": 488,
+          "segments": 3
+        },
+        {
+          "x": 64,
+          "y": 608,
+          "segments": 5
+        },
+        {
+          "x": 800,
+          "y": 608,
+          "segments": 5
+        },
+        {
+          "x": 250,
+          "y": 728,
+          "segments": 7
+        }
+      ],
+      "ladders": [
+        {
+          "x": 350,
+          "yTop": 128,
+          "yBottom": 248
+        },
+        {
+          "x": 1100,
+          "yTop": 128,
+          "yBottom": 248
+        },
+        {
+          "x": 300,
+          "yTop": 248,
+          "yBottom": 368
+        },
+        {
+          "x": 1150,
+          "yTop": 248,
+          "yBottom": 368
+        },
+        {
+          "x": 350,
+          "yTop": 368,
+          "yBottom": 488
+        },
+        {
+          "x": 1100,
+          "yTop": 368,
+          "yBottom": 488
+        },
+        {
+          "x": 300,
+          "yTop": 488,
+          "yBottom": 608
+        },
+        {
+          "x": 1150,
+          "yTop": 488,
+          "yBottom": 608
+        },
+        {
+          "x": 350,
+          "yTop": 608,
+          "yBottom": 728
+        },
+        {
+          "x": 950,
+          "yTop": 608,
+          "yBottom": 728
+        }
+      ],
+      "mutants": [
+        {
+          "type": "floaty",
+          "dir": 1,
+          "x": 700,
+          "y0": 170,
+          "y1": 330
+        },
+        {
+          "type": "floaty",
+          "dir": 1,
+          "x": 985,
+          "y0": 290,
+          "y1": 450,
+          "phase": 1.5
+        },
+        {
+          "type": "floaty",
+          "dir": 1,
+          "x": 650,
+          "y0": 530,
+          "y1": 690,
+          "phase": 3.0
+        },
+        {
+          "type": "cuddler",
+          "dir": -1,
+          "platform": 10
+        },
+        {
+          "type": "smoocher",
+          "dir": 1,
+          "platform": 5
+        }
+      ],
+      "pickups": [
+        {
+          "item": "rubber-duck",
+          "x": 900,
+          "y": 128
+        },
+        {
+          "item": "soap",
+          "x": 150,
+          "y": 368
+        },
+        {
+          "item": "lava-lamp",
+          "x": 1150,
+          "y": 488
+        },
+        {
+          "item": "banana",
+          "x": 500,
+          "y": 728
+        }
+      ],
+      "powerups": [
+        {
+          "type": "boots",
+          "x": 1250,
+          "y": 248
+        },
+        {
+          "type": "canary",
+          "x": 150,
+          "y": 608
+        }
+      ],
+      "conveyors": [],
+      "spikes": [],
+      "elevators": [],
+      "slides": []
+    },
+    {
+      "name": "Overtime",
+      "introLine": "Time and a half. Mostly the half.",
+      "timer": 85,
+      "mutantSpeed": 105,
+      "spawn": {
+        "x": 100,
+        "y": 128
+      },
+      "platforms": [
+        {
+          "x": 64,
+          "y": 128,
+          "segments": 4
+        },
+        {
+          "x": 900,
+          "y": 128,
+          "segments": 5
+        },
+        {
+          "x": 200,
+          "y": 248,
+          "segments": 3,
+          "crumble": [
+            1
+          ]
+        },
+        {
+          "x": 1000,
+          "y": 248,
+          "segments": 3
+        },
+        {
+          "x": 64,
+          "y": 368,
+          "segments": 4
+        },
+        {
+          "x": 900,
+          "y": 368,
+          "segments": 4,
+          "crumble": [
+            2
+          ]
+        },
+        {
+          "x": 200,
+          "y": 488,
+          "segments": 4
+        },
+        {
+          "x": 1000,
+          "y": 488,
+          "segments": 3
+        },
+        {
+          "x": 64,
+          "y": 608,
+          "segments": 4,
+          "crumble": [
+            2
+          ]
+        },
+        {
+          "x": 900,
+          "y": 608,
+          "segments": 5
+        },
+        {
+          "x": 300,
+          "y": 728,
+          "segments": 7
+        }
+      ],
+      "ladders": [
+        {
+          "x": 300,
+          "yTop": 128,
+          "yBottom": 248
+        },
+        {
+          "x": 1100,
+          "yTop": 128,
+          "yBottom": 248
+        },
+        {
+          "x": 250,
+          "yTop": 248,
+          "yBottom": 368
+        },
+        {
+          "x": 1100,
+          "yTop": 248,
+          "yBottom": 368
+        },
+        {
+          "x": 300,
+          "yTop": 368,
+          "yBottom": 488
+        },
+        {
+          "x": 1050,
+          "yTop": 368,
+          "yBottom": 488
+        },
+        {
+          "x": 250,
+          "yTop": 488,
+          "yBottom": 608
+        },
+        {
+          "x": 1100,
+          "yTop": 488,
+          "yBottom": 608
+        },
+        {
+          "x": 430,
+          "yTop": 608,
+          "yBottom": 728
+        },
+        {
+          "x": 1000,
+          "yTop": 608,
+          "yBottom": 728
+        }
+      ],
+      "mutants": [
+        {
+          "type": "grabby",
+          "dir": -1,
+          "platform": 5
+        },
+        {
+          "type": "grabby",
+          "dir": 1,
+          "platform": 9
+        },
+        {
+          "type": "cuddler",
+          "dir": 1,
+          "platform": 10
+        },
+        {
+          "type": "smoocher",
+          "dir": 1,
+          "platform": 0
+        }
+      ],
+      "pickups": [
+        {
+          "item": "batteries",
+          "x": 1100,
+          "y": 128
+        },
+        {
+          "item": "cologne",
+          "x": 150,
+          "y": 368
+        },
+        {
+          "item": "magazine",
+          "x": 1100,
+          "y": 488
+        },
+        {
+          "item": "boxers",
+          "x": 600,
+          "y": 728
+        }
+      ],
+      "powerups": [
+        {
+          "type": "thermos",
+          "x": 200,
+          "y": 608
+        },
+        {
+          "type": "canary",
+          "x": 1150,
+          "y": 248
+        }
+      ],
+      "conveyors": [
+        {
+          "x": 552,
+          "y": 248,
+          "cells": 4,
+          "dir": -1
+        },
+        {
+          "x": 512,
+          "y": 608,
+          "cells": 4,
+          "dir": 1
+        }
+      ],
+      "spikes": [],
+      "elevators": [],
+      "slides": []
+    },
+    {
+      "name": "The Foreman's Office",
+      "introLine": "He has a corner shaft and no sense of humor.",
+      "timer": 90,
+      "mutantSpeed": 105,
+      "spawn": {
+        "x": 100,
+        "y": 128
+      },
+      "platforms": [
+        {
+          "x": 64,
+          "y": 128,
+          "segments": 5
+        },
+        {
+          "x": 800,
+          "y": 128,
+          "segments": 5
+        },
+        {
+          "x": 300,
+          "y": 248,
+          "segments": 4
+        },
+        {
+          "x": 1050,
+          "y": 248,
+          "segments": 4
+        },
+        {
+          "x": 64,
+          "y": 368,
+          "segments": 4
+        },
+        {
+          "x": 700,
+          "y": 368,
+          "segments": 6
+        },
+        {
+          "x": 250,
+          "y": 488,
+          "segments": 5
+        },
+        {
+          "x": 1100,
+          "y": 488,
+          "segments": 3
+        },
+        {
+          "x": 64,
+          "y": 608,
+          "segments": 5
+        },
+        {
+          "x": 800,
+          "y": 608,
+          "segments": 5
+        },
+        {
+          "x": 250,
+          "y": 728,
+          "segments": 7
+        }
+      ],
+      "ladders": [
+        {
+          "x": 350,
+          "yTop": 128,
+          "yBottom": 248
+        },
+        {
+          "x": 1100,
+          "yTop": 128,
+          "yBottom": 248
+        },
+        {
+          "x": 400,
+          "yTop": 248,
+          "yBottom": 368
+        },
+        {
+          "x": 1150,
+          "yTop": 248,
+          "yBottom": 368
+        },
+        {
+          "x": 300,
+          "yTop": 368,
+          "yBottom": 488
+        },
+        {
+          "x": 1100,
+          "yTop": 368,
+          "yBottom": 488
+        },
+        {
+          "x": 400,
+          "yTop": 488,
+          "yBottom": 608
+        },
+        {
+          "x": 1200,
+          "yTop": 488,
+          "yBottom": 608
+        },
+        {
+          "x": 350,
+          "yTop": 608,
+          "yBottom": 728
+        },
+        {
+          "x": 950,
+          "yTop": 608,
+          "yBottom": 728
+        }
+      ],
+      "mutants": [
+        {
+          "type": "prude",
+          "dir": -1,
+          "platform": 5
+        },
+        {
+          "type": "prude",
+          "dir": 1,
+          "platform": 10
+        },
+        {
+          "type": "grabby",
+          "dir": 1,
+          "platform": 6
+        },
+        {
+          "type": "smoocher",
+          "dir": 1,
+          "platform": 2
+        },
+        {
+          "type": "winker",
+          "dir": 1,
+          "x0": 520,
+          "x1": 780,
+          "y": 60
+        }
+      ],
+      "pickups": [
+        {
+          "item": "magazine",
+          "x": 900,
+          "y": 128
+        },
+        {
+          "item": "lava-lamp",
+          "x": 150,
+          "y": 368
+        },
+        {
+          "item": "cologne",
+          "x": 1200,
+          "y": 488
+        },
+        {
+          "item": "golden-pickaxe",
+          "x": 450,
+          "y": 728
+        }
+      ],
+      "powerups": [
+        {
+          "type": "gold-helmet",
+          "x": 150,
+          "y": 608
+        },
+        {
+          "type": "gold-helmet",
+          "x": 1250,
+          "y": 248
+        },
+        {
+          "type": "thermos",
+          "x": 350,
+          "y": 488
+        }
+      ],
+      "conveyors": [],
+      "spikes": [
+        {
+          "x": 608,
+          "y": 128,
+          "cells": 1
+        }
+      ],
+      "elevators": [],
+      "slides": []
+    },
+    {
+      "name": "Rock Bottom",
+      "introLine": "There is only one way to go from here. (It's up.)",
+      "timer": 85,
+      "mutantSpeed": 110,
+      "spawn": {
+        "x": 100,
+        "y": 128
+      },
+      "tint": "rgba(140,60,40,0.14)",
+      "platforms": [
+        {
+          "x": 64,
+          "y": 128,
+          "segments": 4
+        },
+        {
+          "x": 720,
+          "y": 128,
+          "segments": 4
+        },
+        {
+          "x": 1240,
+          "y": 128,
+          "segments": 2
+        },
+        {
+          "x": 250,
+          "y": 248,
+          "segments": 4,
+          "crumble": [
+            1
+          ]
+        },
+        {
+          "x": 950,
+          "y": 248,
+          "segments": 4
+        },
+        {
+          "x": 64,
+          "y": 368,
+          "segments": 4
+        },
+        {
+          "x": 760,
+          "y": 368,
+          "segments": 5
+        },
+        {
+          "x": 300,
+          "y": 488,
+          "segments": 4
+        },
+        {
+          "x": 1050,
+          "y": 488,
+          "segments": 3
+        },
+        {
+          "x": 64,
+          "y": 608,
+          "segments": 4,
+          "crumble": [
+            2
+          ]
+        },
+        {
+          "x": 800,
+          "y": 608,
+          "segments": 5
+        },
+        {
+          "x": 250,
+          "y": 728,
+          "segments": 8
+        }
+      ],
+      "ladders": [
+        {
+          "x": 300,
+          "yTop": 128,
+          "yBottom": 248
+        },
+        {
+          "x": 1050,
+          "yTop": 128,
+          "yBottom": 248
+        },
+        {
+          "x": 350,
+          "yTop": 248,
+          "yBottom": 368
+        },
+        {
+          "x": 1100,
+          "yTop": 248,
+          "yBottom": 368
+        },
+        {
+          "x": 350,
+          "yTop": 368,
+          "yBottom": 488
+        },
+        {
+          "x": 1100,
+          "yTop": 368,
+          "yBottom": 488
+        },
+        {
+          "x": 400,
+          "yTop": 488,
+          "yBottom": 608
+        },
+        {
+          "x": 1150,
+          "yTop": 488,
+          "yBottom": 608
+        },
+        {
+          "x": 430,
+          "yTop": 608,
+          "yBottom": 728
+        },
+        {
+          "x": 1000,
+          "yTop": 608,
+          "yBottom": 728
+        }
+      ],
+      "mutants": [
+        {
+          "type": "winker",
+          "dir": 1,
+          "x0": 1080,
+          "x1": 1440,
+          "y": 68
+        },
+        {
+          "type": "floaty",
+          "dir": 1,
+          "x": 650,
+          "y0": 300,
+          "y1": 460
+        },
+        {
+          "type": "prude",
+          "dir": 1,
+          "platform": 6
+        },
+        {
+          "type": "grabby",
+          "dir": -1,
+          "platform": 11
+        },
+        {
+          "type": "cuddler",
+          "dir": 1,
+          "platform": 10
+        }
+      ],
+      "pickups": [
+        {
+          "item": "boxers",
+          "x": 1350,
+          "y": 128
+        },
+        {
+          "item": "soap",
+          "x": 150,
+          "y": 368
+        },
+        {
+          "item": "batteries",
+          "x": 1150,
+          "y": 488
+        },
+        {
+          "item": "rubber-duck",
+          "x": 600,
+          "y": 728
+        }
+      ],
+      "powerups": [
+        {
+          "type": "gold-helmet",
+          "x": 1000,
+          "y": 248
+        },
+        {
+          "type": "canary",
+          "x": 200,
+          "y": 608
+        }
+      ],
+      "conveyors": [
+        {
+          "x": 512,
+          "y": 608,
+          "cells": 3,
+          "dir": -1
+        }
+      ],
+      "spikes": [],
+      "elevators": [],
+      "slides": []
+    },
+    {
+      "name": "The Motherlode II: Mother Lode Harder",
+      "introLine": "Uncle Randy would be so proud. Probably.",
+      "timer": 90,
+      "mutantSpeed": 115,
+      "spawn": {
+        "x": 100,
+        "y": 128
+      },
+      "tint": "rgba(64,52,140,0.18)",
+      "platforms": [
+        {
+          "x": 64,
+          "y": 128,
+          "segments": 4
+        },
+        {
+          "x": 640,
+          "y": 128,
+          "segments": 4,
+          "crumble": [
+            2
+          ]
+        },
+        {
+          "x": 1216,
+          "y": 128,
+          "segments": 2
+        },
+        {
+          "x": 200,
+          "y": 248,
+          "segments": 3
+        },
+        {
+          "x": 900,
+          "y": 248,
+          "segments": 4
+        },
+        {
+          "x": 64,
+          "y": 368,
+          "segments": 4
+        },
+        {
+          "x": 760,
+          "y": 368,
+          "segments": 5,
+          "crumble": [
+            3
+          ]
+        },
+        {
+          "x": 350,
+          "y": 488,
+          "segments": 3
+        },
+        {
+          "x": 1100,
+          "y": 488,
+          "segments": 2
+        },
+        {
+          "x": 64,
+          "y": 608,
+          "segments": 4
+        },
+        {
+          "x": 850,
+          "y": 608,
+          "segments": 4
+        },
+        {
+          "x": 250,
+          "y": 728,
+          "segments": 8
+        },
+        {
+          "x": 1100,
+          "y": 728,
+          "segments": 2
+        }
+      ],
+      "ladders": [
+        {
+          "x": 300,
+          "yTop": 128,
+          "yBottom": 248
+        },
+        {
+          "x": 1000,
+          "yTop": 128,
+          "yBottom": 248
+        },
+        {
+          "x": 250,
+          "yTop": 248,
+          "yBottom": 368
+        },
+        {
+          "x": 1000,
+          "yTop": 248,
+          "yBottom": 368
+        },
+        {
+          "x": 400,
+          "yTop": 368,
+          "yBottom": 488
+        },
+        {
+          "x": 1250,
+          "yTop": 368,
+          "yBottom": 488
+        },
+        {
+          "x": 400,
+          "yTop": 488,
+          "yBottom": 608
+        },
+        {
+          "x": 1150,
+          "yTop": 488,
+          "yBottom": 608
+        },
+        {
+          "x": 300,
+          "yTop": 608,
+          "yBottom": 728
+        },
+        {
+          "x": 1000,
+          "yTop": 608,
+          "yBottom": 728
+        }
+      ],
+      "mutants": [
+        {
+          "type": "winker",
+          "dir": 1,
+          "x0": 1080,
+          "x1": 1440,
+          "y": 68
+        },
+        {
+          "type": "floaty",
+          "dir": 1,
+          "x": 660,
+          "y0": 290,
+          "y1": 450
+        },
+        {
+          "type": "prude",
+          "dir": -1,
+          "platform": 11
+        },
+        {
+          "type": "grabby",
+          "dir": 1,
+          "platform": 4
+        },
+        {
+          "type": "cuddler",
+          "dir": 1,
+          "platform": 10
+        },
+        {
+          "type": "smoocher",
+          "dir": 1,
+          "platform": 5
+        }
+      ],
+      "pickups": [
+        {
+          "item": "boxers",
+          "x": 1300,
+          "y": 128
+        },
+        {
+          "item": "cologne",
+          "x": 150,
+          "y": 368
+        },
+        {
+          "item": "magazine",
+          "x": 1200,
+          "y": 488
+        },
+        {
+          "item": "golden-pickaxe",
+          "x": 700,
+          "y": 728
+        }
+      ],
+      "powerups": [
+        {
+          "type": "gold-helmet",
+          "x": 450,
+          "y": 488
+        },
+        {
+          "type": "thermos",
+          "x": 1000,
+          "y": 608
+        },
+        {
+          "type": "canary",
+          "x": 150,
+          "y": 608
+        },
+        {
+          "type": "boots",
+          "x": 1000,
+          "y": 248
+        }
+      ],
+      "conveyors": [],
+      "spikes": [
+        {
+          "x": 528,
+          "y": 128,
+          "cells": 1
+        }
+      ],
+      "elevators": [
+        {
+          "x": 1400,
+          "yTop": 488,
+          "yBottom": 728
+        }
+      ],
+      "slides": [
+        {
+          "xTop": 552,
+          "yTop": 248,
+          "dir": 1,
+          "drop": 360
+        }
+      ]
+    }
+  ]
+}

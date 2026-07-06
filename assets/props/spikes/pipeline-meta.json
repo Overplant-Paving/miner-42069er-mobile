@@ -1,0 +1,59 @@
+{
+  "target": "asset",
+  "mode": "single",
+  "prompt": "Use the attached miner sheet as a style-only visual reference. Single side-view prop sprite for Miner 42069er: a wide low cluster of sharp gray stone stalagmite spikes on a low rocky base, about 3:1 wide, 4-5 jagged upward spikes of varied heights with the tallest in the middle. 16-bit pixel art, crisp 1px dark outline #141019, flat 2-3 step shading, cool stone grays, tiny faint bashful-pink #ff5da2 mineral glints near tips, clean cartoon-readable dangerous hazard, no gore. One centered subject with generous padding, solid #FF00FF background, no text, no labels, no border.",
+  "role": "",
+  "input": "assets\\props\\spikes\\raw-sheet.png",
+  "threshold": 100,
+  "edge_threshold": 150,
+  "duration": 200,
+  "rows": 1,
+  "cols": 1,
+  "cell_size": 256,
+  "fit_scale": 0.78,
+  "trim_border": 4,
+  "edge_clean_depth": 3,
+  "align": "bottom",
+  "shared_scale": false,
+  "component_mode": "all",
+  "component_padding": 2,
+  "min_component_area": 16,
+  "edge_touch_margin": 8,
+  "frame_labels": [
+    "spikes-1"
+  ],
+  "frames": [
+    {
+      "grid": [
+        0,
+        0
+      ],
+      "source_box": [
+        0,
+        0,
+        1536,
+        1024
+      ],
+      "component_mode": "all",
+      "component_count": 1,
+      "selected_component_area": null,
+      "selected_component_bbox": null,
+      "crop_bbox": [
+        249,
+        248,
+        1280,
+        802
+      ],
+      "edge_touch": false,
+      "output_size": [
+        199,
+        107
+      ],
+      "paste_position": [
+        28,
+        121
+      ]
+    }
+  ],
+  "edge_touch_frames": []
+}

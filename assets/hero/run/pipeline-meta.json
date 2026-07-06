@@ -1,0 +1,249 @@
+{
+  "target": "player",
+  "mode": "run",
+  "prompt": "Use the image just shown as the visual reference. Create a square 2D game sprite sheet with exactly 6 equal cells arranged as a 2x3 grid, read left to right across the top row then left to right across the bottom row. No visible grid lines, no borders, no labels, no text. Subject: Dusty Rodd, the exact same stocky cheerful side-view miner from the reference, facing right in every cell. Preserve identity and art style exactly: same stocky proportions and body height, same face and small eyes, same horseshoe mustache, same cream shirt, same brown gloves and boots, same denim-blue overalls color #3fa7ff with bib and straps, same yellow hard hat and small lantern color #ffd24a, same warm lantern highlight, same 1px dark outline #141019, flat 2-3 step 16-bit pixel-art shading, crisp silhouette. Action: side-view 6-frame grounded run cycle. Frame 1 contact stride, frame 2 passing pose, frame 3 opposite contact, frame 4 airborne/bounce pose, frame 5 strong opposite stride, frame 6 return-to-loop passing pose. Pump the arms, bounce the hard-hat lantern subtly, and show the boots clearly striding. Body-only sprite: no pickaxe, no detached dust, no floating effects, no speed lines. Keep the body centered in each cell, full body inside the central 60-70% safe area, consistent scale in all cells, feet/bottom anchor line stable along the same lower y position, nothing crosses any cell edge, leave solid magenta margin on all four sides. Background must be 100% solid flat #FF00FF magenta with no gradient and no shadow.",
+  "role": "",
+  "input": "C:\\Users\\henry\\.codex\\generated_images\\019f31a3-1b0e-7f32-81e5-33ba81ac6c0a\\ig_094f577e30bf28fa016a4a25d712a48194a66faff1a1991ffa.png",
+  "threshold": 220,
+  "edge_threshold": 245,
+  "duration": 180,
+  "rows": 2,
+  "cols": 3,
+  "cell_size": 256,
+  "fit_scale": 0.88,
+  "trim_border": 4,
+  "edge_clean_depth": 3,
+  "align": "feet",
+  "shared_scale": true,
+  "component_mode": "largest",
+  "component_padding": 8,
+  "min_component_area": 64,
+  "edge_touch_margin": 2,
+  "frame_labels": [
+    "run-1",
+    "run-2",
+    "run-3",
+    "run-4",
+    "run-5",
+    "run-6"
+  ],
+  "frames": [
+    {
+      "grid": [
+        0,
+        0
+      ],
+      "source_box": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "component_mode": "largest",
+      "component_count": 1,
+      "selected_component_area": 66123,
+      "selected_component_bbox": [
+        158,
+        86,
+        413,
+        461
+      ],
+      "crop_bbox": [
+        150,
+        78,
+        421,
+        469
+      ],
+      "edge_touch": false,
+      "output_size": [
+        156,
+        225
+      ],
+      "paste_position": [
+        50,
+        16
+      ]
+    },
+    {
+      "grid": [
+        0,
+        1
+      ],
+      "source_box": [
+        512,
+        0,
+        1024,
+        512
+      ],
+      "component_mode": "largest",
+      "component_count": 1,
+      "selected_component_area": 57633,
+      "selected_component_bbox": [
+        123,
+        98,
+        354,
+        461
+      ],
+      "crop_bbox": [
+        115,
+        90,
+        362,
+        469
+      ],
+      "edge_touch": false,
+      "output_size": [
+        142,
+        218
+      ],
+      "paste_position": [
+        57,
+        23
+      ]
+    },
+    {
+      "grid": [
+        0,
+        2
+      ],
+      "source_box": [
+        1024,
+        0,
+        1536,
+        512
+      ],
+      "component_mode": "largest",
+      "component_count": 1,
+      "selected_component_area": 66101,
+      "selected_component_bbox": [
+        66,
+        101,
+        335,
+        459
+      ],
+      "crop_bbox": [
+        58,
+        93,
+        343,
+        467
+      ],
+      "edge_touch": false,
+      "output_size": [
+        164,
+        215
+      ],
+      "paste_position": [
+        46,
+        26
+      ]
+    },
+    {
+      "grid": [
+        1,
+        0
+      ],
+      "source_box": [
+        0,
+        512,
+        512,
+        1024
+      ],
+      "component_mode": "largest",
+      "component_count": 1,
+      "selected_component_area": 62131,
+      "selected_component_bbox": [
+        149,
+        18,
+        425,
+        356
+      ],
+      "crop_bbox": [
+        141,
+        10,
+        433,
+        364
+      ],
+      "edge_touch": false,
+      "output_size": [
+        168,
+        203
+      ],
+      "paste_position": [
+        44,
+        38
+      ]
+    },
+    {
+      "grid": [
+        1,
+        1
+      ],
+      "source_box": [
+        512,
+        512,
+        1024,
+        1024
+      ],
+      "component_mode": "largest",
+      "component_count": 1,
+      "selected_component_area": 64104,
+      "selected_component_bbox": [
+        94,
+        39,
+        374,
+        383
+      ],
+      "crop_bbox": [
+        86,
+        31,
+        382,
+        391
+      ],
+      "edge_touch": false,
+      "output_size": [
+        170,
+        207
+      ],
+      "paste_position": [
+        43,
+        34
+      ]
+    },
+    {
+      "grid": [
+        1,
+        2
+      ],
+      "source_box": [
+        1024,
+        512,
+        1536,
+        1024
+      ],
+      "component_mode": "largest",
+      "component_count": 1,
+      "selected_component_area": 54761,
+      "selected_component_bbox": [
+        89,
+        39,
+        313,
+        394
+      ],
+      "crop_bbox": [
+        81,
+        31,
+        321,
+        402
+      ],
+      "edge_touch": false,
+      "output_size": [
+        138,
+        213
+      ],
+      "paste_position": [
+        59,
+        28
+      ]
+    }
+  ],
+  "edge_touch_frames": []
+}

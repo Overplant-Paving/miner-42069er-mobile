@@ -1,0 +1,59 @@
+{
+  "target": "asset",
+  "mode": "single",
+  "prompt": "Create exactly one single 2D game prop sprite on a square solid flat #FF00FF magenta canvas. Use the miner sprite reference shown earlier as the visual style anchor only: 16-bit pixel art, crisp 1px dark outline #141019, chunky readable pixels, flat 2-3 step shading, warm arcade mining palette, no smooth gradients, no painterly texture, no soft anti-alias blur.\n\nSubject: a side-view weathered cracked timber plank platform segment for a mining platformer. One single platform piece, not a pack, centered with generous padding. IMPORTANT silhouette: the plank itself must be about 3:1 width-to-height, not a long skinny beam; make it visibly wide but thick enough that its total height is roughly one third of its width, including the sagging underside. It is horizontal and visibly sagging downward in the middle, unstable and about to collapse. Dry pale timber brown based around #6e4a2d but lighter/desaturated than fresh wood, darker cavern-brown underside, tiny warm lantern-gold highlights. Several splintering cracks across the top and side face, one loose crooked nail sticking slightly upward, and a few tiny rock chips resting on top. It must clearly read as 'this will collapse if you stand on it.'\n\nComposition rules: one subject only, centered in the canvas, full object visible, no repeated variants, no labels, no text, no UI, no frame border, no shadow outside the sprite. Leave large magenta margin on all four sides; nothing touches or crosses the canvas edges. Keep the platform in the central safe area.",
+  "role": "",
+  "input": "C:\\Users\\henry\\.codex\\generated_images\\019f3409-dc29-7c91-9115-b8589823368e\\ig_05dd4f41eebf79d5016a4ac3bcd0408199b4edc7d0897921ac.png",
+  "threshold": 100,
+  "edge_threshold": 150,
+  "duration": 200,
+  "rows": 1,
+  "cols": 1,
+  "cell_size": 256,
+  "fit_scale": 0.78,
+  "trim_border": 4,
+  "edge_clean_depth": 3,
+  "align": "center",
+  "shared_scale": false,
+  "component_mode": "all",
+  "component_padding": 4,
+  "min_component_area": 8,
+  "edge_touch_margin": 2,
+  "frame_labels": [
+    "frame-1"
+  ],
+  "frames": [
+    {
+      "grid": [
+        0,
+        0
+      ],
+      "source_box": [
+        0,
+        0,
+        1254,
+        1254
+      ],
+      "component_mode": "all",
+      "component_count": 1,
+      "selected_component_area": null,
+      "selected_component_bbox": null,
+      "crop_bbox": [
+        53,
+        443,
+        1194,
+        742
+      ],
+      "edge_touch": false,
+      "output_size": [
+        199,
+        52
+      ],
+      "paste_position": [
+        28,
+        102
+      ]
+    }
+  ],
+  "edge_touch_frames": []
+}

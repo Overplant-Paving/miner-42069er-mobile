@@ -1,0 +1,760 @@
+{
+  "job": "map-mine-stage",
+  "stage_canvas": {
+    "width": 1536,
+    "height": 864
+  },
+  "coordinate_system": {
+    "origin": "top_left",
+    "unit": "px",
+    "y_axis": "down"
+  },
+  "collision_model": "precise_shapes",
+  "image_collision": false,
+  "rules": {
+    "platforms": "one_way_top_from_above",
+    "claim_check": "grounded player feet center inside claim segment rect",
+    "ladders": "climb zones independent of ladder pixels",
+    "fall_danger_distance_px": 150
+  },
+  "camera_bounds": {
+    "x": 0,
+    "y": 0,
+    "width": 1536,
+    "height": 864
+  },
+  "platforms": [
+    {
+      "id": "p1",
+      "x": 64,
+      "y": 128,
+      "width": 544,
+      "height": 32,
+      "one_way_top": {
+        "x": 64,
+        "y": 128,
+        "width": 544,
+        "height": 10
+      },
+      "claim_segments": [
+        {
+          "index": 0,
+          "x": 96,
+          "y": 124,
+          "width": 96,
+          "height": 12,
+          "claim_rule": "grounded_feet_center_inside"
+        },
+        {
+          "index": 1,
+          "x": 192,
+          "y": 124,
+          "width": 96,
+          "height": 12,
+          "claim_rule": "grounded_feet_center_inside"
+        },
+        {
+          "index": 2,
+          "x": 288,
+          "y": 124,
+          "width": 96,
+          "height": 12,
+          "claim_rule": "grounded_feet_center_inside"
+        },
+        {
+          "index": 3,
+          "x": 384,
+          "y": 124,
+          "width": 96,
+          "height": 12,
+          "claim_rule": "grounded_feet_center_inside"
+        },
+        {
+          "index": 4,
+          "x": 480,
+          "y": 124,
+          "width": 96,
+          "height": 12,
+          "claim_rule": "grounded_feet_center_inside"
+        }
+      ],
+      "image_independent": true
+    },
+    {
+      "id": "p2",
+      "x": 696,
+      "y": 128,
+      "width": 544,
+      "height": 32,
+      "one_way_top": {
+        "x": 696,
+        "y": 128,
+        "width": 544,
+        "height": 10
+      },
+      "claim_segments": [
+        {
+          "index": 0,
+          "x": 728,
+          "y": 124,
+          "width": 96,
+          "height": 12,
+          "claim_rule": "grounded_feet_center_inside"
+        },
+        {
+          "index": 1,
+          "x": 824,
+          "y": 124,
+          "width": 96,
+          "height": 12,
+          "claim_rule": "grounded_feet_center_inside"
+        },
+        {
+          "index": 2,
+          "x": 920,
+          "y": 124,
+          "width": 96,
+          "height": 12,
+          "claim_rule": "grounded_feet_center_inside"
+        },
+        {
+          "index": 3,
+          "x": 1016,
+          "y": 124,
+          "width": 96,
+          "height": 12,
+          "claim_rule": "grounded_feet_center_inside"
+        },
+        {
+          "index": 4,
+          "x": 1112,
+          "y": 124,
+          "width": 96,
+          "height": 12,
+          "claim_rule": "grounded_feet_center_inside"
+        }
+      ],
+      "image_independent": true
+    },
+    {
+      "id": "p3",
+      "x": 376,
+      "y": 248,
+      "width": 544,
+      "height": 32,
+      "one_way_top": {
+        "x": 376,
+        "y": 248,
+        "width": 544,
+        "height": 10
+      },
+      "claim_segments": [
+        {
+          "index": 0,
+          "x": 408,
+          "y": 244,
+          "width": 96,
+          "height": 12,
+          "claim_rule": "grounded_feet_center_inside"
+        },
+        {
+          "index": 1,
+          "x": 504,
+          "y": 244,
+          "width": 96,
+          "height": 12,
+          "claim_rule": "grounded_feet_center_inside"
+        },
+        {
+          "index": 2,
+          "x": 600,
+          "y": 244,
+          "width": 96,
+          "height": 12,
+          "claim_rule": "grounded_feet_center_inside"
+        },
+        {
+          "index": 3,
+          "x": 696,
+          "y": 244,
+          "width": 96,
+          "height": 12,
+          "claim_rule": "grounded_feet_center_inside"
+        },
+        {
+          "index": 4,
+          "x": 792,
+          "y": 244,
+          "width": 96,
+          "height": 12,
+          "claim_rule": "grounded_feet_center_inside"
+        }
+      ],
+      "image_independent": true
+    },
+    {
+      "id": "p4",
+      "x": 1096,
+      "y": 248,
+      "width": 352,
+      "height": 32,
+      "one_way_top": {
+        "x": 1096,
+        "y": 248,
+        "width": 352,
+        "height": 10
+      },
+      "claim_segments": [
+        {
+          "index": 0,
+          "x": 1128,
+          "y": 244,
+          "width": 96,
+          "height": 12,
+          "claim_rule": "grounded_feet_center_inside"
+        },
+        {
+          "index": 1,
+          "x": 1224,
+          "y": 244,
+          "width": 96,
+          "height": 12,
+          "claim_rule": "grounded_feet_center_inside"
+        },
+        {
+          "index": 2,
+          "x": 1320,
+          "y": 244,
+          "width": 96,
+          "height": 12,
+          "claim_rule": "grounded_feet_center_inside"
+        }
+      ],
+      "image_independent": true
+    },
+    {
+      "id": "p5",
+      "x": 152,
+      "y": 368,
+      "width": 448,
+      "height": 32,
+      "one_way_top": {
+        "x": 152,
+        "y": 368,
+        "width": 448,
+        "height": 10
+      },
+      "claim_segments": [
+        {
+          "index": 0,
+          "x": 184,
+          "y": 364,
+          "width": 96,
+          "height": 12,
+          "claim_rule": "grounded_feet_center_inside"
+        },
+        {
+          "index": 1,
+          "x": 280,
+          "y": 364,
+          "width": 96,
+          "height": 12,
+          "claim_rule": "grounded_feet_center_inside"
+        },
+        {
+          "index": 2,
+          "x": 376,
+          "y": 364,
+          "width": 96,
+          "height": 12,
+          "claim_rule": "grounded_feet_center_inside"
+        },
+        {
+          "index": 3,
+          "x": 472,
+          "y": 364,
+          "width": 96,
+          "height": 12,
+          "claim_rule": "grounded_feet_center_inside"
+        }
+      ],
+      "image_independent": true
+    },
+    {
+      "id": "p6",
+      "x": 760,
+      "y": 368,
+      "width": 544,
+      "height": 32,
+      "one_way_top": {
+        "x": 760,
+        "y": 368,
+        "width": 544,
+        "height": 10
+      },
+      "claim_segments": [
+        {
+          "index": 0,
+          "x": 792,
+          "y": 364,
+          "width": 96,
+          "height": 12,
+          "claim_rule": "grounded_feet_center_inside"
+        },
+        {
+          "index": 1,
+          "x": 888,
+          "y": 364,
+          "width": 96,
+          "height": 12,
+          "claim_rule": "grounded_feet_center_inside"
+        },
+        {
+          "index": 2,
+          "x": 984,
+          "y": 364,
+          "width": 96,
+          "height": 12,
+          "claim_rule": "grounded_feet_center_inside"
+        },
+        {
+          "index": 3,
+          "x": 1080,
+          "y": 364,
+          "width": 96,
+          "height": 12,
+          "claim_rule": "grounded_feet_center_inside"
+        },
+        {
+          "index": 4,
+          "x": 1176,
+          "y": 364,
+          "width": 96,
+          "height": 12,
+          "claim_rule": "grounded_feet_center_inside"
+        }
+      ],
+      "image_independent": true
+    },
+    {
+      "id": "p7",
+      "x": 88,
+      "y": 488,
+      "width": 640,
+      "height": 32,
+      "one_way_top": {
+        "x": 88,
+        "y": 488,
+        "width": 640,
+        "height": 10
+      },
+      "claim_segments": [
+        {
+          "index": 0,
+          "x": 120,
+          "y": 484,
+          "width": 96,
+          "height": 12,
+          "claim_rule": "grounded_feet_center_inside"
+        },
+        {
+          "index": 1,
+          "x": 216,
+          "y": 484,
+          "width": 96,
+          "height": 12,
+          "claim_rule": "grounded_feet_center_inside"
+        },
+        {
+          "index": 2,
+          "x": 312,
+          "y": 484,
+          "width": 96,
+          "height": 12,
+          "claim_rule": "grounded_feet_center_inside"
+        },
+        {
+          "index": 3,
+          "x": 408,
+          "y": 484,
+          "width": 96,
+          "height": 12,
+          "claim_rule": "grounded_feet_center_inside"
+        },
+        {
+          "index": 4,
+          "x": 504,
+          "y": 484,
+          "width": 96,
+          "height": 12,
+          "claim_rule": "grounded_feet_center_inside"
+        },
+        {
+          "index": 5,
+          "x": 600,
+          "y": 484,
+          "width": 96,
+          "height": 12,
+          "claim_rule": "grounded_feet_center_inside"
+        }
+      ],
+      "image_independent": true
+    },
+    {
+      "id": "p8",
+      "x": 888,
+      "y": 488,
+      "width": 352,
+      "height": 32,
+      "one_way_top": {
+        "x": 888,
+        "y": 488,
+        "width": 352,
+        "height": 10
+      },
+      "claim_segments": [
+        {
+          "index": 0,
+          "x": 920,
+          "y": 484,
+          "width": 96,
+          "height": 12,
+          "claim_rule": "grounded_feet_center_inside"
+        },
+        {
+          "index": 1,
+          "x": 1016,
+          "y": 484,
+          "width": 96,
+          "height": 12,
+          "claim_rule": "grounded_feet_center_inside"
+        },
+        {
+          "index": 2,
+          "x": 1112,
+          "y": 484,
+          "width": 96,
+          "height": 12,
+          "claim_rule": "grounded_feet_center_inside"
+        }
+      ],
+      "image_independent": true
+    },
+    {
+      "id": "p9",
+      "x": 288,
+      "y": 608,
+      "width": 448,
+      "height": 32,
+      "one_way_top": {
+        "x": 288,
+        "y": 608,
+        "width": 448,
+        "height": 10
+      },
+      "claim_segments": [
+        {
+          "index": 0,
+          "x": 320,
+          "y": 604,
+          "width": 96,
+          "height": 12,
+          "claim_rule": "grounded_feet_center_inside"
+        },
+        {
+          "index": 1,
+          "x": 416,
+          "y": 604,
+          "width": 96,
+          "height": 12,
+          "claim_rule": "grounded_feet_center_inside"
+        },
+        {
+          "index": 2,
+          "x": 512,
+          "y": 604,
+          "width": 96,
+          "height": 12,
+          "claim_rule": "grounded_feet_center_inside"
+        },
+        {
+          "index": 3,
+          "x": 608,
+          "y": 604,
+          "width": 96,
+          "height": 12,
+          "claim_rule": "grounded_feet_center_inside"
+        }
+      ],
+      "image_independent": true
+    },
+    {
+      "id": "p10",
+      "x": 872,
+      "y": 608,
+      "width": 448,
+      "height": 32,
+      "one_way_top": {
+        "x": 872,
+        "y": 608,
+        "width": 448,
+        "height": 10
+      },
+      "claim_segments": [
+        {
+          "index": 0,
+          "x": 904,
+          "y": 604,
+          "width": 96,
+          "height": 12,
+          "claim_rule": "grounded_feet_center_inside"
+        },
+        {
+          "index": 1,
+          "x": 1000,
+          "y": 604,
+          "width": 96,
+          "height": 12,
+          "claim_rule": "grounded_feet_center_inside"
+        },
+        {
+          "index": 2,
+          "x": 1096,
+          "y": 604,
+          "width": 96,
+          "height": 12,
+          "claim_rule": "grounded_feet_center_inside"
+        },
+        {
+          "index": 3,
+          "x": 1192,
+          "y": 604,
+          "width": 96,
+          "height": 12,
+          "claim_rule": "grounded_feet_center_inside"
+        }
+      ],
+      "image_independent": true
+    },
+    {
+      "id": "p11",
+      "x": 72,
+      "y": 728,
+      "width": 544,
+      "height": 32,
+      "one_way_top": {
+        "x": 72,
+        "y": 728,
+        "width": 544,
+        "height": 10
+      },
+      "claim_segments": [
+        {
+          "index": 0,
+          "x": 104,
+          "y": 724,
+          "width": 96,
+          "height": 12,
+          "claim_rule": "grounded_feet_center_inside"
+        },
+        {
+          "index": 1,
+          "x": 200,
+          "y": 724,
+          "width": 96,
+          "height": 12,
+          "claim_rule": "grounded_feet_center_inside"
+        },
+        {
+          "index": 2,
+          "x": 296,
+          "y": 724,
+          "width": 96,
+          "height": 12,
+          "claim_rule": "grounded_feet_center_inside"
+        },
+        {
+          "index": 3,
+          "x": 392,
+          "y": 724,
+          "width": 96,
+          "height": 12,
+          "claim_rule": "grounded_feet_center_inside"
+        },
+        {
+          "index": 4,
+          "x": 488,
+          "y": 724,
+          "width": 96,
+          "height": 12,
+          "claim_rule": "grounded_feet_center_inside"
+        }
+      ],
+      "image_independent": true
+    },
+    {
+      "id": "p12",
+      "x": 704,
+      "y": 728,
+      "width": 736,
+      "height": 32,
+      "one_way_top": {
+        "x": 704,
+        "y": 728,
+        "width": 736,
+        "height": 10
+      },
+      "claim_segments": [
+        {
+          "index": 0,
+          "x": 736,
+          "y": 724,
+          "width": 96,
+          "height": 12,
+          "claim_rule": "grounded_feet_center_inside"
+        },
+        {
+          "index": 1,
+          "x": 832,
+          "y": 724,
+          "width": 96,
+          "height": 12,
+          "claim_rule": "grounded_feet_center_inside"
+        },
+        {
+          "index": 2,
+          "x": 928,
+          "y": 724,
+          "width": 96,
+          "height": 12,
+          "claim_rule": "grounded_feet_center_inside"
+        },
+        {
+          "index": 3,
+          "x": 1024,
+          "y": 724,
+          "width": 96,
+          "height": 12,
+          "claim_rule": "grounded_feet_center_inside"
+        },
+        {
+          "index": 4,
+          "x": 1120,
+          "y": 724,
+          "width": 96,
+          "height": 12,
+          "claim_rule": "grounded_feet_center_inside"
+        },
+        {
+          "index": 5,
+          "x": 1216,
+          "y": 724,
+          "width": 96,
+          "height": 12,
+          "claim_rule": "grounded_feet_center_inside"
+        },
+        {
+          "index": 6,
+          "x": 1312,
+          "y": 724,
+          "width": 96,
+          "height": 12,
+          "claim_rule": "grounded_feet_center_inside"
+        }
+      ],
+      "image_independent": true
+    }
+  ],
+  "ladders": [
+    {
+      "id": "l1",
+      "x": 460,
+      "y": 128,
+      "width": 48,
+      "height": 152,
+      "mount_tolerance_x": 12,
+      "connects": {
+        "top_platform": "p1",
+        "bottom_platform": "p3"
+      },
+      "image_independent": true
+    },
+    {
+      "id": "l2",
+      "x": 820,
+      "y": 248,
+      "width": 48,
+      "height": 152,
+      "mount_tolerance_x": 12,
+      "connects": {
+        "top_platform": "p3",
+        "bottom_platform": "p6"
+      },
+      "image_independent": true
+    },
+    {
+      "id": "l3",
+      "x": 360,
+      "y": 368,
+      "width": 48,
+      "height": 152,
+      "mount_tolerance_x": 12,
+      "connects": {
+        "top_platform": "p5",
+        "bottom_platform": "p7"
+      },
+      "image_independent": true
+    },
+    {
+      "id": "l4",
+      "x": 1100,
+      "y": 488,
+      "width": 48,
+      "height": 152,
+      "mount_tolerance_x": 12,
+      "connects": {
+        "top_platform": "p8",
+        "bottom_platform": "p10"
+      },
+      "image_independent": true
+    },
+    {
+      "id": "l5",
+      "x": 704,
+      "y": 608,
+      "width": 48,
+      "height": 152,
+      "mount_tolerance_x": 12,
+      "connects": {
+        "top_platform": "p9",
+        "bottom_platform": "p12"
+      },
+      "image_independent": true
+    }
+  ],
+  "death_zones": [
+    {
+      "id": "bottom_void",
+      "x": 0,
+      "y": 864,
+      "width": 1536,
+      "height": 160,
+      "type": "fall_out_of_bounds"
+    }
+  ],
+  "critical_points": {
+    "player_spawn_feet": {
+      "x": 112,
+      "y": 128,
+      "platform": "p1"
+    },
+    "safe_platform_rows_y": [
+      128,
+      248,
+      368,
+      488,
+      608,
+      728
+    ]
+  }
+}

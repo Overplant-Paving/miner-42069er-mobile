@@ -1,0 +1,175 @@
+{
+  "target": "creature",
+  "mode": "smitten",
+  "prompt": "Use the image just shown as the visual style reference only. Match its 16-bit pixel art style exactly: crisp chunky pixels, same pixel density, clean 1px dark outline #141019, flat 2-3 step shading, warm arcade-mining palette, readable side-view silhouette, simple expressive face language, no antialias blur, no painterly texture. Do NOT draw or copy the miner, helmet, overalls, human body, tools, or mining gear.\n\nCreate a raw sprite animation sheet for the same new side-view cave-mutant enemy named Grabby. Exact sheet: 2 columns by 2 rows, exactly 4 equal invisible cells, read left-to-right across the top row then left-to-right across the bottom row. Background must be 100% solid flat #FF00FF magenta only, no transparency, no gradients, no scenery. No visible grid, no borders, no labels, no text, no UI, no frame numbers.\n\nSubject identity in every cell: Grabby is a cute-goofy wholesome squat cave crab mutant, rusty orange shell and body, darker cavern-brown underside and leg tips, one comically oversized LEFT claw held up beside its face like a round boxing glove, the other claw small and tucked near the body, small eyes on short stalks, stubby skittering legs. Family-friendly arcade enemy, silly and sweet rather than scary. Side view facing right. Crisp 16-bit pixel art, dark #141019 outline, flat 2-3 shade bands, small warm lantern-gold highlights on the shell and big claw.\n\nAction: 4-frame smitten loop, stopped in place. Grabby is bashful and in love with its own huge claw. Frame 1: shy upright pose, hugging the big claw close. Frame 2: squeezes the big claw with tiny body tucked inward. Frame 3: leans slightly into the big claw with extra bashful cheeks. Frame 4: settles back to the shy hugging pose. The oversized left claw stays hugged close in every frame and does not swing wide.\n\nSmitten face: clear heart eyes in every frame, bashful pink cheek blush color #ff5da2 on the face or shell cheeks, sweet shy expression. No floating hearts outside the body; the heart shapes are only the eyes. Keep the same Grabby identity, same body size, same shell shape, and same claw proportions in every frame.\n\nCritical layout: exactly 2 rows and 2 columns, equal invisible cells, no visible grid lines or borders. Full creature must stay centered in each cell with the same scale and same bounding box in all frames. Draw Grabby smaller than each cell: the whole body including hugged claw and eye stalks must occupy only the central 60% to 68% safe area. Leave a wide flat magenta margin on all four sides. Stable bottom anchor line: all stubby legs sit on the same lower horizontal line in every frame.\n\nContainment: no claw, eye stalk, shell spike, leg, antenna, blush pixel, shadow, or effect may cross or touch a cell edge. Nothing may touch the sheet edge. No floating detached effects, no dust clouds, no ground shadows outside the sprite.\n\nCleanup: solid flat #FF00FF background only, transparent-ready sprite-sheet discipline, no text, no logos, no labels.",
+  "role": "",
+  "input": "C:\\Users\\henry\\.codex\\generated_images\\019f33fc-5493-7ea3-8d28-481237f3fe45\\ig_0c5de0315b35511b016a4ac01fd4e4819aa610331c000ecc48.png",
+  "threshold": 125,
+  "edge_threshold": 150,
+  "duration": 140,
+  "rows": 2,
+  "cols": 2,
+  "cell_size": 256,
+  "fit_scale": 0.82,
+  "trim_border": 4,
+  "edge_clean_depth": 3,
+  "align": "bottom",
+  "shared_scale": true,
+  "component_mode": "largest",
+  "component_padding": 8,
+  "min_component_area": 64,
+  "edge_touch_margin": 4,
+  "frame_labels": [
+    "smitten-1",
+    "smitten-2",
+    "smitten-3",
+    "smitten-4"
+  ],
+  "frames": [
+    {
+      "grid": [
+        0,
+        0
+      ],
+      "source_box": [
+        0,
+        0,
+        627,
+        627
+      ],
+      "component_mode": "largest",
+      "component_count": 1,
+      "selected_component_area": 84960,
+      "selected_component_bbox": [
+        109,
+        219,
+        542,
+        513
+      ],
+      "crop_bbox": [
+        101,
+        211,
+        550,
+        521
+      ],
+      "edge_touch": false,
+      "output_size": [
+        209,
+        144
+      ],
+      "paste_position": [
+        23,
+        89
+      ]
+    },
+    {
+      "grid": [
+        0,
+        1
+      ],
+      "source_box": [
+        627,
+        0,
+        1254,
+        627
+      ],
+      "component_mode": "largest",
+      "component_count": 1,
+      "selected_component_area": 75211,
+      "selected_component_bbox": [
+        95,
+        265,
+        513,
+        513
+      ],
+      "crop_bbox": [
+        87,
+        257,
+        521,
+        521
+      ],
+      "edge_touch": false,
+      "output_size": [
+        202,
+        123
+      ],
+      "paste_position": [
+        27,
+        110
+      ]
+    },
+    {
+      "grid": [
+        1,
+        0
+      ],
+      "source_box": [
+        0,
+        627,
+        627,
+        1254
+      ],
+      "component_mode": "largest",
+      "component_count": 1,
+      "selected_component_area": 79240,
+      "selected_component_bbox": [
+        123,
+        122,
+        544,
+        386
+      ],
+      "crop_bbox": [
+        115,
+        114,
+        552,
+        394
+      ],
+      "edge_touch": false,
+      "output_size": [
+        204,
+        130
+      ],
+      "paste_position": [
+        26,
+        103
+      ]
+    },
+    {
+      "grid": [
+        1,
+        1
+      ],
+      "source_box": [
+        627,
+        627,
+        1254,
+        1254
+      ],
+      "component_mode": "largest",
+      "component_count": 1,
+      "selected_component_area": 84591,
+      "selected_component_bbox": [
+        83,
+        105,
+        514,
+        397
+      ],
+      "crop_bbox": [
+        75,
+        97,
+        522,
+        405
+      ],
+      "edge_touch": false,
+      "output_size": [
+        208,
+        143
+      ],
+      "paste_position": [
+        24,
+        90
+      ]
+    }
+  ],
+  "edge_touch_frames": []
+}

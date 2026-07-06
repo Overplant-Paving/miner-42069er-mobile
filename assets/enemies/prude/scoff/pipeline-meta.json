@@ -1,0 +1,182 @@
+{
+  "target": "creature",
+  "mode": "scoff",
+  "prompt": "Use the original miner idle image shown in the conversation as the visual reference for ART STYLE ONLY. Match its 16-bit pixel art style exactly: crisp 1px dark outline #141019, clean chunky pixel clusters, flat 2-3 step shading, simple readable side-view proportions, warm arcade-mining color discipline, crisp silhouette, no painterly texture, no antialias blur. Do not draw the miner character from the reference.\n\nCreate a clean 2D game animation sprite sheet for a new enemy unit in Miner 42069er. Exactly 4 equal invisible cells arranged as a 2x2 grid: 2 rows and 2 columns, read left to right across the top row, then left to right across the bottom row. No visible grid lines, no borders, no frame numbers.\n\nSubject: The Prude, a cute-goofy wholesome cave-mutant enemy: a small gray mole with a prim buttoned-up posture, tiny round spectacles, a plain spotless white hard hat with NO lamp and NO headlight, high stiff white collar, little gloved hands, small brown boots, pointed snout held high, one sharply raised eyebrow, politely disapproving face. Side view facing right. Family-friendly comedic arcade enemy, not scary, not gross. The whole personality is buttoned-up disapproval.\n\nHard hat rule: the hard hat is plain clean white only. No helmet lamp, no headlamp, no glowing light, no yellow lamp housing, no mining light, no strap-mounted light.\n\nAction: 4-frame scoff loop while stopped. Arms are crossed tightly across the chest in every frame. Frames 1-4 show a restrained disapproving head shake: chin high facing right, head tilted slightly back, head turned a little away with raised eyebrow, return to chin-high pose. Feet stay planted. Body posture remains stiff and upright. Keep the same mole identity, same plain white hard hat, same glasses, same collar, same body size in every frame.\n\nCritical layout: the full body must stay centered in each cell with the same pixel scale and same bounding box in all frames. The character should occupy only the central 55% to 62% of each cell, leaving wide flat magenta margin on all four sides. Stable bottom anchor line: both feet or lowest boot pixels sit on the same lower horizontal line in every frame. Nothing may cross or touch a cell edge or the sheet edge.\n\nContainment: no helmet, nose, spectacles, eyebrow, collar, crossed arms, hands, boots, pixels, shadows, dust, hearts, blush, floating symbols, speech bubbles, or effects may cross or touch a cell edge. No detached effects at all. No hearts. No blush. No romantic symbols.\n\nBackground and cleanup: solid flat #FF00FF magenta background only, no gradients, no transparency, no text, no labels, no UI, no shadows outside the sprite.",
+  "role": "",
+  "input": "C:\\Users\\henry\\.codex\\generated_images\\019f33fc-62e2-79b2-b316-adeebc4c632e\\ig_0ee277e03f60bee9016a4ac03316ac8198a650e03442ac19cf.png",
+  "threshold": 100,
+  "edge_threshold": 150,
+  "duration": 140,
+  "rows": 2,
+  "cols": 2,
+  "cell_size": 256,
+  "fit_scale": 0.82,
+  "trim_border": 4,
+  "edge_clean_depth": 3,
+  "align": "bottom",
+  "shared_scale": true,
+  "component_mode": "largest",
+  "component_padding": 8,
+  "min_component_area": 64,
+  "edge_touch_margin": 4,
+  "frame_labels": [
+    "scoff-1",
+    "scoff-2",
+    "scoff-3",
+    "scoff-4"
+  ],
+  "frames": [
+    {
+      "grid": [
+        0,
+        0
+      ],
+      "source_box": [
+        0,
+        0,
+        627,
+        627
+      ],
+      "component_mode": "largest",
+      "component_count": 1,
+      "selected_component_area": 78194,
+      "selected_component_bbox": [
+        214,
+        123,
+        462,
+        545
+      ],
+      "crop_bbox": [
+        206,
+        115,
+        470,
+        553
+      ],
+      "edge_touch": false,
+      "output_size": [
+        125,
+        208
+      ],
+      "paste_position": [
+        65,
+        25
+      ]
+    },
+    {
+      "grid": [
+        0,
+        1
+      ],
+      "source_box": [
+        627,
+        0,
+        1254,
+        627
+      ],
+      "component_mode": "largest",
+      "component_count": 3,
+      "selected_component_area": 77224,
+      "selected_component_bbox": [
+        156,
+        123,
+        400,
+        545
+      ],
+      "crop_bbox": [
+        148,
+        115,
+        408,
+        553
+      ],
+      "edge_touch": false,
+      "output_size": [
+        123,
+        208
+      ],
+      "paste_position": [
+        66,
+        25
+      ]
+    },
+    {
+      "grid": [
+        1,
+        0
+      ],
+      "source_box": [
+        0,
+        627,
+        627,
+        1254
+      ],
+      "component_mode": "largest",
+      "component_count": 5,
+      "selected_component_area": 77157,
+      "selected_component_bbox": [
+        221,
+        72,
+        460,
+        498
+      ],
+      "crop_bbox": [
+        213,
+        64,
+        468,
+        506
+      ],
+      "edge_touch": false,
+      "output_size": [
+        121,
+        209
+      ],
+      "paste_position": [
+        67,
+        24
+      ]
+    },
+    {
+      "grid": [
+        1,
+        1
+      ],
+      "source_box": [
+        627,
+        627,
+        1254,
+        1254
+      ],
+      "component_mode": "largest",
+      "component_count": 1,
+      "selected_component_area": 76838,
+      "selected_component_bbox": [
+        159,
+        79,
+        402,
+        498
+      ],
+      "crop_bbox": [
+        151,
+        71,
+        410,
+        506
+      ],
+      "edge_touch": false,
+      "output_size": [
+        123,
+        206
+      ],
+      "paste_position": [
+        66,
+        27
+      ]
+    }
+  ],
+  "edge_touch_frames": [],
+  "postprocess_cleanup": {
+    "alpha_floor": 128,
+    "magenta_distance_removed_below": 140,
+    "small_component_area_removed_at_or_below": 240,
+    "transparent_sheet_rebuilt": true,
+    "gif_rebuilt": true
+  }
+}

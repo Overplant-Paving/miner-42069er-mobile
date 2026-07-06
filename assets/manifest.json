@@ -1,0 +1,574 @@
+{
+  "game": "miner-42069er",
+  "title": "Miner 42069er",
+  "engine": "html5-canvas",
+  "style": {
+    "art_style": "retro_pixel",
+    "bible": "design/style-bible.md",
+    "summary": "16-bit pixel art; comedic arcade-mining mood; warm lantern gold and bashful pink accents over dark cavern browns; 1px dark outlines, flat 2-3 step shading, crisp silhouettes, side view. All imagery wholesome and family-friendly.",
+    "anchor_job": "hero-idle",
+    "anchor_image": "assets/hero/idle/sheet-transparent.png"
+  },
+  "jobs": [
+    {
+      "id": "hero-idle",
+      "kind": "sprite",
+      "status": "accepted",
+      "priority": 1,
+      "consumer": "src/game.js:Player â€” idle state loop, 6fps",
+      "spec": {
+        "asset_type": "player",
+        "action": "idle",
+        "view": "side",
+        "sheet": "2x2",
+        "art_style": "retro_pixel"
+      },
+      "brief": "Use $generate2dsprite to create a 2x2 side-view idle animation sheet for Dusty Rodd, the hero of a comedic mining platformer: a stocky cheerful miner with a big brown horseshoe mustache, denim-blue overalls (#3fa7ff) over a cream shirt, brown work gloves and boots, and a butter-yellow hard hat with a small glowing lantern (#ffd24a) on the front. 16-bit pixel art, 1px dark outline (#141019), flat 2-3 step shading, warm lantern-lit look. Idle motion across 4 frames: relaxed breathing, slight heel rock, lantern flame flicker. Feet planted on a stable bottom anchor line. Wholesome, family-friendly character design.",
+      "output_dir": "assets/hero/idle",
+      "expect": [
+        "sheet-transparent.png",
+        "pipeline-meta.json",
+        "animation.gif"
+      ],
+      "reference_images": [],
+      "attempts": 1,
+      "thread_id": "019f3190-55e0-7740-9718-cf3f3c5bc88e",
+      "notes": "Accepted attempt 1: identity/style/silhouette/animation/technical all pass; feet line stable at 241; edge_touch empty."
+    },
+    {
+      "id": "hero-actions",
+      "kind": "sprite",
+      "status": "accepted",
+      "priority": 2,
+      "consumer": "src/game.js:Player â€” run/jump/climb/hurt states",
+      "spec": {
+        "asset_type": "player",
+        "bundle": "hero_action_bundle",
+        "view": "side",
+        "art_style": "retro_pixel",
+        "actions": {
+          "run": "2x3",
+          "jump": "2x2",
+          "climb": "2x2",
+          "hurt": "2x2"
+        }
+      },
+      "brief": "Use $generate2dsprite to create a hero_action_bundle for Dusty Rodd, the exact same character as the attached idle reference sheet (stocky miner, horseshoe mustache, denim-blue overalls #3fa7ff, yellow hard hat with lantern #ffd24a). Match the art style of the attached reference exactly; preserve palette, proportions, face, costume and 1px dark outline; body height must match the idle sheet. Four separate action grid sheets, all body-only, 16-bit pixel art: (1) run, 2x3, 6-frame side-view run cycle with pumping arms and bouncing lantern; (2) jump, 2x2, side-view phases crouch / rising / apex / falling; (3) climb, 2x2, seen from behind gripping ladder rungs, alternating hands and feet, 4-frame loop; (4) hurt, 2x2, side-view knocked-back dizzy stagger, hard hat tipping, small stars optional but kept tight to the head. Stable feet/bottom anchor line in every sheet, nothing crossing cell edges.",
+      "output_dir": "assets/hero",
+      "expect": [
+        "assets/hero/run/sheet-transparent.png",
+        "assets/hero/run/pipeline-meta.json",
+        "assets/hero/run/animation.gif",
+        "assets/hero/jump/sheet-transparent.png",
+        "assets/hero/jump/pipeline-meta.json",
+        "assets/hero/jump/animation.gif",
+        "assets/hero/climb/sheet-transparent.png",
+        "assets/hero/climb/pipeline-meta.json",
+        "assets/hero/climb/animation.gif",
+        "assets/hero/hurt/sheet-transparent.png",
+        "assets/hero/hurt/pipeline-meta.json",
+        "assets/hero/hurt/animation.gif"
+      ],
+      "reference_images": [
+        "assets/hero/idle/sheet-transparent.png"
+      ],
+      "attempts": 1,
+      "thread_id": "019f31a3-1b0e-7f32-81e5-33ba81ac6c0a",
+      "notes": "Accepted attempt 1: all 4 sheets pass rubric; feet line 241 across all 24 frames; edge_touch empty. Climb bakes ladder-rung fragments (within brief allowance) — verify overlay vs tiled ladder at playtest."
+    },
+    {
+      "id": "mutant-smoocher",
+      "kind": "sprite",
+      "status": "accepted",
+      "priority": 2,
+      "consumer": "src/game.js:Mutant(type=smoocher) â€” patrol walk + smitten loops",
+      "spec": {
+        "asset_type": "creature",
+        "bundle": "unit_bundle",
+        "view": "side",
+        "art_style": "retro_pixel",
+        "actions": {
+          "walk": "2x3",
+          "smitten": "2x2"
+        }
+      },
+      "brief": "Use $generate2dsprite to create a unit_bundle for the Smoocher, a comedic cave-mutant enemy in a mining platformer: a round waddling gob-green blob creature (#8cd94a) with stubby feet, tiny arms, big cartoon eyes, and oversized pursed cartoon lips as its defining feature. Cute-goofy, wholesome, family-friendly â€” a silly critter, nothing gross. 16-bit pixel art, 1px dark outline (#141019), flat shading. Match the art style of the attached reference sheet exactly (style-only anchor; the subject is new). Two action sheets: (1) walk, 2x3, 6-frame side-view waddle cycle, body squashing and stretching, lips leading; (2) smitten, 2x2, 4-frame loop of the same creature blushing bashful pink (#ff5da2) on the cheeks, eyes turned to hearts, swaying dreamily in place. Same body size in both sheets, stable bottom anchor line.",
+      "output_dir": "assets/enemies/smoocher",
+      "expect": [
+        "assets/enemies/smoocher/walk/sheet-transparent.png",
+        "assets/enemies/smoocher/walk/pipeline-meta.json",
+        "assets/enemies/smoocher/walk/animation.gif",
+        "assets/enemies/smoocher/smitten/sheet-transparent.png",
+        "assets/enemies/smoocher/smitten/pipeline-meta.json",
+        "assets/enemies/smoocher/smitten/animation.gif"
+      ],
+      "reference_images": [
+        "assets/hero/idle/sheet-transparent.png"
+      ],
+      "attempts": 1,
+      "thread_id": "019f31a3-269c-7723-a5b4-c75dbdde81e9",
+      "notes": "Accepted attempt 1: walk squash-stretch + smitten heart-eyes both pass rubric; feet 233 stable; edge_touch empty."
+    },
+    {
+      "id": "mutant-cuddler",
+      "kind": "sprite",
+      "status": "accepted",
+      "priority": 2,
+      "consumer": "src/game.js:Mutant(type=cuddler) â€” patrol walk + smitten loops",
+      "spec": {
+        "asset_type": "creature",
+        "bundle": "unit_bundle",
+        "view": "side",
+        "art_style": "retro_pixel",
+        "actions": {
+          "walk": "2x3",
+          "smitten": "2x2"
+        }
+      },
+      "brief": "Use $generate2dsprite to create a unit_bundle for the Cuddler, a comedic cave-mutant enemy in a mining platformer: a lanky low-slung cave weasel with pale lavender fur, a pink tuft mohawk (#ff5da2), a long noodly body, and both stubby arms permanently stretched forward as if desperate for a hug. Cute-goofy, wholesome, family-friendly. 16-bit pixel art, 1px dark outline (#141019), flat shading. Match the art style of the attached reference sheet exactly (style-only anchor; the subject is new). Two action sheets: (1) walk, 2x3, 6-frame side-view scurry cycle, body undulating, arms always reaching forward; (2) smitten, 2x2, 4-frame loop of the same creature stopped, hugging itself, blushing pink cheeks, heart eyes, swaying. Same body size in both sheets, stable bottom anchor line.",
+      "output_dir": "assets/enemies/cuddler",
+      "expect": [
+        "assets/enemies/cuddler/walk/sheet-transparent.png",
+        "assets/enemies/cuddler/walk/pipeline-meta.json",
+        "assets/enemies/cuddler/walk/animation.gif",
+        "assets/enemies/cuddler/smitten/sheet-transparent.png",
+        "assets/enemies/cuddler/smitten/pipeline-meta.json",
+        "assets/enemies/cuddler/smitten/animation.gif"
+      ],
+      "reference_images": [
+        "assets/hero/idle/sheet-transparent.png"
+      ],
+      "attempts": 1,
+      "thread_id": "019f31ac-5ac3-7d53-89bc-9d02d7bb2412",
+      "notes": "Accepted attempt 1: walk (lanky scurry, arms forward) + smitten (self-hug, heart eyes) pass rubric; feet 233 stable; edge_touch empty. Minor mohawk value drift frame 3, imperceptible at 44px."
+    },
+    {
+      "id": "map-mine-stage",
+      "kind": "map",
+      "status": "accepted",
+      "priority": 2,
+      "consumer": "src/engine.js:StageRenderer â€” parallax plates; src/game.js:Level â€” platform/ladder tiling; data/mine-collision.json transcribed into data/levels.json level 1",
+      "spec": {
+        "map_mode": "side_scroll_mode",
+        "art_style": "retro_pixel",
+        "stage_canvas": "1536x864",
+        "perspective": "side-view",
+        "collision_model": "precise_shapes",
+        "engine_target": "raw_canvas",
+        "prop_generation": "platform_strip_1x3 + one_by_one"
+      },
+      "brief": "Use $generate2dmap to create a side_scroll_mode stage for a single-screen (fixed camera) comedic mining platformer. stage_canvas 1536x864, shared exactly by all plates, the stage reference and the preview. 16-bit pixel art matching the art style of the attached reference sheet exactly (style-only anchor). Scenery-only parallax plates of a warm lantern-lit underground mine interior: sky plate = near-black cavern void (#141019) with faint mineral glints; far-bg = distant rock walls and old timber scaffolding silhouettes; mid-bg = closer cavern wall with support beams, hanging lanterns (#ffd24a) and rope details; near-bg = the brightest wall band behind the play area with subtle track and beam details. Keep the playable field visually open and uncluttered; plates darken with depth; no platforms, ladders, props, actors, text or UI baked into any plate. Then the stage reference (max 9 object candidates) and these separate runtime objects: (a) a platform strip, timber-and-rock mine girder, left cap 32x32, middle repeat 96x32, right cap 32x32, in TWO states as separate strips â€” unclaimed (timber brown #6e4a2d) and claimed (same exact geometry re-lit glowing bashful pink #ff5da2 with warm highlights); (b) a ladder, one seamless vertical repeat piece 48x64, rough timber side rails and rungs. Layout intent for the collision/objects JSON: a 6-row single-screen platformer level, rows about 120px apart vertically, platforms of 3-8 segments with gaps, 4-5 ladders connecting rows, player spawn top-left, all within 1536x864.",
+      "output_dir": "assets/map",
+      "expect": [
+        "assets/map/mine-sky.png",
+        "assets/map/mine-far-bg.png",
+        "assets/map/mine-mid-bg.png",
+        "assets/map/mine-near-bg.png",
+        "assets/map/mine-stage-reference.png",
+        "assets/map/mine-stage-preview.png",
+        "assets/props/platform/left.png",
+        "assets/props/platform/mid.png",
+        "assets/props/platform/right.png",
+        "assets/props/platform-claimed/left.png",
+        "assets/props/platform-claimed/mid.png",
+        "assets/props/platform-claimed/right.png",
+        "assets/props/ladder/ladder.png",
+        "data/mine-objects.json",
+        "data/mine-collision.json",
+        "data/mine-scene-hooks.json"
+      ],
+      "reference_images": [
+        "assets/hero/idle/sheet-transparent.png"
+      ],
+      "attempts": 1,
+      "thread_id": "019f31a3-2f37-7f13-b25a-5b24ad415a1b",
+      "notes": "Accepted attempt 1: all 16 deliverables exact; plates 1536x864 foundation-only; strips/ladder at exact spec sizes with alpha; collision/hooks JSON coherent 6-row layout, spawn walkable. Plates ship per-layer opacity metadata (0.58-1.0) — renderer honors it."
+    },
+    {
+      "id": "props-pickups",
+      "kind": "sprite",
+      "status": "accepted",
+      "priority": 3,
+      "consumer": "src/game.js:Pickup â€” world items and pickup-toast icons",
+      "spec": {
+        "asset_type": "prop",
+        "action": "single",
+        "view": "side",
+        "sheet": "3x3",
+        "art_style": "retro_pixel",
+        "prop_generation": "prop_pack_3x3"
+      },
+      "brief": "Use $generate2dsprite to create a prop_pack_3x3 of nine compact lost-property pickup items for a comedic mining platformer. 16-bit pixel art matching the art style of the attached reference sheet exactly (style-only anchor); 1px dark outline, flat shading, each item reading clearly at 32px. All items are innocent, wholesome household objects (the game's humor is text-only): 1) folded heart-print boxer shorts (white with small red hearts); 2) rolled-up vintage magazine with a heart on the cover; 3) lava lamp with pink blobs; 4) classic yellow rubber duck; 5) bar of soap with bubbles; 6) small cologne bottle with atomizer bulb; 7) 4-pack of batteries in packaging; 8) single banana; 9) golden pickaxe with a glint (#ffd24a). Each item centered in its own cell with generous padding.",
+      "output_dir": "assets/props/pickups",
+      "expect": [
+        "prop-pack.json",
+        "boxers/prop.png",
+        "magazine/prop.png",
+        "lava-lamp/prop.png",
+        "rubber-duck/prop.png",
+        "soap/prop.png",
+        "cologne/prop.png",
+        "batteries/prop.png",
+        "banana/prop.png",
+        "golden-pickaxe/prop.png"
+      ],
+      "reference_images": [
+        "assets/hero/idle/sheet-transparent.png"
+      ],
+      "attempts": 1,
+      "thread_id": "019f31af-37dd-7653-bd46-a2ea067239ec",
+      "notes": "Accepted attempt 1: 9/9 items at 32x32 with alpha, edge_touch empty, all read clearly at icon scale, wholesome per humor contract."
+    },
+    {
+      "id": "props-hud",
+      "kind": "sprite",
+      "status": "accepted",
+      "priority": 3,
+      "consumer": "src/game.js:HUD â€” lives/timer/smitten/score icons",
+      "spec": {
+        "asset_type": "prop",
+        "action": "single",
+        "view": "side",
+        "sheet": "2x2",
+        "art_style": "retro_pixel",
+        "prop_generation": "prop_pack_2x2"
+      },
+      "brief": "Use $generate2dsprite to create a prop_pack_2x2 of four HUD icons for a comedic mining platformer. 16-bit pixel art matching the art style of the attached reference sheet exactly (style-only anchor); 1px dark outline, bold silhouettes reading at 28px: 1) yellow miner hard hat with lantern (lives icon, matches the hero's hat); 2) round alarm clock with bells (shift timer); 3) plump bashful-pink heart #ff5da2 (smitten window); 4) five-point lantern-gold star #ffd24a (score). Each icon centered in its own cell with generous padding.",
+      "output_dir": "assets/props/hud",
+      "expect": [
+        "prop-pack.json",
+        "helmet/prop.png",
+        "clock/prop.png",
+        "heart/prop.png",
+        "star/prop.png"
+      ],
+      "reference_images": [
+        "assets/hero/idle/sheet-transparent.png"
+      ],
+      "attempts": 1,
+      "thread_id": "019f31b6-f60c-74c1-9111-bce2b1d7180b",
+      "notes": "Accepted attempt 1: 4/4 icons 32x32 with alpha, edge_touch empty, bold readable silhouettes."
+    },
+    {
+      "id": "title-screen",
+      "kind": "map",
+      "status": "accepted",
+      "priority": 3,
+      "consumer": "src/main.js:TitleState â€” full-screen background (logo/text rendered by code)",
+      "spec": {
+        "map_mode": "baked_scene_mode",
+        "art_style": "retro_pixel",
+        "size": "1536x864",
+        "collision_model": "none"
+      },
+      "brief": "Use $generate2dmap in baked_scene_mode to create one 1536x864 title-screen scene for 'Miner 42069er', a comedic mining platformer. 16-bit pixel art matching the art style of the attached reference sheet exactly (style-only anchor). Scene: dusk at a rickety old mine entrance built into a hillside â€” wooden headframe, warm glowing lantern (#ffd24a) hanging by the door, minecart with a few gold nuggets, wooden 'reserved for the logo' empty sky band across the upper third (plain dusk sky, no text). Palette leans dark cavern browns and dusk purples with lantern gold pools and one bashful pink (#ff5da2) glow spilling from inside the mine door. ABSOLUTELY NO text, letters, numbers, logo, signage writing or UI in the image â€” the game renders all text. Wholesome, inviting, slightly mischievous mood.",
+      "output_dir": "assets/map",
+      "expect": [
+        "assets/map/title-screen.png"
+      ],
+      "reference_images": [
+        "assets/hero/idle/sheet-transparent.png"
+      ],
+      "attempts": 1,
+      "thread_id": "019f31b8-668d-7ac1-b107-f6b96c392c6f",
+      "notes": "Accepted attempt 1: 1536x864 exact, no baked text, upper third clear for logo, pink door-glow per brief. RGB is fine for a baked opaque scene."
+    },
+    {
+      "id": "mutant-winker",
+      "kind": "sprite",
+      "status": "accepted",
+      "priority": 3,
+      "consumer": "src/game.js:Mutant(type=winker) — flying gap-guard, fly + smitten loops (L4)",
+      "spec": {
+        "asset_type": "creature",
+        "bundle": "unit_bundle",
+        "view": "side",
+        "art_style": "retro_pixel",
+        "actions": {
+          "fly": "2x3",
+          "smitten": "2x2"
+        }
+      },
+      "brief": "Use $generate2dsprite to create a unit_bundle for the Winker, a comedic flying cave-mutant in a mining platformer: a plump round cave bat with dusky plum-purple fur, small ragged wings, tiny tucked-up feet, and ONE huge expressive gob-green (#8cd94a) eye as its defining feature — a goofy cyclops bat that winks. Cute, wholesome, family-friendly. 16-bit pixel art, 1px dark outline (#141019), flat 2-3 step shading. Match the art style of the attached reference sheet exactly (style-only anchor; the subject is new). Two action sheets, same body size, body centered and stable in every cell, nothing crossing cell edges: (1) fly, 2x3, 6-frame side-view hover flap cycle, body bobbing gently, the big eye performing one slow wink across the loop; (2) smitten, 2x2, 4-frame loop hovering in place, the eye turned into a big bashful-pink (#ff5da2) heart, blushing cheeks, wings fluttering dreamily.",
+      "output_dir": "assets/enemies/winker",
+      "expect": [
+        "assets/enemies/winker/fly/sheet-transparent.png",
+        "assets/enemies/winker/fly/pipeline-meta.json",
+        "assets/enemies/winker/fly/animation.gif",
+        "assets/enemies/winker/smitten/sheet-transparent.png",
+        "assets/enemies/winker/smitten/pipeline-meta.json",
+        "assets/enemies/winker/smitten/animation.gif"
+      ],
+      "reference_images": [
+        "assets/hero/idle/sheet-transparent.png"
+      ],
+      "attempts": 1,
+      "thread_id": "019f32dd-685c-7220-96a4-b6255da44b20",
+      "notes": "Accepted attempt 1: fly 2x3 (wink mid-loop) + smitten 2x2 (heart eye) pass rubric; feet 97-98 stable; edge_touch empty."
+    },
+    {
+      "id": "prop-elevator",
+      "kind": "sprite",
+      "status": "accepted",
+      "priority": 3,
+      "consumer": "src/game.js:Elevator — moving platform draw (L4)",
+      "spec": {
+        "asset_type": "prop",
+        "action": "single",
+        "view": "side",
+        "sheet": "auto",
+        "art_style": "retro_pixel",
+        "prop_generation": "one_by_one"
+      },
+      "brief": "Use $generate2dsprite to create ONE single side-view prop (one-by-one, not a pack) for a mining platformer: a mine elevator platform — a sturdy timber slab with iron corner brackets, and two taut vertical chains rising from its ends up to a small iron pulley crossbar at the top of the sprite. Wide slab at the bottom (about 2:1 slab, overall sprite about 2:1 wide vs tall), chains and crossbar contained inside the sprite. 16-bit pixel art, 1px dark outline (#141019), flat 2-3 step shading, timber brown (#6e4a2d) with lantern-gold (#ffd24a) metal glints. Match the art style of the attached reference sheet exactly (style-only anchor). Single subject centered with generous padding, nothing touching the edges.",
+      "output_dir": "assets/props/elevator",
+      "expect": [
+        "assets/props/elevator/sheet-transparent.png",
+        "assets/props/elevator/pipeline-meta.json"
+      ],
+      "reference_images": [
+        "assets/hero/idle/sheet-transparent.png"
+      ],
+      "attempts": 1,
+      "thread_id": "019f32dd-6f39-7e92-8086-5097d9c29375",
+      "notes": "Accepted attempt 1: timber slab + chains + pulley crossbar per brief; alpha OK; edge_touch empty."
+    },
+    {
+      "id": "prop-slide",
+      "kind": "sprite",
+      "status": "accepted",
+      "priority": 3,
+      "consumer": "src/game.js:Slide — diagonal chute tiled along its length (L4)",
+      "spec": {
+        "asset_type": "prop",
+        "action": "single",
+        "view": "side",
+        "sheet": "auto",
+        "art_style": "retro_pixel",
+        "prop_generation": "one_by_one"
+      },
+      "brief": "Use $generate2dsprite to create ONE single square tile prop (one-by-one, not a pack) for a mining platformer: a section of a polished timber mining chute (a slide) running diagonally at exactly 45 degrees from the top-left corner region down to the bottom-right corner region of the square tile, with low side rails and a smooth worn sliding surface. CRITICAL: the chute must enter and exit the tile at the same offsets so the tile repeats SEAMLESSLY when copies are placed diagonally (each next copy offset one full tile right and one full tile down). 16-bit pixel art, 1px dark outline (#141019), flat shading, timber brown (#6e4a2d) with a lantern-gold (#ffd24a) worn sheen down the middle. Match the art style of the attached reference sheet exactly (style-only anchor). No background, no text.",
+      "output_dir": "assets/props/slide",
+      "expect": [
+        "assets/props/slide/sheet-transparent.png",
+        "assets/props/slide/pipeline-meta.json"
+      ],
+      "reference_images": [
+        "assets/hero/idle/sheet-transparent.png"
+      ],
+      "attempts": 1,
+      "thread_id": "019f32dd-78cc-7a40-a659-966dd0b8e9c5",
+      "notes": "Accepted attempt 1 with documented exception: edge_touch [[0,0]] is REQUIRED (seamless diagonal tile must reach cell edges). Art chute stopped short of exact corners; fixed deterministically in-engine via overlap-stride tiling (SLIDE.stride 64 < tile 96) — composite verified seamless (.forge/qa-slide-overlap.png). No art change needed."
+    },
+    {
+      "id": "mutant-grabby",
+      "kind": "sprite",
+      "priority": 3,
+      "consumer": "src/game.js:Mutant(type=grabby) — burst-dash crab, walk + smitten loops (v2 levels)",
+      "spec": {
+        "asset_type": "creature",
+        "bundle": "unit_bundle",
+        "view": "side",
+        "art_style": "retro_pixel",
+        "actions": {
+          "walk": "2x3",
+          "smitten": "2x2"
+        }
+      },
+      "brief": "Use $generate2dsprite to create a unit_bundle for Grabby, a comedic cave-mutant enemy in a mining platformer: a squat rusty-orange cave crab with one comically oversized left claw held up like a boxing glove, small beady eyes on short stalks, and stubby scuttling legs. Cute-goofy, wholesome, family-friendly. 16-bit pixel art, 1px dark outline (#141019), flat 2-3 step shading. Match the art style of the attached reference sheet exactly (style-only anchor; the subject is new). Two action sheets, same body size, stable bottom anchor line, nothing crossing cell edges: (1) walk, 2x3, 6-frame sideways scuttle cycle, legs skittering, big claw bobbing; (2) smitten, 2x2, 4-frame loop stopped in place, hugging its own big claw, blushing bashful pink (#ff5da2) cheeks, heart eyes.",
+      "output_dir": "assets/enemies/grabby",
+      "expect": [
+        "assets/enemies/grabby/walk/sheet-transparent.png",
+        "assets/enemies/grabby/walk/pipeline-meta.json",
+        "assets/enemies/grabby/walk/animation.gif",
+        "assets/enemies/grabby/smitten/sheet-transparent.png",
+        "assets/enemies/grabby/smitten/pipeline-meta.json",
+        "assets/enemies/grabby/smitten/animation.gif"
+      ],
+      "status": "accepted",
+      "reference_images": [
+        "assets/hero/idle/sheet-transparent.png"
+      ],
+      "attempts": 1,
+      "thread_id": "019f33fc-5493-7ea3-8d28-481237f3fe45",
+      "notes": "Accepted attempt 1: scuttle walk + claw-hug smitten pass rubric; feet 233 stable; edge_touch empty."
+    },
+    {
+      "id": "mutant-floaty",
+      "kind": "sprite",
+      "priority": 3,
+      "consumer": "src/game.js:Mutant(type=floaty) — vertical bobbing wisp, float + smitten loops (v2 levels)",
+      "spec": {
+        "asset_type": "creature",
+        "bundle": "unit_bundle",
+        "view": "side",
+        "art_style": "retro_pixel",
+        "actions": {
+          "float": "2x3",
+          "smitten": "2x2"
+        }
+      },
+      "brief": "Use $generate2dsprite to create a unit_bundle for Floaty, a comedic cave-mutant enemy in a mining platformer: a round rosy-mauve gas-wisp creature — a plump balloon-like blob with a soft flame-shaped tuft on top, tiny stubby arms, and a puckered kissy-face. Drawn as a solid pastel body with soft highlights (not transparent). Cute-goofy, wholesome, family-friendly. 16-bit pixel art, 1px dark outline (#141019), flat 2-3 step shading. Match the art style of the attached reference sheet exactly (style-only anchor; the subject is new). Two action sheets, same body size, body centered and stable in every cell, nothing crossing cell edges: (1) float, 2x3, 6-frame hover loop, body gently squashing as it drifts, tuft flickering, arms paddling; (2) smitten, 2x2, 4-frame loop with heart eyes, deep blush, kissy lips puckering bigger.",
+      "output_dir": "assets/enemies/floaty",
+      "expect": [
+        "assets/enemies/floaty/float/sheet-transparent.png",
+        "assets/enemies/floaty/float/pipeline-meta.json",
+        "assets/enemies/floaty/float/animation.gif",
+        "assets/enemies/floaty/smitten/sheet-transparent.png",
+        "assets/enemies/floaty/smitten/pipeline-meta.json",
+        "assets/enemies/floaty/smitten/animation.gif"
+      ],
+      "status": "accepted",
+      "reference_images": [
+        "assets/hero/idle/sheet-transparent.png"
+      ],
+      "attempts": 1,
+      "thread_id": "019f33fc-5a54-7583-a77f-c94f5f82d04d",
+      "notes": "Accepted attempt 1: float (3x2 grid — engine reads grid from meta) + smitten pass rubric; edge_touch empty."
+    },
+    {
+      "id": "mutant-prude",
+      "kind": "sprite",
+      "priority": 3,
+      "consumer": "src/game.js:Mutant(type=prude) — smitten-immune patroller, walk + scoff loops (v2 levels)",
+      "spec": {
+        "asset_type": "creature",
+        "bundle": "unit_bundle",
+        "view": "side",
+        "art_style": "retro_pixel",
+        "actions": {
+          "walk": "2x3",
+          "scoff": "2x2"
+        }
+      },
+      "brief": "Use $generate2dsprite to create a unit_bundle for The Prude, a comedic cave-mutant enemy in a mining platformer: a prim buttoned-up gray mole wearing tiny round spectacles, a spotless white hard hat, and a high stiff collar, nose in the air. Cute-goofy, wholesome, family-friendly — disapproval is its whole personality. 16-bit pixel art, 1px dark outline (#141019), flat 2-3 step shading. Match the art style of the attached reference sheet exactly (style-only anchor; the subject is new). Two action sheets, same body size, stable bottom anchor line, nothing crossing cell edges: (1) walk, 2x3, 6-frame prim marching cycle, chin high, short deliberate steps; (2) scoff, 2x2, 4-frame loop stopped with arms crossed, shaking its head disapprovingly, one eyebrow raised — NO blush, NO hearts (this one is immune to charm).",
+      "output_dir": "assets/enemies/prude",
+      "expect": [
+        "assets/enemies/prude/walk/sheet-transparent.png",
+        "assets/enemies/prude/walk/pipeline-meta.json",
+        "assets/enemies/prude/walk/animation.gif",
+        "assets/enemies/prude/scoff/sheet-transparent.png",
+        "assets/enemies/prude/scoff/pipeline-meta.json",
+        "assets/enemies/prude/scoff/animation.gif"
+      ],
+      "status": "accepted",
+      "reference_images": [
+        "assets/hero/idle/sheet-transparent.png"
+      ],
+      "attempts": 1,
+      "thread_id": "019f33fc-62e2-79b2-b316-adeebc4c632e",
+      "notes": "Accepted attempt 1: prim march + arms-crossed scoff (no blush, per immune design); feet 233; edge_touch empty."
+    },
+    {
+      "id": "props-powerups",
+      "kind": "sprite",
+      "priority": 3,
+      "consumer": "src/game.js:PowerUp — world items + HUD active-effect icons (v2 levels)",
+      "spec": {
+        "asset_type": "prop",
+        "action": "single",
+        "view": "side",
+        "sheet": "2x2",
+        "art_style": "retro_pixel",
+        "prop_generation": "prop_pack_2x2"
+      },
+      "brief": "Use $generate2dsprite to create a prop_pack_2x2 of four power-up items for a comedic mining platformer. 16-bit pixel art, 1px dark outline (#141019), flat 2-3 step shading, each reading clearly at 32px on a dark background. Match the art style of the attached reference sheet exactly (style-only anchor). All wholesome objects, one per cell, centered, generous magenta padding, no cell-edge contact: 1) a dented steel coffee thermos with a small steam curl; 2) a pair of brown work boots with visible shiny springs in the heels; 3) a small brass cage lantern with a tiny yellow canary inside; 4) a gleaming golden miner hard hat with a sparkle glint.",
+      "output_dir": "assets/props/powerups",
+      "expect": [
+        "prop-pack.json",
+        "thermos/prop.png",
+        "boots/prop.png",
+        "canary/prop.png",
+        "gold-helmet/prop.png"
+      ],
+      "status": "accepted",
+      "reference_images": [
+        "assets/hero/idle/sheet-transparent.png"
+      ],
+      "attempts": 1,
+      "thread_id": "019f3409-d26d-7ff2-bf9a-d003051dd303",
+      "notes": "Accepted attempt 1: 4/4 power-up icons 32x32 with alpha, edge_touch empty, read clearly at HUD scale."
+    },
+    {
+      "id": "prop-plank",
+      "kind": "sprite",
+      "priority": 3,
+      "consumer": "src/game.js:Level — crumbling segment cells (v2 levels)",
+      "spec": {
+        "asset_type": "prop",
+        "action": "single",
+        "view": "side",
+        "sheet": "auto",
+        "art_style": "retro_pixel",
+        "prop_generation": "one_by_one"
+      },
+      "brief": "Use $generate2dsprite to create ONE single side-view prop (one-by-one, not a pack) for a mining platformer: a weathered cracked timber plank platform segment, wide and thin (about 3:1 wide), visibly sagging in the middle with several splintering cracks and one loose nail, a few small rock chips resting on top. It must read as 'this will collapse if you stand on it'. 16-bit pixel art, 1px dark outline (#141019), flat 2-3 step shading, timber brown (#6e4a2d) but paler/drier than fresh timber. Match the art style of the attached reference sheet exactly (style-only anchor). Single subject centered with generous padding, nothing touching the edges.",
+      "output_dir": "assets/props/plank",
+      "expect": [
+        "assets/props/plank/sheet-transparent.png",
+        "assets/props/plank/pipeline-meta.json"
+      ],
+      "status": "accepted",
+      "reference_images": [
+        "assets/hero/idle/sheet-transparent.png"
+      ],
+      "attempts": 1,
+      "thread_id": "019f3409-dc29-7c91-9115-b8589823368e",
+      "notes": "Accepted attempt 1: sagging cracked plank reads as collapse warning; alpha OK."
+    },
+    {
+      "id": "prop-conveyor",
+      "kind": "sprite",
+      "priority": 3,
+      "consumer": "src/game.js:Level — conveyor strip cells, scroll-animated (v2 levels)",
+      "spec": {
+        "asset_type": "prop",
+        "action": "single",
+        "view": "side",
+        "sheet": "auto",
+        "art_style": "retro_pixel",
+        "prop_generation": "one_by_one"
+      },
+      "brief": "Use $generate2dsprite to create ONE single side-view prop (one-by-one, not a pack) for a mining platformer: a section of an industrial mine conveyor belt, wide and thin (about 3:1 wide) — dark riveted iron side frame, a ribbed rubber belt surface across the top with evenly spaced tread marks, two small roller wheels visible at the bottom edge of the frame. CRITICAL: the left and right edges must be cut cleanly mid-pattern so the section tiles SEAMLESSLY when repeated horizontally (frame rail and belt treads continue across copies). 16-bit pixel art, 1px dark outline (#141019), flat shading, iron gray with lantern-gold (#ffd24a) hazard accents. Match the art style of the attached reference sheet exactly (style-only anchor). No background, no text.",
+      "output_dir": "assets/props/conveyor",
+      "expect": [
+        "assets/props/conveyor/sheet-transparent.png",
+        "assets/props/conveyor/pipeline-meta.json"
+      ],
+      "status": "accepted",
+      "reference_images": [
+        "assets/hero/idle/sheet-transparent.png"
+      ],
+      "attempts": 1,
+      "thread_id": "019f340d-cff4-7f33-afeb-963322f414e8",
+      "notes": "Accepted attempt 1: tiles seamlessly horizontally (verified composite); alpha OK. Edge contact inherent to a seamless strip — documented exception, same class as prop-slide."
+    },
+    {
+      "id": "prop-spikes",
+      "kind": "sprite",
+      "priority": 3,
+      "consumer": "src/game.js:Level — spike hazard cells (v2 levels)",
+      "spec": {
+        "asset_type": "prop",
+        "action": "single",
+        "view": "side",
+        "sheet": "auto",
+        "art_style": "retro_pixel",
+        "prop_generation": "one_by_one"
+      },
+      "brief": "Use $generate2dsprite to create ONE single side-view prop (one-by-one, not a pack) for a mining platformer: a cluster of sharp gray stone stalagmite spikes rising from a low rocky base, wide and low (about 3:1 wide, a row of 4-5 jagged upward spikes of varying heights, tallest in the middle). Clearly dangerous but clean and cartoon-readable, no gore. 16-bit pixel art, 1px dark outline (#141019), flat 2-3 step shading, cool stone grays with faint bashful-pink (#ff5da2) mineral glints near the tips. Match the art style of the attached reference sheet exactly (style-only anchor). Single subject centered with generous padding, nothing touching the edges.",
+      "output_dir": "assets/props/spikes",
+      "expect": [
+        "assets/props/spikes/sheet-transparent.png",
+        "assets/props/spikes/pipeline-meta.json"
+      ],
+      "status": "accepted",
+      "reference_images": [
+        "assets/hero/idle/sheet-transparent.png"
+      ],
+      "attempts": 1,
+      "thread_id": "019f340e-db56-7d02-b48d-dec9ab8a2d81",
+      "notes": "Accepted attempt 1: stalagmite cluster reads as lethal at strip scale; alpha OK."
+    }
+  ]
+}

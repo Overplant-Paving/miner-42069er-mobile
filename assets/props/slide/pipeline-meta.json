@@ -1,0 +1,100 @@
+{
+  "target": "asset",
+  "mode": "single",
+  "prompt": "\ufeffUse the image just shown as the visual reference for art style only: match its 16-bit arcade pixel art, crisp chunky pixels, 1px dark outline color #141019, flat 2-3 step shading, warm lantern-gold highlights, and clean readable silhouettes. Do not copy the miner character.\n\nCreate exactly one square 1x1 sprite sheet tile on a 100% solid flat #FF00FF magenta background. One single mining platformer prop only: a polished timber mining chute slide running diagonally at exactly 45 degrees from the top-left corner region down to the bottom-right corner region of the square tile. Side-view platformer readability, but the tile itself is square and collision-aligned.\n\nThe chute must be seamless when copies are placed diagonally with each next copy offset one full tile right and one full tile down: the chute enters the tile at the top-left corner region and exits at the bottom-right corner region with the same width, same rail spacing, same surface centerline, same outline thickness, and same cross-section alignment. The diagonal slide should be cropped cleanly by the square tile boundary at those two matching corner regions so the next tile continues perfectly. Keep the centerline on a true 45-degree slope from top-left to bottom-right.\n\nVisual details: low timber side rails, smooth worn sliding surface, timber brown base #6e4a2d, lantern-gold worn sheen #ffd24a down the middle, dark cavern-brown shadows, subtle bashful pink accent pixels only if needed, no metal track, no nails dominating. 1px #141019 dark outline around the chute and rails. Flat pixel shading, no painterly gradients, no anti-aliased blur.\n\nContainment and cleanup rules: the only non-magenta pixels are the chute itself; no other props, no dust, no floating effects. Leave the rest solid #FF00FF. No text, no labels, no UI, no borders, no frame lines, no shadows on the background.\n",
+  "role": "",
+  "input": "assets\\props\\slide\\raw-sheet.png",
+  "threshold": 100,
+  "edge_threshold": 150,
+  "duration": 200,
+  "rows": 1,
+  "cols": 1,
+  "cell_size": 256,
+  "fit_scale": 1.0,
+  "trim_border": 0,
+  "edge_clean_depth": 0,
+  "align": "center",
+  "shared_scale": false,
+  "component_mode": "all",
+  "component_padding": 0,
+  "min_component_area": 1,
+  "edge_touch_margin": 0,
+  "frame_labels": [
+    "slide-1"
+  ],
+  "frames": [
+    {
+      "grid": [
+        0,
+        0
+      ],
+      "source_box": [
+        0,
+        0,
+        1254,
+        1254
+      ],
+      "component_mode": "all",
+      "component_count": 1,
+      "selected_component_area": null,
+      "selected_component_bbox": null,
+      "crop_bbox": [
+        0,
+        0,
+        1254,
+        1254
+      ],
+      "edge_touch": true,
+      "output_size": [
+        256,
+        256
+      ],
+      "paste_position": [
+        0,
+        0
+      ]
+    }
+  ],
+  "edge_touch_frames": [
+    [
+      0,
+      0
+    ]
+  ],
+  "edge_touch_expected": true,
+  "postprocess_overrides": {
+    "seam_preserving_downscale": true,
+    "source_canvas_preserved": true,
+    "resampling": "nearest",
+    "final_size": [
+      256,
+      256
+    ],
+    "reason": "diagonal repeat tile must keep generated edge contact instead of crop-centering the prop"
+  },
+  "seam_qc": {
+    "final_size": [
+      256,
+      256
+    ],
+    "edge_alpha_counts": {
+      "top": 9,
+      "bottom": 54,
+      "left": 46,
+      "right": 16
+    },
+    "corner_32px_alpha_counts": {
+      "top_left": 845,
+      "bottom_right": 888,
+      "top_right": 0,
+      "bottom_left": 0
+    },
+    "estimated_alpha_axis_slope": 0.953659596014116,
+    "estimated_angle_degrees": 43.64121068180738,
+    "diagonal_repeat_offset": [
+      256,
+      256
+    ]
+  },
+  "qc_warnings": []
+}

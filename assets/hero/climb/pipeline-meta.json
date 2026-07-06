@@ -1,0 +1,175 @@
+{
+  "target": "player",
+  "mode": "climb",
+  "prompt": "Use the image just shown as the visual reference for Dusty Rodd. Create a square 2D game sprite sheet with exactly 4 equal cells arranged as a 2x2 grid, read top-left, top-right, bottom-left, bottom-right. No visible grid lines, no borders, no labels, no text. Subject: Dusty Rodd, the exact same stocky miner from the reference, but seen from behind in every cell for a climbing loop. Preserve identity and style exactly from the reference where visible: same stocky proportions and height, same yellow hard hat with small lantern #ffd24a seen from rear/side, same dark hair/sideburn hint, same cream shirt sleeves, brown gloves and boots, denim-blue overalls #3fa7ff with back straps and bib seam, same 1px dark outline #141019, flat 2-3 step 16-bit pixel-art shading, crisp silhouette. Action: 4-frame behind-view ladder climb loop. Top-left: left hand high, right hand low, left boot on higher rung, right boot low. Top-right: hands passing, body centered, knees bent. Bottom-left: right hand high, left hand low, right boot higher, left boot low. Bottom-right: hands passing back to loop. Draw only one or two short dark-brown ladder rung segments per cell if needed for hand and boot contact, kept tight behind the body and fully inside the same cell; no tall ladder rails, no long props. Body-only arcade sprite, no detached FX. Keep the character centered in each cell, full body inside the central 60-70% safe area, consistent scale matching the idle reference within 10%, stable bottom/feet anchor line, no limb, hat, rung, or boot crosses a cell edge, leave solid magenta margin on all four sides. Background must be 100% solid flat #FF00FF magenta with no gradient and no shadow.",
+  "role": "",
+  "input": "C:\\Users\\henry\\.codex\\generated_images\\019f31a3-1b0e-7f32-81e5-33ba81ac6c0a\\ig_094f577e30bf28fa016a4a26407b4c8194b2b521ecb74111e6.png",
+  "threshold": 220,
+  "edge_threshold": 245,
+  "duration": 180,
+  "rows": 2,
+  "cols": 2,
+  "cell_size": 256,
+  "fit_scale": 0.88,
+  "trim_border": 4,
+  "edge_clean_depth": 3,
+  "align": "feet",
+  "shared_scale": true,
+  "component_mode": "largest",
+  "component_padding": 8,
+  "min_component_area": 64,
+  "edge_touch_margin": 2,
+  "frame_labels": [
+    "climb-1",
+    "climb-2",
+    "climb-3",
+    "climb-4"
+  ],
+  "frames": [
+    {
+      "grid": [
+        0,
+        0
+      ],
+      "source_box": [
+        0,
+        0,
+        627,
+        627
+      ],
+      "component_mode": "largest",
+      "component_count": 1,
+      "selected_component_area": 82215,
+      "selected_component_bbox": [
+        223,
+        82,
+        477,
+        550
+      ],
+      "crop_bbox": [
+        215,
+        74,
+        485,
+        558
+      ],
+      "edge_touch": false,
+      "output_size": [
+        125,
+        225
+      ],
+      "paste_position": [
+        65,
+        16
+      ]
+    },
+    {
+      "grid": [
+        0,
+        1
+      ],
+      "source_box": [
+        627,
+        0,
+        1254,
+        627
+      ],
+      "component_mode": "largest",
+      "component_count": 1,
+      "selected_component_area": 79876,
+      "selected_component_bbox": [
+        142,
+        93,
+        402,
+        519
+      ],
+      "crop_bbox": [
+        134,
+        85,
+        410,
+        527
+      ],
+      "edge_touch": false,
+      "output_size": [
+        128,
+        205
+      ],
+      "paste_position": [
+        64,
+        36
+      ]
+    },
+    {
+      "grid": [
+        1,
+        0
+      ],
+      "source_box": [
+        0,
+        627,
+        627,
+        1254
+      ],
+      "component_mode": "largest",
+      "component_count": 2,
+      "selected_component_area": 81786,
+      "selected_component_bbox": [
+        211,
+        61,
+        471,
+        522
+      ],
+      "crop_bbox": [
+        203,
+        53,
+        479,
+        530
+      ],
+      "edge_touch": false,
+      "output_size": [
+        128,
+        222
+      ],
+      "paste_position": [
+        64,
+        19
+      ]
+    },
+    {
+      "grid": [
+        1,
+        1
+      ],
+      "source_box": [
+        627,
+        627,
+        1254,
+        1254
+      ],
+      "component_mode": "largest",
+      "component_count": 1,
+      "selected_component_area": 79169,
+      "selected_component_bbox": [
+        144,
+        67,
+        403,
+        505
+      ],
+      "crop_bbox": [
+        136,
+        59,
+        411,
+        513
+      ],
+      "edge_touch": false,
+      "output_size": [
+        128,
+        211
+      ],
+      "paste_position": [
+        64,
+        30
+      ]
+    }
+  ],
+  "edge_touch_frames": []
+}

@@ -1,0 +1,68 @@
+{
+  "job": "props-powerups",
+  "game": "miner-42069er",
+  "type": "prop_pack_2x2",
+  "art_style": "retro_pixel",
+  "style_anchor": "assets/hero/idle/sheet-transparent.png",
+  "raw_sheet": "raw-sheet.png",
+  "clean_sheet": "raw-sheet-clean.png",
+  "transparent_sheet": "sheet-transparent.png",
+  "prompt": "prompt-used.txt",
+  "pipeline_meta": "pipeline-meta.json",
+  "grid": {
+    "rows": 2,
+    "cols": 2,
+    "source_cell_size": 627
+  },
+  "prop_size": {
+    "width": 32,
+    "height": 32
+  },
+  "background": "#FF00FF",
+  "qc": {
+    "edge_touch_frames": [],
+    "processor": "generate2dsprite.py process",
+    "threshold": 30,
+    "edge_threshold": 80,
+    "component_mode": "all",
+    "notes": ""
+  },
+  "items": [
+    {
+      "id": "thermos",
+      "label": "dented steel coffee thermos with small steam curl",
+      "grid": [
+        0,
+        0
+      ],
+      "path": "thermos/prop.png"
+    },
+    {
+      "id": "boots",
+      "label": "brown work boots with shiny springs in the heels",
+      "grid": [
+        0,
+        1
+      ],
+      "path": "boots/prop.png"
+    },
+    {
+      "id": "canary",
+      "label": "small brass cage lantern with tiny yellow canary inside",
+      "grid": [
+        1,
+        0
+      ],
+      "path": "canary/prop.png"
+    },
+    {
+      "id": "gold-helmet",
+      "label": "gleaming golden miner hard hat with sparkle glint",
+      "grid": [
+        1,
+        1
+      ],
+      "path": "gold-helmet/prop.png"
+    }
+  ]
+}
